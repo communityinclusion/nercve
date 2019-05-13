@@ -34,7 +34,7 @@ parameters:
     # the cookie domain should start with a dot.
     #
     # @default none
-    cookie_domain: '.nercve8.local'
+    #cookie_domain: '.nercve8.local'
     #
   twig.config:
     # Twig debugging:
