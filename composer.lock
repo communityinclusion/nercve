@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "0452cc4ca703327708e98772a2d2d646",
+    "content-hash": "763890b07764b440bf3655823e6b12c8",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -3734,7 +3734,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/devel.git",
-                "reference": "fb28836d6c08e4ea4039e481e30fbbe86e3c82a9"
+                "reference": "4eefb59e22ed63ecb3ffa3862c3b0b4c5179d54c"
             },
             "require": {
                 "drupal/core": "~8.0",
@@ -3746,8 +3746,8 @@
                     "dev-2.x": "2.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-2.0+12-dev",
-                    "datestamp": "1554296885",
+                    "version": "8.x-2.0+48-dev",
+                    "datestamp": "1556666286",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
@@ -3806,7 +3806,7 @@
                 "issues": "http://drupal.org/project/devel",
                 "irc": "irc://irc.freenode.org/drupal-contribute"
             },
-            "time": "2019-04-03T23:57:21+00:00"
+            "time": "2019-05-08T10:03:51+00:00"
         },
         {
             "name": "drupal/ds",
@@ -12415,6 +12415,7 @@
         "drupal/captcha": 10,
         "drupal/computed_field": 10,
         "drupal/conditional_fields": 15,
+        "drupal/devel": 20,
         "drupal/fapi_validation": 15,
         "drupal/mailgun": 10,
         "drupal/nodeaccess": 10,
