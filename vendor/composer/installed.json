@@ -398,17 +398,17 @@
     },
     {
         "name": "chi-teck/drupal-code-generator",
-        "version": "1.28.1",
-        "version_normalized": "1.28.1.0",
+        "version": "1.29.1",
+        "version_normalized": "1.29.1.0",
         "source": {
             "type": "git",
             "url": "https://github.com/Chi-teck/drupal-code-generator.git",
-            "reference": "e7ca5d7d2ecb5374988ff636e7546638e91c2201"
+            "reference": "f1da0370113ee246cd8f6d744d4835e8d53ea61c"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/Chi-teck/drupal-code-generator/zipball/e7ca5d7d2ecb5374988ff636e7546638e91c2201",
-            "reference": "e7ca5d7d2ecb5374988ff636e7546638e91c2201",
+            "url": "https://api.github.com/repos/Chi-teck/drupal-code-generator/zipball/f1da0370113ee246cd8f6d744d4835e8d53ea61c",
+            "reference": "f1da0370113ee246cd8f6d744d4835e8d53ea61c",
             "shasum": ""
         },
         "require": {
@@ -418,7 +418,7 @@
             "symfony/filesystem": "^2.7 || ^3.4 || ^4.0",
             "twig/twig": "^1.35"
         },
-        "time": "2019-03-07T06:10:55+00:00",
+        "time": "2019-04-26T08:30:10+00:00",
         "bin": [
             "bin/dcg"
         ],
@@ -445,17 +445,17 @@
     },
     {
         "name": "clue/stream-filter",
-        "version": "v1.4.0",
-        "version_normalized": "1.4.0.0",
+        "version": "v1.4.1",
+        "version_normalized": "1.4.1.0",
         "source": {
             "type": "git",
             "url": "https://github.com/clue/php-stream-filter.git",
-            "reference": "d80fdee9b3a7e0d16fc330a22f41f3ad0eeb09d0"
+            "reference": "5a58cc30a8bd6a4eb8f856adf61dd3e013f53f71"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/clue/php-stream-filter/zipball/d80fdee9b3a7e0d16fc330a22f41f3ad0eeb09d0",
-            "reference": "d80fdee9b3a7e0d16fc330a22f41f3ad0eeb09d0",
+            "url": "https://api.github.com/repos/clue/php-stream-filter/zipball/5a58cc30a8bd6a4eb8f856adf61dd3e013f53f71",
+            "reference": "5a58cc30a8bd6a4eb8f856adf61dd3e013f53f71",
             "shasum": ""
         },
         "require": {
@@ -464,7 +464,7 @@
         "require-dev": {
             "phpunit/phpunit": "^5.0 || ^4.8"
         },
-        "time": "2017-08-18T09:54:01+00:00",
+        "time": "2019-04-09T12:31:48+00:00",
         "type": "library",
         "installation-source": "dist",
         "autoload": {
@@ -472,7 +472,7 @@
                 "Clue\\StreamFilter\\": "src/"
             },
             "files": [
-                "src/functions.php"
+                "src/functions_include.php"
             ]
         },
         "notification-url": "https://packagist.org/downloads/",
@@ -1379,17 +1379,17 @@
     },
     {
         "name": "consolidation/site-process",
-        "version": "2.0.1",
-        "version_normalized": "2.0.1.0",
+        "version": "2.0.2",
+        "version_normalized": "2.0.2.0",
         "source": {
             "type": "git",
             "url": "https://github.com/consolidation/site-process.git",
-            "reference": "d923bbf8843f4b273733db5912198b7dba0f236d"
+            "reference": "8957b9b3f4d48c183b7b11a29089d52875442e2f"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/consolidation/site-process/zipball/d923bbf8843f4b273733db5912198b7dba0f236d",
-            "reference": "d923bbf8843f4b273733db5912198b7dba0f236d",
+            "url": "https://api.github.com/repos/consolidation/site-process/zipball/8957b9b3f4d48c183b7b11a29089d52875442e2f",
+            "reference": "8957b9b3f4d48c183b7b11a29089d52875442e2f",
             "shasum": ""
         },
         "require": {
@@ -1407,7 +1407,7 @@
             "phpunit/phpunit": "^6",
             "squizlabs/php_codesniffer": "^2.8"
         },
-        "time": "2019-04-02T18:47:44+00:00",
+        "time": "2019-04-05T20:16:00+00:00",
         "type": "library",
         "extra": {
             "scenarios": {
@@ -2711,7 +2711,7 @@
         "description": "Drupal administration theme with modern minimalist design.",
         "homepage": "https://www.drupal.org/project/adminimal_theme",
         "support": {
-            "source": "http://cgit.drupalcode.org/adminimal_theme",
+            "source": "https://git.drupalcode.org/project/adminimal_theme",
             "issues": "https://www.drupal.org/project/issues/adminimal_theme"
         }
     },
@@ -2766,6 +2766,10 @@
                 "homepage": "https://www.drupal.org/user/216396"
             },
             {
+                "name": "diqidoq",
+                "homepage": "https://www.drupal.org/user/1001934"
+            },
+            {
                 "name": "purushotam.rai",
                 "homepage": "https://www.drupal.org/user/3193859"
             }
@@ -2773,7 +2777,7 @@
         "description": "Allows hiding of entity label fields and automatic label creation.",
         "homepage": "https://www.drupal.org/project/auto_entitylabel",
         "support": {
-            "source": "http://cgit.drupalcode.org/auto_entitylabel",
+            "source": "https://git.drupalcode.org/project/auto_entitylabel",
             "issues": "https://www.drupal.org/project/issues/auto_entitylabel"
         }
     },
@@ -2828,7 +2832,7 @@
         "description": "Bootstrap 4 base theme.",
         "homepage": "https://www.drupal.org/project/bootstrap_barrio",
         "support": {
-            "source": "http://cgit.drupalcode.org/bootstrap_barrio"
+            "source": "https://git.drupalcode.org/project/bootstrap_barrio"
         }
     },
     {
@@ -2878,7 +2882,7 @@
         "description": "Provides Bootstrap Integration.",
         "homepage": "http://drupal.org/project/bootstrap_library",
         "support": {
-            "source": "http://cgit.drupalcode.org/bootstrap_library"
+            "source": "https://git.drupalcode.org/project/bootstrap_library"
         }
     },
     {
@@ -2947,7 +2951,7 @@
         "description": "The CAPTCHA module provides this feature to virtually any user facing web form on a Drupal site.",
         "homepage": "https://www.drupal.org/project/captcha",
         "support": {
-            "source": "http://cgit.drupalcode.org/captcha"
+            "source": "https://git.drupalcode.org/project/captcha"
         }
     },
     {
@@ -3063,7 +3067,7 @@
         "description": "Defines a field type that allows values to be \"computed\" via PHP code.",
         "homepage": "https://www.drupal.org/project/computed_field",
         "support": {
-            "source": "http://cgit.drupalcode.org/computed_field"
+            "source": "https://git.drupalcode.org/project/computed_field"
         }
     },
     {
@@ -3128,7 +3132,7 @@
         "description": "Conditional fields",
         "homepage": "https://www.drupal.org/project/conditional_fields",
         "support": {
-            "source": "http://cgit.drupalcode.org/conditional_fields"
+            "source": "https://git.drupalcode.org/project/conditional_fields"
         }
     },
     {
@@ -3687,7 +3691,7 @@
         "description": "Import content from CSV.",
         "homepage": "https://www.drupal.org/project/csv_importer",
         "support": {
-            "source": "http://cgit.drupalcode.org/csv_importer"
+            "source": "https://git.drupalcode.org/project/csv_importer"
         }
     },
     {
@@ -3737,7 +3741,7 @@
         "description": "Provides CSV as a serialization format.",
         "homepage": "https://www.drupal.org/project/csv_serialization",
         "support": {
-            "source": "http://cgit.drupalcode.org/csv_serialization"
+            "source": "https://git.drupalcode.org/project/csv_serialization"
         }
     },
     {
@@ -4247,7 +4251,7 @@
         "description": "Provides the field_group module.",
         "homepage": "https://www.drupal.org/project/field_group",
         "support": {
-            "source": "http://cgit.drupalcode.org/field_group"
+            "source": "https://git.drupalcode.org/project/field_group"
         }
     },
     {
@@ -4300,7 +4304,7 @@
         "description": "Allows administrators to force users to change their password",
         "homepage": "https://www.drupal.org/project/force_password_change",
         "support": {
-            "source": "http://cgit.drupalcode.org/force_password_change"
+            "source": "https://git.drupalcode.org/project/force_password_change"
         }
     },
     {
@@ -4474,6 +4478,10 @@
                 "homepage": "https://www.drupal.org/user/84263"
             },
             {
+                "name": "Manuel Garcia",
+                "homepage": "https://www.drupal.org/user/213194"
+            },
+            {
                 "name": "Nafes",
                 "homepage": "https://www.drupal.org/user/2489926"
             },
@@ -4489,7 +4497,7 @@
         "description": "Mail System",
         "homepage": "https://www.drupal.org/project/mailsystem",
         "support": {
-            "source": "http://cgit.drupalcode.org/mailsystem"
+            "source": "https://git.drupalcode.org/project/mailsystem"
         }
     },
     {
@@ -4554,23 +4562,23 @@
         "description": "Provides configurable blocks of menu links.",
         "homepage": "https://www.drupal.org/project/menu_block",
         "support": {
-            "source": "http://cgit.drupalcode.org/menu_block"
+            "source": "https://git.drupalcode.org/project/menu_block"
         }
     },
     {
         "name": "drupal/menu_breadcrumb",
-        "version": "1.8.0",
-        "version_normalized": "1.8.0.0",
+        "version": "1.9.0",
+        "version_normalized": "1.9.0.0",
         "source": {
             "type": "git",
             "url": "https://git.drupalcode.org/project/menu_breadcrumb.git",
-            "reference": "8.x-1.8"
+            "reference": "8.x-1.9"
         },
         "dist": {
             "type": "zip",
-            "url": "https://ftp.drupal.org/files/projects/menu_breadcrumb-8.x-1.8.zip",
-            "reference": "8.x-1.8",
-            "shasum": "db3aee3edd5e34a750297709d74b61c0c7c432f7"
+            "url": "https://ftp.drupal.org/files/projects/menu_breadcrumb-8.x-1.9.zip",
+            "reference": "8.x-1.9",
+            "shasum": "c68782d805b12b1d15d4e0bea2e16a76dac89bd2"
         },
         "require": {
             "drupal/core": "~8.0"
@@ -4581,8 +4589,8 @@
                 "dev-1.x": "1.x-dev"
             },
             "drupal": {
-                "version": "8.x-1.8",
-                "datestamp": "1549606384",
+                "version": "8.x-1.9",
+                "datestamp": "1554988685",
                 "security-coverage": {
                     "status": "covered",
                     "message": "Covered by Drupal's security advisory policy"
@@ -4623,31 +4631,33 @@
         "description": "Create breadcrumbs from nested menu titles and/or taxonomy membership.",
         "homepage": "https://www.drupal.org/project/menu_breadcrumb",
         "support": {
-            "source": "http://cgit.drupalcode.org/menu_breadcrumb"
+            "source": "https://git.drupalcode.org/project/menu_breadcrumb"
         }
     },
     {
         "name": "drupal/migrate_plus",
-        "version": "4.1.0",
-        "version_normalized": "4.1.0.0",
+        "version": "4.2.0",
+        "version_normalized": "4.2.0.0",
         "source": {
             "type": "git",
             "url": "https://git.drupalcode.org/project/migrate_plus.git",
-            "reference": "8.x-4.1"
+            "reference": "8.x-4.2"
         },
         "dist": {
             "type": "zip",
-            "url": "https://ftp.drupal.org/files/projects/migrate_plus-8.x-4.1.zip",
-            "reference": "8.x-4.1",
-            "shasum": "cfd7ef2b17ede664b2b74eb101032a03c386457e"
+            "url": "https://ftp.drupal.org/files/projects/migrate_plus-8.x-4.2.zip",
+            "reference": "8.x-4.2",
+            "shasum": "5736a43e39cc5c091d54ceef2849ea35ba979af3"
         },
         "require": {
             "drupal/core": "^8.3"
         },
         "require-dev": {
+            "drupal/entity": "*",
             "drupal/migrate_example_advanced_setup": "*",
             "drupal/migrate_example_setup": "*",
-            "drupal/migrate_tools": "*"
+            "drupal/migrate_tools": "*",
+            "drupal/profile": "*"
         },
         "suggest": {
             "ext-soap": "*",
@@ -4659,8 +4669,8 @@
                 "dev-4.x": "4.x-dev"
             },
             "drupal": {
-                "version": "8.x-4.1",
-                "datestamp": "1546879080",
+                "version": "8.x-4.2",
+                "datestamp": "1555683487",
                 "security-coverage": {
                     "status": "covered",
                     "message": "Covered by Drupal's security advisory policy"
@@ -4832,7 +4842,7 @@
         "description": "Drush support for direct upgrades from older Drupal versions.",
         "homepage": "https://www.drupal.org/project/migrate_upgrade",
         "support": {
-            "source": "http://cgit.drupalcode.org/migrate_upgrade"
+            "source": "https://git.drupalcode.org/project/migrate_upgrade"
         }
     },
     {
@@ -4860,7 +4870,7 @@
             },
             "drupal": {
                 "version": "8.x-1.0-beta3",
-                "datestamp": "1549754880",
+                "datestamp": "1549893780",
                 "security-coverage": {
                     "status": "not-covered",
                     "message": "Beta releases are not covered by Drupal security advisories."
@@ -4885,7 +4895,7 @@
         "description": "Provides per node access control.",
         "homepage": "https://www.drupal.org/project/nodeaccess",
         "support": {
-            "source": "http://cgit.drupalcode.org/nodeaccess"
+            "source": "https://git.drupalcode.org/project/nodeaccess"
         }
     },
     {
@@ -4941,8 +4951,8 @@
                 "homepage": "https://www.drupal.org/user/45640"
             },
             {
-                "name": "tim.plunkett",
-                "homepage": "https://www.drupal.org/user/241634"
+                "name": "manuel.adan",
+                "homepage": "https://www.drupal.org/user/516420"
             }
         ],
         "description": "Provides a way to place blocks on a custom page.",
@@ -5012,6 +5022,10 @@
                 "homepage": "https://www.drupal.org/user/45640"
             },
             {
+                "name": "joelpittet",
+                "homepage": "https://www.drupal.org/user/160302"
+            },
+            {
                 "name": "merlinofchaos",
                 "homepage": "https://www.drupal.org/user/26979"
             },
@@ -5022,10 +5036,6 @@
             {
                 "name": "samuel.mortenson",
                 "homepage": "https://www.drupal.org/user/2582268"
-            },
-            {
-                "name": "sdboyer",
-                "homepage": "https://www.drupal.org/user/146719"
             },
             {
                 "name": "tim.plunkett",
@@ -5169,7 +5179,7 @@
         "description": "Provides configurable user profiles.",
         "homepage": "http://drupal.org/project/profile",
         "support": {
-            "source": "http://cgit.drupalcode.org/profile"
+            "source": "https://git.drupalcode.org/project/profile"
         }
     },
     {
@@ -5299,7 +5309,7 @@
         "description": "React on events and conditionally evaluate actions.",
         "homepage": "https://www.drupal.org/project/rules",
         "support": {
-            "source": "http://cgit.drupalcode.org/rules"
+            "source": "https://git.drupalcode.org/project/rules"
         }
     },
     {
@@ -5418,7 +5428,7 @@
         "description": "Email functionality for Drupal, simplified.",
         "homepage": "https://www.drupal.org/project/simple_mail",
         "support": {
-            "source": "http://cgit.drupalcode.org/simple_mail"
+            "source": "https://git.drupalcode.org/project/simple_mail"
         }
     },
     {
@@ -5487,7 +5497,7 @@
         "description": "Allow for site emails to be sent through an SMTP server of your choice.",
         "homepage": "https://www.drupal.org/project/smtp",
         "support": {
-            "source": "http://cgit.drupalcode.org/smtp",
+            "source": "https://git.drupalcode.org/project/smtp",
             "issues": "https://www.drupal.org/project/issues/smtp"
         }
     },
@@ -5541,7 +5551,7 @@
         "description": "Provides support for extending sub-paths of URL aliases.",
         "homepage": "https://www.drupal.org/project/subpathauto",
         "support": {
-            "source": "http://cgit.drupalcode.org/subpathauto"
+            "source": "https://git.drupalcode.org/project/subpathauto"
         }
     },
     {
@@ -5635,7 +5645,7 @@
         ],
         "authors": [
             {
-                "name": "Aswathy Ajish",
+                "name": "AswathyAjish",
                 "homepage": "https://www.drupal.org/user/2584696"
             },
             {
@@ -5650,7 +5660,7 @@
         "description": "A module to import taxonomy using CSV or XML file to a user defined vocabulary",
         "homepage": "https://www.drupal.org/project/taxonomy_import",
         "support": {
-            "source": "http://cgit.drupalcode.org/taxonomy_import"
+            "source": "https://git.drupalcode.org/project/taxonomy_import"
         }
     },
     {
@@ -5719,7 +5729,7 @@
         "description": "Provides a user interface for the Token API and some missing core tokens.",
         "homepage": "https://www.drupal.org/project/token",
         "support": {
-            "source": "http://cgit.drupalcode.org/token"
+            "source": "https://git.drupalcode.org/project/token"
         }
     },
     {
@@ -5865,7 +5875,7 @@
         "description": "This is a very simple module to make global token values available as an input filter.",
         "homepage": "https://www.drupal.org/project/token_filter",
         "support": {
-            "source": "http://cgit.drupalcode.org/token_filter"
+            "source": "https://git.drupalcode.org/project/token_filter"
         }
     },
     {
@@ -6040,7 +6050,7 @@
         "description": "Adds an ability to perform bulk operations on selected entities from view results. Provides an API to create such operations.",
         "homepage": "https://www.drupal.org/project/views_bulk_operations",
         "support": {
-            "source": "http://cgit.drupalcode.org/views_bulk_operations",
+            "source": "https://git.drupalcode.org/project/views_bulk_operations",
             "issues": "https://www.drupal.org/project/issues/views_bulk_operations?version=8.x",
             "docs": "https://www.drupal.org/docs/8/modules/views-bulk-operations-vbo"
         }
@@ -6112,7 +6122,7 @@
         "description": "Plugin to export views data into various file formats.",
         "homepage": "https://www.drupal.org/project/views_data_export",
         "support": {
-            "source": "http://cgit.drupalcode.org/views_data_export"
+            "source": "https://git.drupalcode.org/project/views_data_export"
         }
     },
     {
@@ -6155,7 +6165,7 @@
             },
             "drupal": {
                 "version": "8.x-5.2",
-                "datestamp": "1553801966",
+                "datestamp": "1557418583",
                 "security-coverage": {
                     "status": "covered",
                     "message": "Covered by Drupal's security advisory policy"
@@ -6304,7 +6314,7 @@
         "description": "Defines a field type with Workflows, containing customizable state transitions.",
         "homepage": "https://www.drupal.org/project/workflow",
         "support": {
-            "source": "http://cgit.drupalcode.org/workflow"
+            "source": "https://git.drupalcode.org/project/workflow"
         }
     },
     {
@@ -10175,17 +10185,17 @@
     },
     {
         "name": "stecman/symfony-console-completion",
-        "version": "0.9.0",
-        "version_normalized": "0.9.0.0",
+        "version": "0.10.1",
+        "version_normalized": "0.10.1.0",
         "source": {
             "type": "git",
             "url": "https://github.com/stecman/symfony-console-completion.git",
-            "reference": "bd07a24190541de2828c1d6469a8ddce599d3c5a"
+            "reference": "7bfa9b93e216896419f2f8de659935d7e04fecd8"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/stecman/symfony-console-completion/zipball/bd07a24190541de2828c1d6469a8ddce599d3c5a",
-            "reference": "bd07a24190541de2828c1d6469a8ddce599d3c5a",
+            "url": "https://api.github.com/repos/stecman/symfony-console-completion/zipball/7bfa9b93e216896419f2f8de659935d7e04fecd8",
+            "reference": "7bfa9b93e216896419f2f8de659935d7e04fecd8",
             "shasum": ""
         },
         "require": {
@@ -10195,11 +10205,11 @@
         "require-dev": {
             "phpunit/phpunit": "~4.8.36 || ~5.7 || ~6.4"
         },
-        "time": "2019-01-19T21:25:25+00:00",
+        "time": "2019-04-29T03:20:18+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
-                "dev-master": "0.6.x-dev"
+                "dev-master": "0.10.x-dev"
             }
         },
         "installation-source": "dist",
@@ -11269,7 +11279,7 @@
             },
             {
                 "name": "Gert de Pagter",
-                "email": "backendtea@gmail.com"
+                "email": "BackEndTea@gmail.com"
             }
         ],
         "description": "Symfony polyfill for ctype functions",

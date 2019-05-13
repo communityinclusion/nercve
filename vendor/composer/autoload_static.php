@@ -4,7 +4,7 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit31d92b1161a10d1e5b74ce9b46a09c65
+class ComposerStaticInitca579a3530d46abb62fe9e39f6758d18
 {
     public static $files = array (
         '320cde22f66dd4f5d3fd621d3e88b98f' => __DIR__ . '/..' . '/symfony/polyfill-ctype/bootstrap.php',
@@ -28,7 +28,7 @@ class ComposerStaticInit31d92b1161a10d1e5b74ce9b46a09c65
         '1ca3bc274755662169f9629d5412a1da' => __DIR__ . '/..' . '/zendframework/zend-diactoros/src/functions/normalize_uploaded_files.php',
         '40360c0b9b437e69bcbb7f1349ce029e' => __DIR__ . '/..' . '/zendframework/zend-diactoros/src/functions/parse_cookie_header.php',
         'def43f6c87e4f8dfd0c9e1b1bab14fe8' => __DIR__ . '/..' . '/symfony/polyfill-iconv/bootstrap.php',
-        'ddc0a4d7e61c0286f0f8593b1903e894' => __DIR__ . '/..' . '/clue/stream-filter/src/functions.php',
+        '9c67151ae59aff4788964ce8eb2a0f43' => __DIR__ . '/..' . '/clue/stream-filter/src/functions_include.php',
         '8cff32064859f4559445b89279f3199c' => __DIR__ . '/..' . '/php-http/message/src/filters.php',
         '801c31d8ed748cfa537fa45402288c95' => __DIR__ . '/..' . '/psy/psysh/src/functions.php',
         '952683d815ff0a7bf322b93c0be7e4e4' => __DIR__ . '/..' . '/chi-teck/drupal-code-generator/src/bootstrap.php',
@@ -1309,11 +1309,11 @@ class ComposerStaticInit31d92b1161a10d1e5b74ce9b46a09c65
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInit31d92b1161a10d1e5b74ce9b46a09c65::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInit31d92b1161a10d1e5b74ce9b46a09c65::$prefixDirsPsr4;
-            $loader->prefixesPsr0 = ComposerStaticInit31d92b1161a10d1e5b74ce9b46a09c65::$prefixesPsr0;
-            $loader->fallbackDirsPsr0 = ComposerStaticInit31d92b1161a10d1e5b74ce9b46a09c65::$fallbackDirsPsr0;
-            $loader->classMap = ComposerStaticInit31d92b1161a10d1e5b74ce9b46a09c65::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInitca579a3530d46abb62fe9e39f6758d18::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInitca579a3530d46abb62fe9e39f6758d18::$prefixDirsPsr4;
+            $loader->prefixesPsr0 = ComposerStaticInitca579a3530d46abb62fe9e39f6758d18::$prefixesPsr0;
+            $loader->fallbackDirsPsr0 = ComposerStaticInitca579a3530d46abb62fe9e39f6758d18::$fallbackDirsPsr0;
+            $loader->classMap = ComposerStaticInitca579a3530d46abb62fe9e39f6758d18::$classMap;
 
         }, null, ClassLoader::class);
     }

@@ -14,9 +14,7 @@ use Drupal\migrate_drupal\Plugin\migrate\source\DrupalSqlBase;
  * Drupal 7 field_group source.
  *
  * @MigrateSource(
- *   id = "d7_field_group",
- *   source_module = "field_group",
- *   destination_module = "field_group"
+ *   id = "d7_field_group"
  * )
  */
 class FieldGroup extends DrupalSqlBase {
