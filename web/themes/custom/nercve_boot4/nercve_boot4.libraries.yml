@@ -6,6 +6,12 @@ global-styling:
     component:
       css/style.css: {}
       css/colors.css: {}
+open_sans:
+  version: VERSION
+  css:
+    component:
+      fonts/open_sans.css: {}
+      //fonts.googleapis.com/css?family=Open+Sans:300,400,600,700: {}
 bootstrap:
   js:
     /libraries/popper/popper.min.js: {}
