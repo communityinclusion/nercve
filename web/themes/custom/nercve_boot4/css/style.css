@@ -9,3 +9,14 @@
     }
     #block-mainnavigation-2 ul#superfish-main li.sf-depth-1.menuparent{ height: 4em; }
 .page-title {font-size:2.5rem}
+
+
+.site-footer h2 {
+    border-bottom: 1px solid #fff;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 27px;
+    padding: 10px 0;
+    color: #fff;
+    text-transform: uppercase;
+    }
