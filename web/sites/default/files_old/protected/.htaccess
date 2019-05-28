@@ -1,0 +1,4 @@
+AuthType Basic
+AuthName "TVI Practicum Handbook"
+AuthUserFile /home/nercve/nercve.org/.htpasswd
+require valid-user
