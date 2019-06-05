@@ -11,8 +11,8 @@
 .page-title {font-size:2.5rem}
 
 
-
-
+#main-wrapper {padding: 2rem 0;}
+.sidebar nav ul.nav {margin:0 1rem}
 
 /*** Footer ***/
 
@@ -31,7 +31,7 @@
    border: none;
 }
 
-
+.site-footer {padding:0}
 
 
 
