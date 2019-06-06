@@ -17,3 +17,6 @@ block.settings.menu_block:*:
     suggestion:
       type: string
       label: 'Theme suggestion'
+    render_parent:
+      type: boolean
+      label: 'Render parent menu link'
