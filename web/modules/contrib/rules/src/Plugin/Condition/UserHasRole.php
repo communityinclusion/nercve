@@ -50,17 +50,17 @@ class UserHasRole extends RulesConditionBase {
    *   TRUE if the user has the role(s).
    */
   protected function doEvaluate(UserInterface $account, array $roles, $operation = 'AND') {
+    // Hack PF https://www.drupal.org/project/rules/issues/2816157
 
-    $rids = array_map(function ($role) {
-      return $role->id();
-    }, $roles);
-
-    switch ($operation) {
-      case 'OR':
-        return (bool) array_intersect($rids, $account->getRoles());
-
-      case 'AND':
-        return (bool) !array_diff($rids, $account->getRoles());
+         switch ($operation) {
+           case 'OR':
+   
+            return (bool) array_intersect($roles, $account->getRoles());
+     
+           case 'AND':
+   
+           return (bool) !array_diff($roles, $account->getRoles());
+     
 
       default:
         throw new InvalidArgumentException('Either use "AND" or "OR". Leave empty for default "AND" behavior.');
