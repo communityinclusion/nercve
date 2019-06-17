@@ -503,9 +503,7 @@
         "version_normalized": "9.7.0.0",
         "dist": {
             "type": "zip",
-            "url": "https://github.com/components/highlightjs/archive/9.7.0.zip",
-            "reference": null,
-            "shasum": null
+            "url": "https://github.com/components/highlightjs/archive/9.7.0.zip"
         },
         "type": "drupal-library",
         "installation-source": "dist"
@@ -1536,9 +1534,7 @@
         "version_normalized": "3.5.17.0",
         "dist": {
             "type": "zip",
-            "url": "https://github.com/d3/d3/archive/v3.5.17.zip",
-            "reference": null,
-            "shasum": null
+            "url": "https://github.com/d3/d3/archive/v3.5.17.zip"
         },
         "type": "drupal-library",
         "installation-source": "dist"
@@ -4282,6 +4278,67 @@
         }
     },
     {
+        "name": "drupal/entity_block",
+        "version": "1.0.0-beta1",
+        "version_normalized": "1.0.0.0-beta1",
+        "source": {
+            "type": "git",
+            "url": "https://git.drupalcode.org/project/entity_block.git",
+            "reference": "8.x-1.0-beta1"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://ftp.drupal.org/files/projects/entity_block-8.x-1.0-beta1.zip",
+            "reference": "8.x-1.0-beta1",
+            "shasum": "4b380e2c70bf8625074449cfd8cc23f8cc6e7f5a"
+        },
+        "require": {
+            "drupal/core": "~8.0"
+        },
+        "type": "drupal-module",
+        "extra": {
+            "branch-alias": {
+                "dev-1.x": "1.x-dev"
+            },
+            "drupal": {
+                "version": "8.x-1.0-beta1",
+                "datestamp": "1513981984",
+                "security-coverage": {
+                    "status": "not-covered",
+                    "message": "Beta releases are not covered by Drupal security advisories."
+                }
+            }
+        },
+        "installation-source": "dist",
+        "notification-url": "https://packages.drupal.org/8/downloads",
+        "license": [
+            "GPL-2.0-or-later"
+        ],
+        "authors": [
+            {
+                "name": "Jaesin",
+                "homepage": "https://www.drupal.org/user/841054"
+            },
+            {
+                "name": "arshadcn",
+                "homepage": "https://www.drupal.org/user/571032"
+            },
+            {
+                "name": "floretan",
+                "homepage": "https://www.drupal.org/user/66163"
+            },
+            {
+                "name": "rrrob",
+                "homepage": "https://www.drupal.org/user/273533"
+            }
+        ],
+        "description": "Let site administrators place content entities as blocks.",
+        "homepage": "https://www.drupal.org/project/entity_block",
+        "support": {
+            "source": "https://git.drupalcode.org/project/entity_block"
+        }
+    },
+    {
         "name": "drupal/fapi_validation",
         "version": "2.0.0-alpha1",
         "version_normalized": "2.0.0.0-alpha1",
@@ -4342,6 +4399,65 @@
             "source": "https://cgit.drupalcode.org/fapi_validation",
             "issues": "https://drupal.org/project/issues/fapi_validation",
             "irc": "irc://irc.freenode.org/drupal-contribute"
+        }
+    },
+    {
+        "name": "drupal/faqfield",
+        "version": "1.1.0",
+        "version_normalized": "1.1.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://git.drupalcode.org/project/faqfield.git",
+            "reference": "8.x-1.1"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://ftp.drupal.org/files/projects/faqfield-8.x-1.1.zip",
+            "reference": "8.x-1.1",
+            "shasum": "61aeccae9ebf2347567df1a891772e88e9452aa6"
+        },
+        "require": {
+            "drupal/core": "*"
+        },
+        "type": "drupal-module",
+        "extra": {
+            "branch-alias": {
+                "dev-1.x": "1.x-dev"
+            },
+            "drupal": {
+                "version": "8.x-1.1",
+                "datestamp": "1519216085",
+                "security-coverage": {
+                    "status": "covered",
+                    "message": "Covered by Drupal's security advisory policy"
+                }
+            }
+        },
+        "installation-source": "dist",
+        "notification-url": "https://packages.drupal.org/8/downloads",
+        "license": [
+            "GPL-2.0+"
+        ],
+        "authors": [
+            {
+                "name": "Patrick Drotleff (patrickd)",
+                "homepage": "https://www.drupal.org/u/patrickd",
+                "role": "Maintainer"
+            },
+            {
+                "name": "Kevin Quillen (kevinquillen)",
+                "homepage": "https://www.drupal.org/u/kevinquillen",
+                "role": "Maintainer"
+            }
+        ],
+        "description": "This module provides a field for frequently asked questions.",
+        "homepage": "http://drupal.org/project/faqfield",
+        "keywords": [
+            "Drupal"
+        ],
+        "support": {
+            "source": "http://cgit.drupalcode.org/faqfield",
+            "issues": "http://drupal.org/project/issues/faqfield"
         }
     },
     {
@@ -6239,6 +6355,117 @@
         "support": {
             "source": "https://git.drupalcode.org/project/viewfield",
             "issues": "https://www.drupal.org/project/issues/viewfield"
+        }
+    },
+    {
+        "name": "drupal/views_accordion",
+        "version": "1.2.0",
+        "version_normalized": "1.2.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://git.drupalcode.org/project/views_accordion.git",
+            "reference": "8.x-1.2"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://ftp.drupal.org/files/projects/views_accordion-8.x-1.2.zip",
+            "reference": "8.x-1.2",
+            "shasum": "4822df2084bd3e05fc9b1ff7b2f99768c123341c"
+        },
+        "require": {
+            "drupal/core": "*"
+        },
+        "type": "drupal-module",
+        "extra": {
+            "branch-alias": {
+                "dev-1.x": "1.x-dev"
+            },
+            "drupal": {
+                "version": "8.x-1.2",
+                "datestamp": "1544298180",
+                "security-coverage": {
+                    "status": "covered",
+                    "message": "Covered by Drupal's security advisory policy"
+                }
+            }
+        },
+        "installation-source": "dist",
+        "notification-url": "https://packages.drupal.org/8/downloads",
+        "license": [
+            "GPL-2.0+"
+        ],
+        "authors": [
+            {
+                "name": "Manuel Garcia",
+                "homepage": "https://www.drupal.org/user/213194"
+            }
+        ],
+        "description": "Provides an accordion views display plugin.",
+        "homepage": "https://www.drupal.org/project/views_accordion",
+        "support": {
+            "source": "https://git.drupalcode.org/project/views_accordion",
+            "issues": "https://www.drupal.org/project/issues/views_accordion"
+        }
+    },
+    {
+        "name": "drupal/views_bootstrap",
+        "version": "4.1.0",
+        "version_normalized": "4.1.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://git.drupalcode.org/project/views_bootstrap.git",
+            "reference": "8.x-4.1"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://ftp.drupal.org/files/projects/views_bootstrap-8.x-4.1.zip",
+            "reference": "8.x-4.1",
+            "shasum": "61e907ad7e2aebf1d2132a206ad1818ef3a6491a"
+        },
+        "require": {
+            "drupal/core": "*"
+        },
+        "type": "drupal-module",
+        "extra": {
+            "branch-alias": {
+                "dev-4.x": "4.x-dev"
+            },
+            "drupal": {
+                "version": "8.x-4.1",
+                "datestamp": "1548889080",
+                "security-coverage": {
+                    "status": "covered",
+                    "message": "Covered by Drupal's security advisory policy"
+                }
+            }
+        },
+        "installation-source": "dist",
+        "notification-url": "https://packages.drupal.org/8/downloads",
+        "license": [
+            "GPL-2.0-or-later"
+        ],
+        "authors": [
+            {
+                "name": "aburrows",
+                "homepage": "https://www.drupal.org/user/577844"
+            },
+            {
+                "name": "ericpugh",
+                "homepage": "https://www.drupal.org/user/130084"
+            },
+            {
+                "name": "ikeigenwijs",
+                "homepage": "https://www.drupal.org/user/583238"
+            },
+            {
+                "name": "mrded",
+                "homepage": "https://www.drupal.org/user/556088"
+            }
+        ],
+        "description": "Views Bootstrap v4",
+        "homepage": "https://www.drupal.org/project/views_bootstrap",
+        "support": {
+            "source": "https://git.drupalcode.org/project/views_bootstrap"
         }
     },
     {
