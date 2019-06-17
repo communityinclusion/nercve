@@ -37,6 +37,10 @@ function nercve_boot4_form_system_theme_settings_alter(&$form, FormStateInterfac
 
 }
 
+function nercve_boot4_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id) {
+  $form['revision_information']['#access'] = FALSE;
+}
+
 function nercve_boot4_preprocess_page(&$variables)
 {
   $fonts = theme_get_setting('bootstrap_barrio_google_fonts');

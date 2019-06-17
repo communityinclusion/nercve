@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "1b9efdf20f2405f72257452fd117d2de",
+    "content-hash": "105d6d94ac72d5e49161bf606335adb0",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -4960,6 +4960,54 @@
             "homepage": "https://www.drupal.org/project/nodeaccess",
             "support": {
                 "source": "https://git.drupalcode.org/project/nodeaccess"
+            }
+        },
+        {
+            "name": "drupal/override_node_options",
+            "version": "2.4.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/override_node_options.git",
+                "reference": "8.x-2.4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/override_node_options-8.x-2.4.zip",
+                "reference": "8.x-2.4",
+                "shasum": "0d00dbefc7f9103c863af2607a988bf68681df60"
+            },
+            "require": {
+                "drupal/core": "^8.4.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-2.x": "2.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-2.4",
+                    "datestamp": "1522490884",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Oliver Davies",
+                    "homepage": "https://www.drupal.org/user/381388",
+                    "email": "oliver@oliverdavies.uk"
+                }
+            ],
+            "description": "Allows permissions to be set on each node option such as published and authoring information.",
+            "homepage": "https://www.drupal.org/project/override_node_options",
+            "support": {
+                "source": "https://git.drupalcode.org/project/override_node_options"
             }
         },
         {
