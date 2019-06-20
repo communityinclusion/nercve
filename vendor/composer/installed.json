@@ -503,7 +503,9 @@
         "version_normalized": "9.7.0.0",
         "dist": {
             "type": "zip",
-            "url": "https://github.com/components/highlightjs/archive/9.7.0.zip"
+            "url": "https://github.com/components/highlightjs/archive/9.7.0.zip",
+            "reference": null,
+            "shasum": null
         },
         "type": "drupal-library",
         "installation-source": "dist"
@@ -1534,7 +1536,9 @@
         "version_normalized": "3.5.17.0",
         "dist": {
             "type": "zip",
-            "url": "https://github.com/d3/d3/archive/v3.5.17.zip"
+            "url": "https://github.com/d3/d3/archive/v3.5.17.zip",
+            "reference": null,
+            "shasum": null
         },
         "type": "drupal-library",
         "installation-source": "dist"
@@ -6259,7 +6263,7 @@
         "source": {
             "type": "git",
             "url": "https://git.drupalcode.org/project/typed_data.git",
-            "reference": "c01189094360cebef8c54078d74283915711e79e"
+            "reference": "d06b12c1b3c9d4ecf9537e25289b189f99a03d47"
         },
         "require": {
             "drupal/core": "~8.0"
