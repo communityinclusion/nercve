@@ -291,3 +291,4 @@ ul.sf-menu .sf-sub-indicator {height:14px;width:14px}
 .view-new-professional-directory .view-content .views-row:nth-of-type(even) {
   background: #e9ecef;
 }
+#block-exposedformnew-professional-directorypage-1 select { max-width: 315px; }
