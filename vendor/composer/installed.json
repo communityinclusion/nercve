@@ -503,9 +503,7 @@
         "version_normalized": "9.7.0.0",
         "dist": {
             "type": "zip",
-            "url": "https://github.com/components/highlightjs/archive/9.7.0.zip",
-            "reference": null,
-            "shasum": null
+            "url": "https://github.com/components/highlightjs/archive/9.7.0.zip"
         },
         "type": "drupal-library",
         "installation-source": "dist"
@@ -1536,9 +1534,7 @@
         "version_normalized": "3.5.17.0",
         "dist": {
             "type": "zip",
-            "url": "https://github.com/d3/d3/archive/v3.5.17.zip",
-            "reference": null,
-            "shasum": null
+            "url": "https://github.com/d3/d3/archive/v3.5.17.zip"
         },
         "type": "drupal-library",
         "installation-source": "dist"
@@ -3041,6 +3037,66 @@
         }
     },
     {
+        "name": "drupal/bootstrap_paragraphs",
+        "version": "2.0.0-beta6",
+        "version_normalized": "2.0.0.0-beta6",
+        "source": {
+            "type": "git",
+            "url": "https://git.drupalcode.org/project/bootstrap_paragraphs.git",
+            "reference": "8.x-2.0-beta6"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://ftp.drupal.org/files/projects/bootstrap_paragraphs-8.x-2.0-beta6.zip",
+            "reference": "8.x-2.0-beta6",
+            "shasum": "ae24c14a87186f2b9e9ef12822ac40cb7ad68b15"
+        },
+        "require": {
+            "drupal/core": "*",
+            "drupal/entity_reference_revisions": "*",
+            "drupal/paragraphs": "*",
+            "drupal/viewsreference": "*"
+        },
+        "require-dev": {
+            "drupal/contact_formatter": "*",
+            "drupal/paragraphs": "*"
+        },
+        "type": "drupal-module",
+        "extra": {
+            "branch-alias": {
+                "dev-2.x": "2.x-dev"
+            },
+            "drupal": {
+                "version": "8.x-2.0-beta6",
+                "datestamp": "1541261280",
+                "security-coverage": {
+                    "status": "not-covered",
+                    "message": "Beta releases are not covered by Drupal security advisories."
+                }
+            }
+        },
+        "installation-source": "dist",
+        "notification-url": "https://packages.drupal.org/8/downloads",
+        "license": [
+            "GPL-2.0-or-later"
+        ],
+        "authors": [
+            {
+                "name": "albertski",
+                "homepage": "https://www.drupal.org/user/1327432"
+            },
+            {
+                "name": "thejimbirch",
+                "homepage": "https://www.drupal.org/user/2507260"
+            }
+        ],
+        "description": "A suite of Paragraph bundles made with the Boostrap framework.",
+        "homepage": "https://www.drupal.org/project/bootstrap_paragraphs",
+        "support": {
+            "source": "https://git.drupalcode.org/project/bootstrap_paragraphs"
+        }
+    },
+    {
         "name": "drupal/captcha",
         "version": "1.0.0-beta1",
         "version_normalized": "1.0.0.0-beta1",
@@ -4343,6 +4399,70 @@
         }
     },
     {
+        "name": "drupal/entity_reference_revisions",
+        "version": "1.6.0",
+        "version_normalized": "1.6.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://git.drupalcode.org/project/entity_reference_revisions.git",
+            "reference": "8.x-1.6"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://ftp.drupal.org/files/projects/entity_reference_revisions-8.x-1.6.zip",
+            "reference": "8.x-1.6",
+            "shasum": "82d515de04d3a75fb677ed82241a6aff3f54ab47"
+        },
+        "require": {
+            "drupal/core": "~8.0"
+        },
+        "require-dev": {
+            "drupal/diff": "*"
+        },
+        "type": "drupal-module",
+        "extra": {
+            "branch-alias": {
+                "dev-1.x": "1.x-dev"
+            },
+            "drupal": {
+                "version": "8.x-1.6",
+                "datestamp": "1539588781",
+                "security-coverage": {
+                    "status": "covered",
+                    "message": "Covered by Drupal's security advisory policy"
+                }
+            }
+        },
+        "installation-source": "dist",
+        "notification-url": "https://packages.drupal.org/8/downloads",
+        "license": [
+            "GPL-2.0-or-later"
+        ],
+        "authors": [
+            {
+                "name": "Berdir",
+                "homepage": "https://www.drupal.org/user/214652"
+            },
+            {
+                "name": "Frans",
+                "homepage": "https://www.drupal.org/user/514222"
+            },
+            {
+                "name": "jeroen.b",
+                "homepage": "https://www.drupal.org/user/1853532"
+            },
+            {
+                "name": "miro_dietiker",
+                "homepage": "https://www.drupal.org/user/227761"
+            }
+        ],
+        "description": "Adds a Entity Reference field type with revision support.",
+        "homepage": "https://www.drupal.org/project/entity_reference_revisions",
+        "support": {
+            "source": "https://git.drupalcode.org/project/entity_reference_revisions"
+        }
+    },
+    {
         "name": "drupal/fapi_validation",
         "version": "2.0.0-alpha1",
         "version_normalized": "2.0.0.0-alpha1",
@@ -4527,6 +4647,72 @@
         "homepage": "https://www.drupal.org/project/field_group",
         "support": {
             "source": "https://git.drupalcode.org/project/field_group"
+        }
+    },
+    {
+        "name": "drupal/fontawesome",
+        "version": "2.13.0",
+        "version_normalized": "2.13.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://git.drupalcode.org/project/fontawesome.git",
+            "reference": "8.x-2.13"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://ftp.drupal.org/files/projects/fontawesome-8.x-2.13.zip",
+            "reference": "8.x-2.13",
+            "shasum": "3bf8bc202f429b6ad35777ae9229b8c1f1bad085"
+        },
+        "require": {
+            "drupal/core": "~8.0"
+        },
+        "type": "drupal-module",
+        "extra": {
+            "branch-alias": {
+                "dev-2.x": "2.x-dev"
+            },
+            "drupal": {
+                "version": "8.x-2.13",
+                "datestamp": "1557577985",
+                "security-coverage": {
+                    "status": "covered",
+                    "message": "Covered by Drupal's security advisory policy"
+                }
+            },
+            "drush": {
+                "services": {
+                    "drush.services.yml": "^9"
+                }
+            }
+        },
+        "installation-source": "dist",
+        "notification-url": "https://packages.drupal.org/8/downloads",
+        "license": [
+            "GPL-2.0+"
+        ],
+        "authors": [
+            {
+                "name": "Daniel.Moberly",
+                "homepage": "https://www.drupal.org/user/1160788"
+            },
+            {
+                "name": "RobLoach",
+                "homepage": "https://www.drupal.org/user/61114"
+            },
+            {
+                "name": "inders",
+                "homepage": "https://www.drupal.org/user/127640"
+            },
+            {
+                "name": "truls1502",
+                "homepage": "https://www.drupal.org/user/325866"
+            }
+        ],
+        "description": "The web's most popular icon set and toolkit.",
+        "homepage": "https://www.drupal.org/project/fontawesome",
+        "support": {
+            "source": "https://git.drupalcode.org/project/fontawesome"
         }
     },
     {
@@ -5429,6 +5615,88 @@
         }
     },
     {
+        "name": "drupal/paragraphs",
+        "version": "1.8.0",
+        "version_normalized": "1.8.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://git.drupalcode.org/project/paragraphs.git",
+            "reference": "8.x-1.8"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://ftp.drupal.org/files/projects/paragraphs-8.x-1.8.zip",
+            "reference": "8.x-1.8",
+            "shasum": "a40849233de8403f5488c20c5b81ab4877373f65"
+        },
+        "require": {
+            "drupal/core": "~8",
+            "drupal/entity_reference_revisions": "~1.3"
+        },
+        "require-dev": {
+            "drupal/block_field": "~1.0",
+            "drupal/ctools": "3.x-dev",
+            "drupal/diff": "~1.0",
+            "drupal/entity_browser": "2.x-dev",
+            "drupal/entity_usage": "2.x-dev",
+            "drupal/field_group": "~1.0",
+            "drupal/inline_entity_form": "~1.0",
+            "drupal/paragraphs-paragraphs_library": "*",
+            "drupal/replicate": "~1.0",
+            "drupal/search_api": "~1.0",
+            "drupal/search_api_db": "*"
+        },
+        "suggest": {
+            "drupal/entity_browser": "Recommended for an improved user experience when using the Paragraphs library module"
+        },
+        "type": "drupal-module",
+        "extra": {
+            "branch-alias": {
+                "dev-1.x": "1.x-dev"
+            },
+            "drupal": {
+                "version": "8.x-1.8",
+                "datestamp": "1553618281",
+                "security-coverage": {
+                    "status": "covered",
+                    "message": "Covered by Drupal's security advisory policy"
+                }
+            }
+        },
+        "installation-source": "dist",
+        "notification-url": "https://packages.drupal.org/8/downloads",
+        "license": [
+            "GPL-2.0"
+        ],
+        "authors": [
+            {
+                "name": "Berdir",
+                "homepage": "https://www.drupal.org/user/214652"
+            },
+            {
+                "name": "Frans",
+                "homepage": "https://www.drupal.org/user/514222"
+            },
+            {
+                "name": "Primsi",
+                "homepage": "https://www.drupal.org/user/282629"
+            },
+            {
+                "name": "jeroen.b",
+                "homepage": "https://www.drupal.org/user/1853532"
+            },
+            {
+                "name": "miro_dietiker",
+                "homepage": "https://www.drupal.org/user/227761"
+            }
+        ],
+        "description": "Enables the creation of Paragraphs entities.",
+        "homepage": "https://www.drupal.org/project/paragraphs",
+        "support": {
+            "source": "https://git.drupalcode.org/project/paragraphs"
+        }
+    },
+    {
         "name": "drupal/pathauto",
         "version": "1.4.0",
         "version_normalized": "1.4.0.0",
@@ -5807,6 +6075,77 @@
         "homepage": "https://www.drupal.org/project/simple_mail",
         "support": {
             "source": "https://git.drupalcode.org/project/simple_mail"
+        }
+    },
+    {
+        "name": "drupal/smart_trim",
+        "version": "1.1.0",
+        "version_normalized": "1.1.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://git.drupalcode.org/project/smart_trim.git",
+            "reference": "8.x-1.1"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://ftp.drupal.org/files/projects/smart_trim-8.x-1.1.zip",
+            "reference": "8.x-1.1",
+            "shasum": "5f1c0f15914208e0ad2ec5cce1d6419040596fc0"
+        },
+        "require": {
+            "drupal/core": "*"
+        },
+        "type": "drupal-module",
+        "extra": {
+            "branch-alias": {
+                "dev-1.x": "1.x-dev"
+            },
+            "drupal": {
+                "version": "8.x-1.1",
+                "datestamp": "1516301286",
+                "security-coverage": {
+                    "status": "covered",
+                    "message": "Covered by Drupal's security advisory policy"
+                }
+            }
+        },
+        "installation-source": "dist",
+        "notification-url": "https://packages.drupal.org/8/downloads",
+        "license": [
+            "GPL-2.0+"
+        ],
+        "authors": [
+            {
+                "name": "Mark Casias (markie)",
+                "homepage": "https://www.drupal.org/u/markie",
+                "role": "Maintainer"
+            },
+            {
+                "name": "chrisjlee",
+                "homepage": "https://www.drupal.org/user/760600"
+            },
+            {
+                "name": "drywall",
+                "homepage": "https://www.drupal.org/user/192591"
+            },
+            {
+                "name": "jsenich",
+                "homepage": "https://www.drupal.org/user/58871"
+            },
+            {
+                "name": "markie",
+                "homepage": "https://www.drupal.org/user/206687"
+            },
+            {
+                "name": "newsignature",
+                "homepage": "https://www.drupal.org/user/765518"
+            }
+        ],
+        "description": "Provides a more robust alternative to 'summary or trimmed' textfield format.",
+        "homepage": "https://drupal.org/project/smart_trim",
+        "support": {
+            "source": "https://cgit.drupalcode.org/smart_trim",
+            "issues": "https://drupal.org/project/issues/smart_trim"
         }
     },
     {
@@ -6612,6 +6951,70 @@
         "homepage": "https://www.drupal.org/project/views_data_export",
         "support": {
             "source": "https://git.drupalcode.org/project/views_data_export"
+        }
+    },
+    {
+        "name": "drupal/viewsreference",
+        "version": "1.4.0",
+        "version_normalized": "1.4.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://git.drupalcode.org/project/viewsreference.git",
+            "reference": "8.x-1.4"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://ftp.drupal.org/files/projects/viewsreference-8.x-1.4.zip",
+            "reference": "8.x-1.4",
+            "shasum": "973509be252d9a2f9a0a12bbfb83ec41311ef41c"
+        },
+        "require": {
+            "drupal/core": "~8.0"
+        },
+        "conflict": {
+            "drupal/viewsreferennce": "*"
+        },
+        "type": "drupal-module",
+        "extra": {
+            "branch-alias": {
+                "dev-1.x": "1.x-dev"
+            },
+            "drupal": {
+                "version": "8.x-1.4",
+                "datestamp": "1544740080",
+                "security-coverage": {
+                    "status": "covered",
+                    "message": "Covered by Drupal's security advisory policy"
+                }
+            }
+        },
+        "installation-source": "dist",
+        "notification-url": "https://packages.drupal.org/8/downloads",
+        "license": [
+            "GPL-2.0+"
+        ],
+        "authors": [
+            {
+                "name": "joekers",
+                "homepage": "https://www.drupal.org/user/2229066"
+            },
+            {
+                "name": "kent@passingphase.nz",
+                "homepage": "https://www.drupal.org/user/93571"
+            },
+            {
+                "name": "seanB",
+                "homepage": "https://www.drupal.org/user/545912"
+            }
+        ],
+        "description": "Views Reference",
+        "homepage": "http://drupal.org/project/viewsreference",
+        "keywords": [
+            "Drupal"
+        ],
+        "support": {
+            "source": "http://cgit.drupalcode.org/viewsreference",
+            "issues": "http://drupal.org/project/issues/viewsreference"
         }
     },
     {

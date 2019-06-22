@@ -2,7 +2,7 @@
  * @file
  * Subtheme specific CSS.
  */
- #block-mainnavigation-2 ul#superfish-main {width: 72em; }
+ #block-mainnavigation-2 ul#superfish-main {width: 62em; }
  #block-mainnavigation-2 ul#superfish-main > li { width: 14em; }
  #block-mainnavigation-2 ul#superfish-main > li,#block-mainnavigation-2 ul#superfish-main li.sf-depth-1.menuparent ul,#block-mainnavigation-2 ul#superfish-main li.sf-depth-1.menuparent ul li {
      background-color: #fff;
@@ -35,6 +35,36 @@
 
 
 .sidebar nav ul.nav {margin:0 1rem}
+
+
+
+
+.site-name-slogan {
+  font-size:3vw;
+  padding-left:5px;
+}
+
+
+.site-name-slogan a {
+  color:#fff;
+}
+
+.site-name-slogan a:hover {
+  color:#fff;
+}
+
+div.sf-accordion-toggle.sf-style-none  > a:after {
+  content: "≡";
+  font-size: 3em;
+  position: absolute;
+    top: 25%;
+
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  speak: none;
+}
 
 /*** Footer ***/
 
@@ -71,12 +101,19 @@
  *
  */
 
+
+/* This seems to fix the issue of the sf menu disappearing in mobile view... probably a better way to fix-revisit later*/
+ .navbar-toggler {display:none}
+.collapse:not(.show) {
+    display: block;
+}
+
+
 #navbar-main {border-bottom:1px solid #d1d1d1;
   -webkit-box-shadow:0px 1px 1px #d8d4d8;
  -moz-box-shadow:0px 1px 1px #d8d4d8;
  box-shadow:0px 1px 1px #d8d4d8;
 }
-
 ul.sf-menu .sf-sub-indicator {height:14px;width:14px}
 
 #block-mainnavigation-2 ul#superfish-main > li {
@@ -100,7 +137,7 @@ ul.sf-menu .sf-sub-indicator {height:14px;width:14px}
 #block-mainnavigation-2 .sf-style-none a,
 #block-mainnavigation-2 .sf-style-none span.nolink {
   color: #1d84c3;
-  padding: 0.75em 1em;
+ padding: .5em 2em .5em 1em;
 }
 #block-mainnavigation-2 .sf-style-none a.sf-with-ul,
 #block-mainnavigation-2 .sf-style-none span.nolink.sf-with-ul {
@@ -172,9 +209,9 @@ ul.sf-menu .sf-sub-indicator {height:14px;width:14px}
   content: "◄";
 }
 #block-mainnavigation-2 div.sf-accordion-toggle.sf-style-none a {
-  background: #f0f0f0;
-  color: #1d84c3;
-  padding: 1em;
+  background:#1d84c3 ;
+  color: #f0f0f0;
+  border:#fff solid 1px;
 }
 #block-mainnavigation-2 div.sf-accordion-toggle.sf-style-none a.sf-expanded,
 #block-mainnavigation-2 .sf-style-none.sf-accordion li.sf-expanded {
@@ -255,12 +292,12 @@ ul.sf-menu .sf-sub-indicator {height:14px;width:14px}
     height: 3.5em;
     text-align: center;
 }
-#block-mainnavigation > ul {
+#block-mainnavigation-2 > ul {
     text-align: center;
     padding: 0;
     width: 100%;
 }
-#block-mainnavigation .sf-menu li {
+#block-mainnavigation-2 .sf-menu li {
     float: none;
     position: relative;
     display: inline-block;
