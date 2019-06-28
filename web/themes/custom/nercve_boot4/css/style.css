@@ -2,7 +2,7 @@
  * @file
  * Subtheme specific CSS.
  */
- #block-mainnavigation-2 ul#superfish-main {width: 68em; }
+/* #block-mainnavigation-2 ul#superfish-main {width: 68em; }*/
  #block-mainnavigation-2 ul#superfish-main > li { width: 14em; }
  #block-mainnavigation-2 ul#superfish-main > li,#block-mainnavigation-2 ul#superfish-main li.sf-depth-1.menuparent ul,#block-mainnavigation-2 ul#superfish-main li.sf-depth-1.menuparent ul li {
      background-color: #fff;
@@ -33,6 +33,11 @@
 #main-wrapper {padding: 2rem 0;}
 
 
+.search-block-form .form-control {  padding: .15rem .375rem;}
+
+
+
+
 /*----home page block styles ----*/
 .block-views-blockspotlight-block-1 h2{
   background-color:#ebf3f8;
@@ -52,23 +57,82 @@
 .block-views-blockemployment-board-block-1 h2::before { font-family: "Font Awesome 5 Free"; font-weight: 700; content: "\f0a1";margin-left:5px;margin-right:5px;}
 .block-views-blockemployment-board-block-1 table tr {background-color: #fff}
 
+
+.views-field-field-thumbnail {float:left;}
+
+
+
+
+/* Social Icons */
+ul.social-icons {
+  margin: 0;
+  padding: 0;
+  width: auto;
+}
+
+ul.social-icons > li {
+  list-style: none;
+  margin-left: 5px;
+  display: inline-block;
+}
+
+ul.social-icons > li > a {
+  color: #fff;
+}
+
+
+
+
+
+ul.social-icons > li i {
+    width: 24px;
+    line-height: 24px;
+  font-size: 30px;
+}
+
+
+ul.social-icons .fa-facebook-square:hover {
+ color: #336699;
+   background-color: #fff;
+}
+
+ul.social-icons .fa-envelope:hover {
+ color: #336699;
+   background-color: #fff;
+       width: 30px;
+    line-height: 18px;
+}
+
+ul.social-icons .fa-twitter-square:hover {
+ color: #336699;
+   background-color: #fff;
+   width: 24px;
+    line-height: 24px;
+}
+
+
+
+
+
 .sidebar nav ul.nav {margin:0 1rem}
 
 
 
 
 .site-name-slogan {
-  font-size:3vw;
-  padding-left:5px;
+     padding-left: 5px;
+    width: 125px;
+    line-height: 20px;
 }
 
 
 .site-name-slogan a {
-  color:#fff;
+  color:#1d84c3;
 }
 
 .site-name-slogan a:hover {
-  color:#fff;
+  font-weight:600;
+  text-transform: none;
 }
 
 div.sf-accordion-toggle.sf-style-none  > a:after {
@@ -104,6 +168,39 @@ div.sf-accordion-toggle.sf-style-none  > a:after {
 .site-footer {padding:0}
 
 
+
+.site-footer ul.list-unstyled {
+    padding-left: 0!important;
+}
+
+
+
+.site-footer__top .content li a {
+  padding: 5px 0;
+   text-indent: 0px;
+}
+
+
+.region-footer-fifth {
+  background-color: #233864;
+    margin-top: 5px;
+
+}
+
+
+.copyright-content .content {
+      width:90%;
+      margin:auto;}
+
+.site-footer__bottom .region {
+  margin-top:0;
+}
+
+
+.site-footer__top {
+      width:90%;
+      margin:auto;
+    }
 
 /*
  * Sample CSS to add Superfish CSS to themes.
@@ -155,7 +252,6 @@ ul.sf-menu .sf-sub-indicator {height:14px;width:14px}
 #block-mainnavigation-2 .sf-style-none a,
 #block-mainnavigation-2 .sf-style-none span.nolink {
   color: #1d84c3;
- padding: .5em 2em .5em 1em;
 }
 #block-mainnavigation-2 .sf-style-none a.sf-with-ul,
 #block-mainnavigation-2 .sf-style-none span.nolink.sf-with-ul {
