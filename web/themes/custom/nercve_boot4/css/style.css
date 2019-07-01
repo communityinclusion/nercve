@@ -2,7 +2,7 @@
  * @file
  * Subtheme specific CSS.
  */
- #block-mainnavigation-2 ul#superfish-main {width: 72em; }
+/* #block-mainnavigation-2 ul#superfish-main {width: 68em; }*/
  #block-mainnavigation-2 ul#superfish-main > li { width: 14em; }
  #block-mainnavigation-2 ul#superfish-main > li,#block-mainnavigation-2 ul#superfish-main li.sf-depth-1.menuparent ul,#block-mainnavigation-2 ul#superfish-main li.sf-depth-1.menuparent ul li {
      background-color: #fff;
@@ -33,8 +33,120 @@
 #main-wrapper {padding: 2rem 0;}
 
 
+.search-block-form .form-control {  padding: .15rem .375rem;}
+
+
+
+
+/*----home page block styles ----*/
+.block-views-blockspotlight-block-1 h2{
+  background-color:#ebf3f8;
+  padding:5px;
+}
+
+.block-views-blockspotlight-block-1 h2::before {
+    font-family: "Font Awesome 5 Free"; font-weight: 700; content: "\f005";margin-left:5px;margin-right:5px;
+  }
+
+.views-field-created, .views-field-title {font-weight: 700}
+
+
+.block-views-blockemployment-board-block-1 h2 { background-color:#ebf3f8;
+  padding:5px;}
+
+.block-views-blockemployment-board-block-1 h2::before { font-family: "Font Awesome 5 Free"; font-weight: 700; content: "\f0a1";margin-left:5px;margin-right:5px;}
+.block-views-blockemployment-board-block-1 table tr {background-color: #fff}
+
+
+.views-field-field-thumbnail {float:left;}
+
+
+
+
+/* Social Icons */
+ul.social-icons {
+  margin: 0;
+  padding: 0;
+  width: auto;
+}
+
+ul.social-icons > li {
+  list-style: none;
+  margin-left: 5px;
+  display: inline-block;
+}
+
+ul.social-icons > li > a {
+  color: #fff;
+}
+
+
+
+
+
+ul.social-icons > li i {
+    width: 24px;
+    line-height: 24px;
+  font-size: 30px;
+}
+
+
+ul.social-icons .fa-facebook-square:hover {
+ color: #336699;
+   background-color: #fff;
+}
+
+ul.social-icons .fa-envelope:hover {
+ color: #336699;
+   background-color: #fff;
+       width: 30px;
+    line-height: 18px;
+}
+
+ul.social-icons .fa-twitter-square:hover {
+ color: #336699;
+   background-color: #fff;
+   width: 24px;
+    line-height: 24px;
+}
+
+
+
+
 
 .sidebar nav ul.nav {margin:0 1rem}
+
+
+
+
+.site-name-slogan {
+     padding-left: 5px;
+    width: 125px;
+    line-height: 20px;
+}
+
+
+.site-name-slogan a {
+  color:#1d84c3;
+}
+
+.site-name-slogan a:hover {
+  font-weight:600;
+  text-transform: none;
+}
+
+div.sf-accordion-toggle.sf-style-none  > a:after {
+  content: "≡";
+  font-size: 3em;
+  position: absolute;
+    top: 25%;
+
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  speak: none;
+}
 
 /*** Footer ***/
 
@@ -57,6 +169,39 @@
 
 
 
+.site-footer ul.list-unstyled {
+    padding-left: 0!important;
+}
+
+
+
+.site-footer__top .content li a {
+  padding: 5px 0;
+   text-indent: 0px;
+}
+
+
+.region-footer-fifth {
+  background-color: #233864;
+    margin-top: 5px;
+
+}
+
+
+.copyright-content .content {
+      width:90%;
+      margin:auto;}
+
+.site-footer__bottom .region {
+  margin-top:0;
+}
+
+
+.site-footer__top {
+      width:90%;
+      margin:auto;
+    }
+
 /*
  * Sample CSS to add Superfish CSS to themes.
  *
@@ -71,12 +216,19 @@
  *
  */
 
+
+/* This seems to fix the issue of the sf menu disappearing in mobile view... probably a better way to fix-revisit later*/
+ .navbar-toggler {display:none}
+.collapse:not(.show) {
+    display: block;
+}
+
+
 #navbar-main {border-bottom:1px solid #d1d1d1;
   -webkit-box-shadow:0px 1px 1px #d8d4d8;
  -moz-box-shadow:0px 1px 1px #d8d4d8;
  box-shadow:0px 1px 1px #d8d4d8;
 }
-
 ul.sf-menu .sf-sub-indicator {height:14px;width:14px}
 
 #block-mainnavigation-2 ul#superfish-main > li {
@@ -100,7 +252,6 @@ ul.sf-menu .sf-sub-indicator {height:14px;width:14px}
 #block-mainnavigation-2 .sf-style-none a,
 #block-mainnavigation-2 .sf-style-none span.nolink {
   color: #1d84c3;
-  padding: 0.75em 1em;
 }
 #block-mainnavigation-2 .sf-style-none a.sf-with-ul,
 #block-mainnavigation-2 .sf-style-none span.nolink.sf-with-ul {
@@ -172,9 +323,9 @@ ul.sf-menu .sf-sub-indicator {height:14px;width:14px}
   content: "◄";
 }
 #block-mainnavigation-2 div.sf-accordion-toggle.sf-style-none a {
-  background: #f0f0f0;
-  color: #1d84c3;
-  padding: 1em;
+  background:#1d84c3 ;
+  color: #f0f0f0;
+  border:#fff solid 1px;
 }
 #block-mainnavigation-2 div.sf-accordion-toggle.sf-style-none a.sf-expanded,
 #block-mainnavigation-2 .sf-style-none.sf-accordion li.sf-expanded {
@@ -255,12 +406,12 @@ ul.sf-menu .sf-sub-indicator {height:14px;width:14px}
     height: 3.5em;
     text-align: center;
 }
-#block-mainnavigation > ul {
+#block-mainnavigation-2 > ul {
     text-align: center;
     padding: 0;
     width: 100%;
 }
-#block-mainnavigation .sf-menu li {
+#block-mainnavigation-2 .sf-menu li {
     float: none;
     position: relative;
     display: inline-block;
