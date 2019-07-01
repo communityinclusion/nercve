@@ -1,0 +1,7 @@
+services:
+   anonpost.old_nodes:
+     class: \Drupal\anonpost\ExpiredNodesService
+     arguments: ["@entity_type.manager"]
+   anonpost.logger.channel.anonpost:
+    parent: logger.channel_base
+    arguments: ['anonpost']

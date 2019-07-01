@@ -1,0 +1,7 @@
+anonpost.anonpost.customize_messages:
+  type: config_object
+  label: 'Anon message settings'
+  mapping:
+    salutation:
+      type: string
+      label: 'The mail message'
