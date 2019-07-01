@@ -1,0 +1,7 @@
+anonpost.settext_form:
+  path: '/admin/config/anonpost-configuration'
+  defaults:
+    _form: '\Drupal\anonpost\Form\AnonpostConfigurationForm'
+    _title: 'Anonymous posting configuration'
+  requirements:
+    _permission: 'administer site configuration'
