@@ -1,0 +1,28 @@
+<?php
+
+/**
+ * @file
+ * Contains datefix.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function datefix_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the datefix module.
+    case 'help.page.datefix':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Datefix for crappy D8') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+function datefix_field_widget_time_range_form_alter(&$element, FormStateInterface $form_state, $context) {
+  $element['value']['#attributes']['step'] = 60;
+  $element['end_value']['#attributes']['step'] = 60;
+}
