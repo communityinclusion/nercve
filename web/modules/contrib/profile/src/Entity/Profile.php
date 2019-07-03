@@ -3,14 +3,15 @@
 namespace Drupal\profile\Entity;
 
 use Drupal\Core\Cache\Cache;
-use Drupal\Core\Entity\EditorialContentEntityBase;
+use Drupal\Core\Entity\EntityChangedTrait;
 use Drupal\Core\Entity\EntityStorageInterface;
 use Drupal\Core\Entity\EntityTypeInterface;
 use Drupal\Core\Field\BaseFieldDefinition;
+use Drupal\Core\Entity\ContentEntityBase;
 use Drupal\Core\StringTranslation\StringTranslationTrait;
-use Drupal\profile\EntityOwnerTrait;
 use Drupal\profile\Event\ProfileEvents;
 use Drupal\profile\Event\ProfileLabelEvent;
+use Drupal\user\UserInterface;
 
 /**
  * Defines the profile entity class.
@@ -21,9 +22,8 @@ use Drupal\profile\Event\ProfileLabelEvent;
  *   bundle_label = @Translation("Profile"),
  *   handlers = {
  *     "storage" = "Drupal\profile\ProfileStorage",
- *     "storage_schema" = "Drupal\profile\ProfileStorageSchema",
  *     "view_builder" = "Drupal\profile\ProfileViewBuilder",
- *     "views_data" = "Drupal\views\EntityViewsData",
+ *     "views_data" = "Drupal\profile\ProfileViewsData",
  *     "access" = "Drupal\profile\ProfileAccessControlHandler",
  *     "permission_provider" = "Drupal\entity\UncacheableEntityPermissionProvider",
  *     "query_access" = "Drupal\entity\QueryAccess\UncacheableQueryAccessHandler",
@@ -33,7 +33,6 @@ use Drupal\profile\Event\ProfileLabelEvent;
  *       "add" = "Drupal\profile\Form\ProfileForm",
  *       "edit" = "Drupal\profile\Form\ProfileForm",
  *       "delete" = "Drupal\profile\Form\ProfileDeleteForm",
- *       "delete-multiple-confirm" = "Drupal\Core\Entity\Form\DeleteMultipleForm",
  *     },
  *     "route_provider" = {
  *       "html" = "Drupal\Core\Entity\Routing\DefaultHtmlRouteProvider",
@@ -46,35 +45,27 @@ use Drupal\profile\Event\ProfileLabelEvent;
  *   base_table = "profile",
  *   revision_table = "profile_revision",
  *   fieldable = TRUE,
- *   show_revision_ui = TRUE,
  *   entity_keys = {
  *     "id" = "profile_id",
  *     "revision" = "revision_id",
  *     "bundle" = "type",
- *     "published" = "status",
  *     "owner" = "uid",
  *     "uid" = "uid",
  *     "uuid" = "uuid"
- *   },
- *   revision_metadata_keys = {
- *     "revision_user" = "revision_user",
- *     "revision_created" = "revision_created",
- *     "revision_log_message" = "revision_log_message"
  *   },
  *  links = {
  *    "canonical" = "/profile/{profile}",
  *    "edit-form" = "/profile/{profile}/edit",
  *    "delete-form" = "/profile/{profile}/delete",
- *    "delete-multiple-form" = "/admin/content/profile/delete",
- *    "collection" = "/admin/people/profiles",
+ *    "collection" = "/admin/config/people/profiles",
  *    "set-default" = "/profile/{profile}/set-default"
  *   },
  *   common_reference_target = TRUE,
  * )
  */
-class Profile extends EditorialContentEntityBase implements ProfileInterface {
+class Profile extends ContentEntityBase implements ProfileInterface {
 
-  use EntityOwnerTrait;
+  use EntityChangedTrait;
   use StringTranslationTrait;
 
   /**
@@ -98,20 +89,45 @@ class Profile extends EditorialContentEntityBase implements ProfileInterface {
   /**
    * {@inheritdoc}
    */
+  public function getOwnerId() {
+    return $this->get('uid')->target_id;
+  }
+
+  /**
+   * {@inheritdoc}
+   */
+  public function setOwnerId($uid) {
+    $this->set('uid', $uid);
+    return $this;
+  }
+
+  /**
+   * {@inheritdoc}
+   */
+  public function getOwner() {
+    return $this->get('uid')->entity;
+  }
+
+  /**
+   * {@inheritdoc}
+   */
+  public function setOwner(UserInterface $account) {
+    $this->set('uid', $account->id());
+    return $this;
+  }
+
+  /**
+   * {@inheritdoc}
+   */
   public function isActive() {
-    return $this->isPublished();
+    return (bool) $this->get('status')->value;
   }
 
   /**
    * {@inheritdoc}
    */
   public function setActive($active) {
-    if ((bool) $active) {
-      $this->setPublished();
-    }
-    else {
-      $this->setUnpublished();
-    }
+    $this->set('status', (bool) $active);
     return $this;
   }
 
@@ -133,37 +149,6 @@ class Profile extends EditorialContentEntityBase implements ProfileInterface {
   /**
    * {@inheritdoc}
    */
-  public function getData($key, $default = NULL) {
-    $data = [];
-    if (!$this->get('data')->isEmpty()) {
-      $data = $this->get('data')->first()->getValue();
-    }
-    return isset($data[$key]) ? $data[$key] : $default;
-  }
-
-  /**
-   * {@inheritdoc}
-   */
-  public function setData($key, $value) {
-    $this->get('data')->__set($key, $value);
-    return $this;
-  }
-
-  /**
-   * {@inheritdoc}
-   */
-  public function unsetData($key) {
-    if (!$this->get('data')->isEmpty()) {
-      $data = $this->get('data')->first()->getValue();
-      unset($data[$key]);
-      $this->set('data', $data);
-    }
-    return $this;
-  }
-
-  /**
-   * {@inheritdoc}
-   */
   public function getCreatedTime() {
     return $this->get('created')->value;
   }
@@ -173,6 +158,21 @@ class Profile extends EditorialContentEntityBase implements ProfileInterface {
    */
   public function setCreatedTime($timestamp) {
     $this->set('created', $timestamp);
+    return $this;
+  }
+
+  /**
+   * {@inheritdoc}
+   */
+  public function getRevisionCreationTime() {
+    return $this->get('revision_timestamp')->value;
+  }
+
+  /**
+   * {@inheritdoc}
+   */
+  public function setRevisionCreationTime($timestamp) {
+    $this->set('revision_timestamp', $timestamp);
     return $this;
   }
 
@@ -205,28 +205,6 @@ class Profile extends EditorialContentEntityBase implements ProfileInterface {
   /**
    * {@inheritdoc}
    */
-  public function populateFromProfile(ProfileInterface $profile, array $field_names = []) {
-    // Transfer all configurable fields by default.
-    if (empty($field_names)) {
-      foreach ($profile->getFieldDefinitions() as $field_name => $definition) {
-        if (!($definition instanceof BaseFieldDefinition)) {
-          $field_names[] = $field_name;
-        }
-      }
-    }
-    $profile_values = $profile->toArray();
-    foreach ($field_names as $field_name) {
-      if (isset($profile_values[$field_name]) && $this->hasField($field_name)) {
-        $this->set($field_name, $profile_values[$field_name]);
-      }
-    }
-
-    return $this;
-  }
-
-  /**
-   * {@inheritdoc}
-   */
   public function preSave(EntityStorageInterface $storage) {
     /** @var \Drupal\profile\ProfileStorage $storage */
     parent::preSave($storage);
@@ -234,20 +212,15 @@ class Profile extends EditorialContentEntityBase implements ProfileInterface {
     // If this profile is active and the owner has no current default profile
     // of this type, set this as the default.
     if ($this->getOwnerId() > 0) {
-      if ($this->isPublished() && !$this->isDefault()) {
+      if ($this->isActive() && !$this->isDefault()) {
         if (!$storage->loadDefaultByUser($this->getOwner(), $this->bundle())) {
           $this->setDefault(TRUE);
         }
       }
       // Only active profiles can be default.
-      elseif (!$this->isPublished()) {
+      elseif (!$this->isActive()) {
         $this->setDefault(FALSE);
       }
-    }
-    // If no revision author has been set explicitly, make the profile owner
-    // the revision author.
-    if (!$this->getRevisionUser()) {
-      $this->setRevisionUserId($this->getOwnerId());
     }
   }
 
@@ -288,26 +261,24 @@ class Profile extends EditorialContentEntityBase implements ProfileInterface {
    */
   public static function baseFieldDefinitions(EntityTypeInterface $entity_type) {
     $fields = parent::baseFieldDefinitions($entity_type);
-    $fields += static::ownerBaseFieldDefinitions($entity_type);
 
-    $fields['uid']
-      ->setRevisionable(TRUE)
+    $fields['uid'] = BaseFieldDefinition::create('entity_reference')
       ->setLabel(t('Owner'))
       ->setDescription(t('The user that owns this profile.'))
-      ->setSetting('handler', 'default');
+      ->setRevisionable(TRUE)
+      ->setSetting('target_type', 'user')
+      ->setSetting('handler', 'default')
+      ->setDefaultValueCallback('Drupal\profile\Entity\Profile::getCurrentUserId');
 
-    $fields['status']
+    $fields['status'] = BaseFieldDefinition::create('boolean')
       ->setLabel(t('Active'))
-      ->setDescription(t('Whether the profile is active.'));
+      ->setDescription(t('Whether the profile is active.'))
+      ->setDefaultValue(TRUE)
+      ->setRevisionable(TRUE);
 
     $fields['is_default'] = BaseFieldDefinition::create('boolean')
       ->setLabel(t('Default'))
       ->setDescription(t('Whether this is the default profile.'))
-      ->setRevisionable(TRUE);
-
-    $fields['data'] = BaseFieldDefinition::create('map')
-      ->setLabel(t('Data'))
-      ->setDescription(t('A serialized array of additional data.'))
       ->setRevisionable(TRUE);
 
     $fields['created'] = BaseFieldDefinition::create('created')
@@ -321,6 +292,18 @@ class Profile extends EditorialContentEntityBase implements ProfileInterface {
       ->setRevisionable(TRUE);
 
     return $fields;
+  }
+
+  /**
+   * Default value callback for 'uid' base field definition.
+   *
+   * @see ::baseFieldDefinitions()
+   *
+   * @return array
+   *   An array of default values.
+   */
+  public static function getCurrentUserId() {
+    return [\Drupal::currentUser()->id()];
   }
 
 }

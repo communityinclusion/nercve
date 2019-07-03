@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "5ee2ad6df7a42afdf596f29242dc423d",
+    "content-hash": "ce1f22995581697265ae9d4e45afea24",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -57,6 +57,46 @@
                 "stack"
             ],
             "time": "2017-12-20T14:37:45+00:00"
+        },
+        {
+            "name": "balbuf/drupal-libraries-installer",
+            "version": "v1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/balbuf/drupal-libraries-installer.git",
+                "reference": "38492190898ed0b9274f1fc72a1fbc15da03d15b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/balbuf/drupal-libraries-installer/zipball/38492190898ed0b9274f1fc72a1fbc15da03d15b",
+                "reference": "38492190898ed0b9274f1fc72a1fbc15da03d15b",
+                "shasum": ""
+            },
+            "require": {
+                "composer-plugin-api": "^1.0",
+                "composer/installers": "^1.1"
+            },
+            "type": "composer-plugin",
+            "extra": {
+                "class": "BalBuf\\DrupalLibrariesInstaller\\Plugin"
+            },
+            "autoload": {
+                "psr-4": {
+                    "BalBuf\\DrupalLibrariesInstaller\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Stephen Beemsterboer",
+                    "homepage": "https://github.com/balbuf"
+                }
+            ],
+            "description": "Install Drupal libraries via a simple listing in your composer.json file",
+            "time": "2018-01-25T01:57:45+00:00"
         },
         {
             "name": "behat/mink",
@@ -427,7 +467,9 @@
             "version": "9.7.0",
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/components/highlightjs/archive/9.7.0.zip"
+                "url": "https://github.com/components/highlightjs/archive/9.7.0.zip",
+                "reference": null,
+                "shasum": null
             },
             "type": "drupal-library"
         },
@@ -1430,7 +1472,9 @@
             "version": "v3.5.17",
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/d3/d3/archive/v3.5.17.zip"
+                "url": "https://github.com/d3/d3/archive/v3.5.17.zip",
+                "reference": null,
+                "shasum": null
             },
             "type": "drupal-library"
         },
@@ -2353,7 +2397,7 @@
                 },
                 "drupal": {
                     "version": "8.x-1.26",
-                    "datestamp": "1549559402",
+                    "datestamp": "1558552081",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -2483,7 +2527,7 @@
                 },
                 "drupal": {
                     "version": "8.x-1.4",
-                    "datestamp": "1547996580",
+                    "datestamp": "1558584484",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -2577,6 +2621,69 @@
             "support": {
                 "source": "https://git.drupalcode.org/project/auto_entitylabel",
                 "issues": "https://www.drupal.org/project/issues/auto_entitylabel"
+            }
+        },
+        {
+            "name": "drupal/better_exposed_filters",
+            "version": "3.0.0-alpha6",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/better_exposed_filters.git",
+                "reference": "8.x-3.0-alpha6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/better_exposed_filters-8.x-3.0-alpha6.zip",
+                "reference": "8.x-3.0-alpha6",
+                "shasum": "0cd9849aa28eea822e18555107e4539d755d95ef"
+            },
+            "require": {
+                "drupal/core": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-3.x": "3.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-3.0-alpha6",
+                    "datestamp": "1550449381",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Alpha releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Etroid",
+                    "homepage": "https://www.drupal.org/user/3048985"
+                },
+                {
+                    "name": "chr.fritsch",
+                    "homepage": "https://www.drupal.org/user/2103716"
+                },
+                {
+                    "name": "jkopel",
+                    "homepage": "https://www.drupal.org/user/66207"
+                },
+                {
+                    "name": "mikeker",
+                    "homepage": "https://www.drupal.org/user/192273"
+                },
+                {
+                    "name": "rlhawk",
+                    "homepage": "https://www.drupal.org/user/352283"
+                }
+            ],
+            "description": "Provides advanced options (such as links, checkboxes, or jQueryUI widgets) for exposed Views elements.",
+            "homepage": "https://www.drupal.org/project/better_exposed_filters",
+            "support": {
+                "source": "https://git.drupalcode.org/project/better_exposed_filters"
             }
         },
         {
@@ -3512,6 +3619,74 @@
             }
         },
         {
+            "name": "drupal/datetime_extras",
+            "version": "dev-1.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/datetime_extras.git",
+                "reference": "4552616d3acae325defc78d96adba61bcdfaeee4"
+            },
+            "require": {
+                "drupal/core": "~8"
+            },
+            "require-dev": {
+                "drupal/duration_field": "^2.0"
+            },
+            "suggest": {
+                "drupal/duration_field": "Required to use the 'daterange_duration' field widget"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.0-alpha1+8-dev",
+                    "datestamp": "1561435684",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Dev releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "dww",
+                    "homepage": "https://www.drupal.org/user/46549"
+                },
+                {
+                    "name": "heddn",
+                    "homepage": "https://www.drupal.org/user/1463982"
+                },
+                {
+                    "name": "jhedstrom",
+                    "homepage": "https://www.drupal.org/user/208732"
+                },
+                {
+                    "name": "mpdonadio",
+                    "homepage": "https://www.drupal.org/user/325244"
+                },
+                {
+                    "name": "pjonckiere",
+                    "homepage": "https://www.drupal.org/user/2442998"
+                },
+                {
+                    "name": "vijaycs85",
+                    "homepage": "https://www.drupal.org/user/93488"
+                }
+            ],
+            "description": "Extends core Datetime and Datetime Range functionality.",
+            "homepage": "https://www.drupal.org/project/datetime_extras",
+            "support": {
+                "source": "https://git.drupalcode.org/project/datetime_extras"
+            },
+            "time": "2019-06-26T19:46:42+00:00"
+        },
+        {
             "name": "drupal/devel",
             "version": "dev-2.x",
             "source": {
@@ -3588,7 +3763,8 @@
                 "source": "http://cgit.drupalcode.org/devel",
                 "issues": "http://drupal.org/project/devel",
                 "irc": "irc://irc.freenode.org/drupal-contribute"
-            }
+            },
+            "time": "2019-05-08T10:03:51+00:00"
         },
         {
             "name": "drupal/ds",
@@ -3751,7 +3927,7 @@
                 },
                 "drupal": {
                     "version": "8.x-1.0-rc2",
-                    "datestamp": "1553254684",
+                    "datestamp": "1559579884",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "RC releases are not covered by Drupal security advisories."
@@ -4904,7 +5080,7 @@
                 },
                 "drupal": {
                     "version": "8.x-4.0-beta3",
-                    "datestamp": "1523670484",
+                    "datestamp": "1559135889",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Project has not opted into security advisory coverage!"
@@ -4940,6 +5116,69 @@
                 "source": "https://git.drupal.org/project/page_manager.git",
                 "issues": "https://www.drupal.org/project/issues/page_manager",
                 "irc": "irc://irc.freenode.org/drupal-contribute"
+            }
+        },
+        {
+            "name": "drupal/page_title_visibility",
+            "version": "1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/page_title_visibility.git",
+                "reference": "8.x-1.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/page_title_visibility-8.x-1.1.zip",
+                "reference": "8.x-1.1",
+                "shasum": "f1b9bd6fe47944b4ea475f4cb8fcadc93bc6a3b0"
+            },
+            "require": {
+                "drupal/core": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.1",
+                    "datestamp": "1556555885",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "gravelpot",
+                    "homepage": "https://www.drupal.org/user/748208"
+                },
+                {
+                    "name": "lreynaga",
+                    "homepage": "https://www.drupal.org/user/3400232"
+                },
+                {
+                    "name": "mark_fullmer",
+                    "homepage": "https://www.drupal.org/user/2612816"
+                },
+                {
+                    "name": "ricksta",
+                    "homepage": "https://www.drupal.org/user/311042"
+                },
+                {
+                    "name": "twfahey",
+                    "homepage": "https://www.drupal.org/user/3403722"
+                }
+            ],
+            "description": "Regulate the page title display for node entities.",
+            "homepage": "https://www.drupal.org/project/page_title_visibility",
+            "support": {
+                "source": "https://git.drupalcode.org/project/page_title_visibility"
             }
         },
         {
@@ -5196,7 +5435,7 @@
                 },
                 "drupal": {
                     "version": "8.x-1.0-rc4",
-                    "datestamp": "1552407486",
+                    "datestamp": "1559926985",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "RC releases are not covered by Drupal security advisories."
@@ -5219,6 +5458,10 @@
                 {
                     "name": "fago",
                     "homepage": "https://www.drupal.org/user/16747"
+                },
+                {
+                    "name": "jsacksick",
+                    "homepage": "https://www.drupal.org/user/972218"
                 },
                 {
                     "name": "mglaman",
@@ -5475,6 +5718,57 @@
             "support": {
                 "source": "https://git.drupalcode.org/project/simple_mail"
             }
+        },
+        {
+            "name": "drupal/single_datetime",
+            "version": "dev-1.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/single_datetime.git",
+                "reference": "753a9729f3639f0a7ff37d34a20b301a72379c9b"
+            },
+            "require": {
+                "drupal/core": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.6+15-dev",
+                    "datestamp": "1543184280",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Dev releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Valentino Medimorec (valic)",
+                    "homepage": "https://www.drupal.org/u/valic",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "valic",
+                    "homepage": "https://www.drupal.org/user/980550"
+                }
+            ],
+            "description": "Date time picker form element using the xdan jQuery Plugin Date and Time Picker library",
+            "homepage": "https://www.drupal.org/project/single_datetime",
+            "keywords": [
+                "Drupal"
+            ],
+            "support": {
+                "source": "http://cgit.drupalcode.org/single_datetime",
+                "issues": "https://www.drupal.org/project/issues/single_datetime"
+            },
+            "time": "2019-05-28T09:41:46+00:00"
         },
         {
             "name": "drupal/smart_trim",
@@ -6021,7 +6315,8 @@
             "homepage": "https://www.drupal.org/project/typed_data",
             "support": {
                 "source": "https://git.drupalcode.org/project/typed_data"
-            }
+            },
+            "time": "2019-05-26T03:09:33+00:00"
         },
         {
             "name": "drupal/viewfield",
@@ -12753,10 +13048,12 @@
     "minimum-stability": "dev",
     "stability-flags": {
         "drupal/auto_entitylabel": 10,
+        "drupal/better_exposed_filters": 15,
         "drupal/bootstrap_paragraphs": 10,
         "drupal/captcha": 10,
         "drupal/computed_field": 10,
         "drupal/conditional_fields": 15,
+        "drupal/datetime_extras": 20,
         "drupal/devel": 20,
         "drupal/entity_block": 10,
         "drupal/fapi_validation": 15,
@@ -12765,6 +13062,7 @@
         "drupal/page_manager": 10,
         "drupal/profile": 5,
         "drupal/rules": 15,
+        "drupal/single_datetime": 20,
         "drupal/smtp": 10,
         "drupal/subpathauto": 5,
         "drupal/token_custom": 15,

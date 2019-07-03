@@ -10,6 +10,7 @@ return array(
     'WebDriver' => array($vendorDir . '/instaclick/php-webdriver/lib'),
     'Twig_' => array($vendorDir . '/twig/twig/lib'),
     'Stack' => array($vendorDir . '/stack/builder/src'),
+    'Prophecy\\' => array($vendorDir . '/phpspec/prophecy/src'),
     'PEAR' => array($vendorDir . '/pear/pear_exception'),
     'Mailgun' => array($vendorDir . '/mailgun/mailgun-php/src'),
     'EasyRdf_' => array($vendorDir . '/easyrdf/easyrdf/lib'),
