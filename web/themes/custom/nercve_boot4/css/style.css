@@ -111,7 +111,54 @@ ul.social-icons .fa-twitter-square:hover {
 }
 
 
+/* Directory Filters */
 
+
+.directory details summary {
+	padding: 0.80em .8em;
+}
+
+.directory summary, .directory .fieldgroup:not(.form-composite) > legend {
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 14px;
+}
+
+summary:hover, summary:focus, details[open] > summary {
+	color: #0074bd;
+}
+
+
+.directory .form-control {
+	font-size: .8rem;
+	line-height: 1.5;
+	color: #495057;
+}
+
+.form-row .form-item {
+	width: 33%;
+}
+
+
+.details-wrapper {
+	margin-top: 1em;
+	margin-bottom: 1em;
+	border: 1px solid #bfbfbf;
+	border-radius: 3px;
+	background-color: #fcfcfa;
+}
+
+details.form-item {
+	border-radius: 3px;
+	border: 1px solid #444;
+	margin-top: 9px;
+	padding-top: 0;
+	padding-bottom: 0;
+	margin-right: 2px
+}
+
+
+/* end Directory Filters */
 
 
 .sidebar nav ul.nav {margin:0 1rem}
