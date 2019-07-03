@@ -54,6 +54,48 @@
         ]
     },
     {
+        "name": "balbuf/drupal-libraries-installer",
+        "version": "v1.0.1",
+        "version_normalized": "1.0.1.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/balbuf/drupal-libraries-installer.git",
+            "reference": "38492190898ed0b9274f1fc72a1fbc15da03d15b"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/balbuf/drupal-libraries-installer/zipball/38492190898ed0b9274f1fc72a1fbc15da03d15b",
+            "reference": "38492190898ed0b9274f1fc72a1fbc15da03d15b",
+            "shasum": ""
+        },
+        "require": {
+            "composer-plugin-api": "^1.0",
+            "composer/installers": "^1.1"
+        },
+        "time": "2018-01-25T01:57:45+00:00",
+        "type": "composer-plugin",
+        "extra": {
+            "class": "BalBuf\\DrupalLibrariesInstaller\\Plugin"
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "BalBuf\\DrupalLibrariesInstaller\\": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Stephen Beemsterboer",
+                "homepage": "https://github.com/balbuf"
+            }
+        ],
+        "description": "Install Drupal libraries via a simple listing in your composer.json file"
+    },
+    {
         "name": "behat/mink",
         "version": "dev-master",
         "version_normalized": "9999999-dev",
@@ -5777,6 +5819,58 @@
         "homepage": "https://www.drupal.org/project/simple_mail",
         "support": {
             "source": "https://git.drupalcode.org/project/simple_mail"
+        }
+    },
+    {
+        "name": "drupal/single_datetime",
+        "version": "dev-1.x",
+        "version_normalized": "dev-1.x",
+        "source": {
+            "type": "git",
+            "url": "https://git.drupalcode.org/project/single_datetime.git",
+            "reference": "753a9729f3639f0a7ff37d34a20b301a72379c9b"
+        },
+        "require": {
+            "drupal/core": "*"
+        },
+        "type": "drupal-module",
+        "extra": {
+            "branch-alias": {
+                "dev-1.x": "1.x-dev"
+            },
+            "drupal": {
+                "version": "8.x-1.6+15-dev",
+                "datestamp": "1543184280",
+                "security-coverage": {
+                    "status": "not-covered",
+                    "message": "Dev releases are not covered by Drupal security advisories."
+                }
+            }
+        },
+        "installation-source": "source",
+        "notification-url": "https://packages.drupal.org/8/downloads",
+        "license": [
+            "GPL-2.0+"
+        ],
+        "authors": [
+            {
+                "name": "Valentino Medimorec (valic)",
+                "homepage": "https://www.drupal.org/u/valic",
+                "role": "Maintainer"
+            },
+            {
+                "name": "valic",
+                "homepage": "https://www.drupal.org/user/980550"
+            }
+        ],
+        "description": "Date time picker form element using the xdan jQuery Plugin Date and Time Picker library",
+        "homepage": "https://www.drupal.org/project/single_datetime",
+        "keywords": [
+            "Drupal"
+        ],
+        "support": {
+            "source": "http://cgit.drupalcode.org/single_datetime",
+            "issues": "https://www.drupal.org/project/issues/single_datetime"
         }
     },
     {

@@ -196,6 +196,7 @@ class ComposerStaticInitca579a3530d46abb62fe9e39f6758d18
             'Brumann\\Polyfill\\' => 17,
             'Behat\\Mink\\Driver\\' => 18,
             'Behat\\Mink\\' => 11,
+            'BalBuf\\DrupalLibrariesInstaller\\' => 32,
         ),
         'A' => 
         array (
@@ -616,6 +617,10 @@ class ComposerStaticInitca579a3530d46abb62fe9e39f6758d18
         'Behat\\Mink\\' => 
         array (
             0 => __DIR__ . '/..' . '/behat/mink/src',
+        ),
+        'BalBuf\\DrupalLibrariesInstaller\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/balbuf/drupal-libraries-installer/src',
         ),
         'Asm89\\Stack\\' => 
         array (
