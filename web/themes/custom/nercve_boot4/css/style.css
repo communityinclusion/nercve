@@ -161,6 +161,16 @@ details.form-item {
 /* end Directory Filters */
 
 
+
+
+/* Sidebar Menus */
+
+.section-menu ul, .section-menu li {padding:0;}
+
+.section-menu  ul  li  ul {padding-left:10px;}
+
+.section-menu ul li ul li {padding-left:15px;}
+
 .sidebar nav ul.nav {margin:0 1rem}
 
 
