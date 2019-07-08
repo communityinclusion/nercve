@@ -443,3 +443,4 @@ ul.sf-menu .sf-sub-indicator {height:14px;width:14px}
   background: #e9ecef;
 }
 #block-exposedformnew-professional-directorypage-1 select { max-width: 315px; }
+.js-form-type-textarea .link-edit-summary, #node-training-form #edit-body-0-format,#node-job-form #edit-body-0-format,#node-job-form #edit-field-qualifications-0-format {display:none;}
