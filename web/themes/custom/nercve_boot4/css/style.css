@@ -492,11 +492,11 @@ ul.sf-menu .sf-sub-indicator {height:14px;width:14px}
 }
 .views-field-field-prof-dir-spec .field-content, .views-field-field-prof-dir-doe .field-content, .views-field-field-prof-dir-cert field-content { display: inline; }
 .view-new-professional-directory h3 { font-size: 130%; margin: 7px 0 3px 0; font-weight: bold;}
-.view-new-professional-directory .view-content .views-row:nth-of-type(odd) {
+.view-employment-board table tr:nth-of-type(even),.view-new-professional-directory .view-content .views-row:nth-of-type(odd) {
   background: #fff;
 }
 
-.view-new-professional-directory .view-content .views-row:nth-of-type(even) {
+.view-employment-board table tr:nth-of-type(even),.view-new-professional-directory .view-content .views-row:nth-of-type(even) {
   background: #e9ecef;
 }
 #block-exposedformnew-professional-directorypage-1 select { max-width: 315px; }
