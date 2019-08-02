@@ -1,5 +1,4 @@
-<?php
-$config['system.logging']['error_level'] = 'verbose'; 
+<?php'; 
 // @codingStandardsIgnoreFile
 
 /**
