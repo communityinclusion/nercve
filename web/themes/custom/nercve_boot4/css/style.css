@@ -62,6 +62,36 @@
 
 
 
+/*   Hero    */
+
+
+
+.hero{
+  width: 100%;
+ max-width: 1400px;
+   height: 300px;
+  text-align: center;
+  margin: 0 auto;
+
+  position: relative;
+
+}
+
+
+
+  .hero-text {
+   text-align: right;
+   display: absolute;
+   right:0;
+    background: rgba(50,50,50,0.4);
+    z-index: 10;
+    font-size: 2rem;
+    color: #fff;
+    text-align: center;
+    width: 100%;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.6);
+}
+
 
 /* Social Icons */
 ul.social-icons {
@@ -474,6 +504,15 @@ ul.sf-menu .sf-sub-indicator {height:14px;width:14px}
     display: inline-block;
     text-align:left;
 }
+
+
+ul.sf-menu a, ul.sf-menu span.nolink {
+
+
+    padding: 1em 1em;
+}
+
+
 /* Make Navbar height double when menu wraps to 2 rows */
 @media (min-width: 360px) and (max-width: 668px) {
     #navbar {
