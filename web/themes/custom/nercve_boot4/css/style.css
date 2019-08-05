@@ -72,7 +72,7 @@
    height: 300px;
   text-align: center;
   margin: 0 auto;
-
+display:block;
   position: relative;
 
 }
@@ -80,16 +80,15 @@
 
 
   .hero-text {
-   text-align: right;
-   display: absolute;
-   right:0;
+
     background: rgba(50,50,50,0.4);
     z-index: 10;
-    font-size: 2rem;
+    font-size: 30px;
     color: #fff;
     text-align: center;
     width: 100%;
     text-shadow: 0 1px 2px rgba(0,0,0,0.6);
+
 }
 
 
