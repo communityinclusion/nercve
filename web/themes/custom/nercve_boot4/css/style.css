@@ -412,9 +412,13 @@ ul.sf-menu .sf-sub-indicator {height:14px;width:14px}
   background:#1d84c3 ;
   color: #f0f0f0;
   border:#fff solid 1px;
+  display: inline-block;
+    font-weight: bold;
+    padding: 1em 3em 1em 1em;
+    position: relative;
 }
-#block-mainnavigation-2 div.sf-accordion-toggle.sf-style-none a.sf-expanded,
-#block-mainnavigation-2 .sf-style-none.sf-accordion li.sf-expanded {
+#block-mainnavigation-2 div.sf-accordion-toggle.sf-style-none a.sf-expanded
+/* #block-mainnavigation-2 .sf-style-none.sf-accordion li.sf-expanded */ {
   background: #f0f0f0;
 }
 #block-mainnavigation-2 div.sf-accordion-toggle.sf-style-none a.sf-expanded,
