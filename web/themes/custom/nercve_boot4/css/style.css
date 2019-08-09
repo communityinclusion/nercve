@@ -430,10 +430,11 @@ div.sf-accordion-toggle.sf-style-none a {
 
 
 
-#block-mainnavigation-2 div.sf-accordion-toggle.sf-style-none a.sf-expanded
-/* #block-mainnavigation-2 .sf-style-none.sf-accordion li.sf-expanded */ {
+/* #block-mainnavigation-2 div.sf-accordion-toggle.sf-style-none a.sf-expanded,
+#block-mainnavigation-2 .sf-style-none.sf-accordion li.sf-expanded  {
   background: #f0f0f0;
 }
+*/
 #block-mainnavigation-2 div.sf-accordion-toggle.sf-style-none a.sf-expanded,
 #block-mainnavigation-2 .sf-style-none.sf-accordion li.sf-expanded > a,
 #block-mainnavigation-2 .sf-style-none.sf-accordion li.sf-expanded > span.nolink {
