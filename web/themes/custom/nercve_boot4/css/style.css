@@ -225,8 +225,8 @@ div.sf-accordion-toggle.sf-style-none  > a:after {
   content: "≡";
   font-size: 3em;
   position: absolute;
-    top: 25%;
-
+    top: 40%;
+    right: .25em;
   -webkit-transform: translateY(-50%);
   -moz-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
@@ -417,6 +417,19 @@ ul.sf-menu .sf-sub-indicator {height:14px;width:14px}
     padding: 1em 3em 1em 1em;
     position: relative;
 }
+
+
+div.sf-accordion-toggle.sf-style-none a {
+    background: #bdd2ff;
+    color: #13a;
+    display: inline-block;
+    font-weight: bold;
+    padding: 1em 3em 1em 1em;
+    position: relative;
+}
+
+
+
 #block-mainnavigation-2 div.sf-accordion-toggle.sf-style-none a.sf-expanded
 /* #block-mainnavigation-2 .sf-style-none.sf-accordion li.sf-expanded */ {
   background: #f0f0f0;
