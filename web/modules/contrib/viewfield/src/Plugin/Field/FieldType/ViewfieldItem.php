@@ -63,6 +63,12 @@ class ViewfieldItem extends EntityReferenceItem {
       'length' => 255,
     ];
 
+    $schema['columns']['items_to_display'] = [
+      'description' => 'Items to display.',
+      'type' => 'varchar',
+      'length' => 255,
+    ];
+
     return $schema;
   }
 
@@ -80,6 +86,10 @@ class ViewfieldItem extends EntityReferenceItem {
     $properties['arguments'] = DataDefinition::create('string')
       ->setLabel(t('Arguments'))
       ->setDescription(t('An optional comma-delimited list of arguments for the display'));
+
+    $properties['items_to_display'] = DataDefinition::create('string')
+      ->setLabel(t('Items to display'))
+      ->setDescription(t('Override the number of displayed items.'));
 
     return $properties;
   }

@@ -26,11 +26,11 @@ use Drupal\user\UserInterface;
  *       description = @Translation("If matching against all selected roles, the user must have <em>all</em> the roles selected."),
  *       default_value = "AND",
  *       required = FALSE
- *     )
+ *     ),
  *   }
  * )
  *
- * @todo: Add access callback information from Drupal 7.
+ * @todo Add access callback information from Drupal 7.
  */
 class UserHasRole extends RulesConditionBase {
 
@@ -50,17 +50,17 @@ class UserHasRole extends RulesConditionBase {
    *   TRUE if the user has the role(s).
    */
   protected function doEvaluate(UserInterface $account, array $roles, $operation = 'AND') {
-    // Hack PF https://www.drupal.org/project/rules/issues/2816157
 
-         switch ($operation) {
-           case 'OR':
-   
-            return (bool) array_intersect($roles, $account->getRoles());
-     
-           case 'AND':
-   
-           return (bool) !array_diff($roles, $account->getRoles());
-     
+    $rids = array_map(function ($role) {
+      return $role->id();
+    }, $roles);
+
+    switch ($operation) {
+      case 'OR':
+        return (bool) array_intersect($rids, $account->getRoles());
+
+      case 'AND':
+        return (bool) !array_diff($rids, $account->getRoles());
 
       default:
         throw new InvalidArgumentException('Either use "AND" or "OR". Leave empty for default "AND" behavior.');

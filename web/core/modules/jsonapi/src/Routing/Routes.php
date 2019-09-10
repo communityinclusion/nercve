@@ -431,15 +431,9 @@ class Routes implements ContainerInjectionInterface {
    *   array; FALSE otherwise.
    */
   protected static function hasNonInternalTargetResourceTypes(array $resource_types) {
-    //  return array_reduce($resource_types, function ($carry, ResourceType $target) {
-   //    return $carry || !$target->isInternal();
-   //  }, FALSE);
-   foreach ($resource_types as $resource_type) {
-          if (($resource_type instanceof ResourceType) && !$resource_type->isInternal()) {
-            return TRUE;
-          }
-        }
-        return FALSE;
+    return array_reduce($resource_types, function ($carry, ResourceType $target) {
+      return $carry || !$target->isInternal();
+    }, FALSE);
   }
 
   /**
@@ -453,15 +447,9 @@ class Routes implements ContainerInjectionInterface {
    *   given array; FALSE otherwise.
    */
   protected static function hasNonInternalFileTargetResourceTypes(array $resource_types) {
-    // HACK PF here: https://www.drupal.org/project/drupal/issues/2996114 return array_reduce($resource_types, function ($carry, ResourceType $target) {
-    //return $carry || (!$target->isInternal() && $target->getEntityTypeId() === 'file');
-    //}, FALSE);
-    foreach ($resource_types as $resource_type) {
-            if (($resource_type instanceof ResourceType) && !$resource_type->isInternal() && $resource_type->getEntityTypeId() === 'file') {
-              return TRUE;
-            }
-          }
-          return FALSE;
+    return array_reduce($resource_types, function ($carry, ResourceType $target) {
+      return $carry || (!$target->isInternal() && $target->getEntityTypeId() === 'file');
+    }, FALSE);
   }
 
   /**
