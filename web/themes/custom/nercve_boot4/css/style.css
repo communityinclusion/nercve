@@ -558,3 +558,4 @@ ul.sf-menu a, ul.sf-menu span.nolink {
 #block-exposedformnew-professional-directorypage-1 select { max-width: 315px; }
 .js-form-type-textarea .link-edit-summary, #node-training-form #edit-body-0-format,#node-job-form #edit-body-0-format,#node-job-form #edit-field-qualifications-0-format {display:none;}
 .page-user-register .form-item-contact { display:none; }
+.page-user-register .field--name-field__would-like-to-be-consider {font-size: 1.5em;}
