@@ -66,6 +66,7 @@
         "drupal/csv_importer": "^1.4",
         "drupal/ctools": "^3.2",
         "drupal/datetime_extras": "1.x-dev",
+        "drupal/db_maintenance": "^1.4",
         "drupal/devel": "2.x-dev",
         "drupal/ds": "^3.2",
         "drupal/email_registration": "^1.0",
