@@ -58,7 +58,7 @@
 .block-views-blockemployment-board-block-1 table tr {background-color: #fff}
 
 
-.views-field-field-thumbnail {float:left;}
+.views-field-field-thumbnail {float:left;padding:5px;}
 
 
 
@@ -415,7 +415,10 @@ ul.sf-menu .sf-sub-indicator {height:14px;width:14px}
   display: inline-block;
     font-weight: bold;
     padding: 1em 3em 1em 1em;
-    position: relative;
+    position: absolute;
+      top:0;
+    right:0;
+    z-index: 1000;
 }
 
 
