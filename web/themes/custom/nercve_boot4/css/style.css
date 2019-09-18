@@ -326,7 +326,7 @@ ul.sf-menu .sf-sub-indicator {height:14px;width:14px}
 }
 #block-mainnavigation-2 .sf-style-none {
   float: left;
-  margin: 0;
+  margin-left: 20px;
   padding: 0;
 }
 #block-mainnavigation-2 .sf-style-none.sf-navbar {
@@ -562,3 +562,7 @@ ul.sf-menu a, ul.sf-menu span.nolink {
 .js-form-type-textarea .link-edit-summary, #node-training-form #edit-body-0-format,#node-job-form #edit-body-0-format,#node-job-form #edit-field-qualifications-0-format {display:none;}
 .page-user-register .form-item-contact { display:none; }
 .page-user-register .field--name-field__would-like-to-be-consider {font-size: 1.5em;}
+
+
+.floatLeft {float:left;width:47%;}
+.floatRight {float:right; width:47%}
