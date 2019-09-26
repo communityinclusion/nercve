@@ -9,11 +9,11 @@
     }
     #block-mainnavigation-2 ul#superfish-main li.sf-depth-1.menuparent{ height: 4em; }
 
-
- li#main-menu-link-contentbd72769b-7c36-47f1-bb3a-667e8df24c98:before {
+/*
+ li#main-menu-link-contentbd72769b-7c36-47f1-bb3a-667e8df24c98::before {
    content: "Vistion Studies:";
    padding-left: 15px;}
-
+*/
 
 
 .page-title {font-size:2.5rem}
@@ -286,7 +286,7 @@ div.sf-accordion-toggle.sf-style-none  > a:after {
       width:90%;
       margin:auto;}
 
-.site-footer__bottom .region {
+.site-footer__bottom {
   margin-top:0;
 }
 
