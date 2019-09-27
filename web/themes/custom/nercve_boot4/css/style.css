@@ -15,6 +15,11 @@
    padding-left: 15px;}
 */
 
+#main-menu-link-content171f93e8-9dbc-4dbd-9d01-6a6b4fcb4465 {
+      padding-left: 20px;
+    font-weight: 700;
+}
+
 
 .page-title {font-size:2.5rem}
 
@@ -572,5 +577,5 @@ ul.sf-menu a, ul.sf-menu span.nolink {
 .page-user-register .field--name-field__would-like-to-be-consider {font-size: 1.5em;}
 
 
-.floatLeft {float:left;width:47%;}
-.floatRight {float:right; width:47%}
+.floatLeft {float:left;width:49%;}
+.floatRight {float:right; width:49%}
