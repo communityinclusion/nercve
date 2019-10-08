@@ -581,7 +581,7 @@ ul.sf-menu a, ul.sf-menu span.nolink {
 
 @media (max-width: 668px) {
 
-.floatLeft {float:none}
-.floatRight {float:none}
+.floatLeft {float:none;width:100%;}
+.floatRight {float:none;width:100%;}
 
 }
