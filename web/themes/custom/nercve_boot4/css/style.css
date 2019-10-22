@@ -650,6 +650,6 @@ ul.sf-menu a, ul.sf-menu span.nolink {
 
 .floatLeft {float:none;width:100%;}
 .floatRight {float:none;width:100%;}
-.hero .h1 {font-size:1.8rem;padding-right:10px;padding-left:10px;}
+.hero .h1 {font-size:1.8rem;font-weight:700;padding-right:10px;padding-left:10px;}
 .hero .h2 {font-size:1.3rem;padding-right:10px;padding-left:10px;}
 }
