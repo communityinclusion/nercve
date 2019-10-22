@@ -159,6 +159,12 @@ ul.social-icons .fa-twitter-square:hover {
 
 /* Directory Filters */
 
+summary {
+    background-color: #eee;
+    padding: 3px 0 3px 10px;
+    margin-bottom: 5px;
+    border-radius: 4px;
+}
 
 .directory details summary {
 	padding: 0.80em .8em;
@@ -196,7 +202,7 @@ summary:hover, summary:focus, details[open] > summary {
 
 details.form-item {
 	border-radius: 3px;
-	border: 1px solid #444;
+	/*border: 1px solid #444;*/
 	margin-top: 9px;
 	padding-top: 0;
 	padding-bottom: 0;
@@ -253,7 +259,7 @@ div.sf-accordion-toggle.sf-style-none  > a:after {
 
 /*** Footer ***/
 
-.site-footer h2 {
+.site-footer h4 {
     border-bottom: 1px solid #fff;
     font-size: 18px;
     font-weight: 600;
