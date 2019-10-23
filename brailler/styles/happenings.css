@@ -1,0 +1,22 @@
+.date {
+color:#36C;
+background-color:inherit;
+display:block;
+padding:0;
+padding-top:1em;
+}
+
+ul.happenings {
+list-style:none;
+margin:0;
+padding:0;
+}
+
+ul.happenings li {
+padding-top:1em;
+}
+
+ul.happenings li a {
+padding:0;
+margin:0;
+}

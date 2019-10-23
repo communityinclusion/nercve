@@ -1,0 +1,148 @@
+* { margin:0; padding:0; border:0; }
+div#centeredcontainer { margin:0 auto; width:78em; text-align:left; color:#999; }
+div#centeredcontainer .copyright a { color:#999; }
+div#centeredcontainer .copyright a:hover { color:#000; background-color:inherit; }
+#main { background-color:white; color:black; padding:0 0.25em; }
+#single { padding:0 2em; }
+.hollyhack { height:1%; }
+
+.error { color:red; background-color:inherit; }
+.warning { color:blue; background-color:inherit; }
+.success { color:green; background-color:inherit; }
+.simBraille { font-family:SimBraille; font-size:1.2em; }
+.caps { text-transform:uppercase; }
+
+/** ELEMENT SPECIFIC **********************************************************************/
+a { color:#47A; background:inherit; }
+a:hover, #skipmenu a:hover { color:#47A; background-color:#CDE; }
+blockquote { padding:0 3em 1em; text-indent:-0.5em; }
+body { background-color:#DDD; color:#222; font-size:10.5pt; font-family:Verdana, Helvetica; text-align:center; }
+fieldset {  border:0.1em solid #369; padding:0.25em; margin-bottom:1em; }
+form { padding: 0.25em; }
+h1 { font-size:1.5em; font-family:Arial Black; margin:0.75em 0; color:#369; background-color:inherit; }
+input { border:0; }
+input.text, input.button, button, textarea { border: 0.1em solid #69C; }
+/*, input[type^="text"], input[type^="submit"], input[type^="reset"], input[type^="button"]*/
+input.button, button { padding: 0.1em 1em; margin:0; }
+legend { border-left:0.1em solid #369; border-right:0.1em solid #369; padding:0.1em 0.25em; }
+option { padding:0 1em 0 0.2em; }
+optgroup option { padding-left:1em; }
+ol, ul { margin-left:1.6em; margin-bottom:1em; }
+select { border:0.2em solid #666; border-bottom:0; }
+p, table { padding:0 0 1em; }
+table caption { margin-bottom:0.2em; }
+table th { color:inherit; background-color:#8AE; text-align:center; border:0.1em solid #46A; padding:0.2em 0.5em; }
+table td { padding:0.25em 0.5em; margin:1em; border-spacing:50px; border-top:0.1em solid #9CF; border-left:0.1em solid #9CF; border-bottom:0.16em solid #69C; border-right:0.16em solid #69C; }
+table td.presenter { color:inherit; background-color:#CCFFFF; }
+table ul, table ol { margin-bottom:0; }
+#single h2 { margin:0.75em 0 0; }
+#single h3 { margin:0.5em 0 0; }
+#single h4 { margin:0.25em 0 0; }
+#single img { border:0.1em solid #369; margin-left:1em; }
+
+/** Positional Styles *************************************************/
+.float-right { float:right; }
+.float-left { float:left; }
+.clear { clear:both; }
+.center { text-align:center; }
+.left { text-align:left; }
+.right { text-align:right; }
+.spacer { padding-bottom:1em; }
+.spacer2 { margin-bottom:2em; }
+
+/** BORDERS **********************************************************************/
+.border-white { border:0.1em solid white; }
+.border-blue { border:0.1em solid #369; }
+
+/** BACKGROUNDS **********************************************************************/
+.bg-gray { background:gray; }
+.bg-lightBlue { background-color:#DEF; }
+
+/** HEADER STYLES ********************************/
+#top { height:6em; color:white; background-color:#233864; vertical-align:top; font-weight:bold; }
+#skipmenu { width:10em; float:right; text-align:right; padding-right:0.3em; }
+#skipmenu a { color:white; background-color:inherit; }
+#skipmenu a.fontsizer { padding:0 0.4em; width:0.1%; text-decoration:none; border:0.1em solid white; }
+#top .logo { margin:0.5em 0.5em 0; float:left; }
+#top .logo img { height:5em; width:4.2em; }
+#top .title { display:inline-block; font-size:1.55em; font-family:Arial Black; margin-top:0.7em; }
+#top .subtitle { font-size:1.4em; font-style:italic; font-weight:normal; }
+ul#navlist { height:1.4em; background-color:#ABBFCE; color:black; padding:0.5em 0; margin:0; }
+ul#navlist, ul#navlist li a { background-color:#ABBFCE; color:black; }
+ul#navlist li { list-style: none; float:left; }
+ul#navlist li a { display:block; padding:0.2em 0.7em; text-decoration:none; font-weight:bold; }
+ul#navlist li ul { display:none; position:absolute; width:13em; left:-999em; margin:0; }
+ul#navlist li ul li { width:14em; }
+ul#navlist li ul li a { font-weight:normal; }
+ul#navlist .hide { color:#ABBFCE; background-color:inherit; }
+ul#navlist a:hover { background-color:#DBEFFE; color:black; text-decoration:underline; }
+ul#navlist li.border { border-right:0.1em dashed #4B5F6E; }
+ul#navlist li:hover ul, ul#navlist li.sfhover ul { left:auto; display:block; background-color:#000; }
+ul#navlist li a.success { color:green; }
+ul#navlist li a.success:hover { color:green; }
+/*.headerImage { background-color:#1765A7; width:100%; text-align:right; height:48px; }*/
+
+/** START FOOTER STYLES ********************************/
+.footer { background-color:#369; color:#FFF; float:none; clear:both; margin-top:1em; padding:0.3em; height:3em; }
+.footer a img { text-decoration:none; border:0; }
+.footer a { color:white; background-color:inherit; }
+.footer a:hover { background:#036; color:white; }
+ul.blinks { width:45em; margin:0 auto; padding:0; }
+ul.blinks li { list-style:none; float:left; padding:0.3em 0.2em; }
+ul.blinks a { font-size:1.3em; padding:0.1em 0.2em; }
+
+/** START FORM STYLES **********************************/
+div.row { clear:both; padding-top:0.4em; margin-left:0.5em; }
+div.row .label { float:left; width:7em; text-align:right; padding-right:0.2em; }
+
+/** HOME PAGE STYLES *****************************/
+#homeRight { float:right; width:25.5em; }
+#homeMiddle { float:left; width:25.9em; }
+#homeLeft { float:left; width:16em; background-color:#DEF; }
+#homeLeft .date { display:block; padding-top:1.2em; }
+.homepanel { padding:0 1.5em; color:#222; background-color:inherit; }
+.homepanel a { text-decoration:none; }
+.homepanel a:hover { text-decoration:underline; }
+.homepanel p { padding:0 0 0.5em; }
+.homepanel h2 { color:#233864; margin:0.6em 0 0.1em; font-family:Arial Black; text-align:center; }
+.homepanel .highlight { border:0.2em solid #ABBFCE; padding:1em; margin-bottom:1em; }
+.homepanel table { width:100%; border-collapse:collapse; }
+.homepanel table td { padding:0.4em 0.2em; border-spacing:0; border:0; border-bottom:0.16em solid #ABBFCE; }
+.homepanel form div.row .label { width:3.8em; }
+
+/** STAFF DIRECTORY STYLES *************************************/
+.staff { clear:both; padding-bottom:1em; }
+.staff .info { float:left; padding-bottom:1em; }
+.staff .name { font-weight:bold; }
+.staff .staffPic { margin:0.2em 0.5em 0 0; float:left; width:80px; min-height:80px; }
+.staff .hide { display:none; }
+
+/** COURSE STYLES ******************************************/
+.course h2.courseHeader { color:#369; background-color:inherit; font-size:1.25em; clear:left; }
+.course .additional { margin-top:0.75em; color:gray; background-color:inherit; font-size:0.8em; text-align:left; }
+.course .instructor { color:#333; font-style:italic; float:left; clear:left; }
+.course .important { margin:1em 0 0 0.25em; padding-left:0.25em; width:12em; text-align:right; border-bottom:0.1em dashed #369; border-left:0.1em dashed #369; line-height:1.15; }
+.course .important .label { color:#036; background-color:inherit; float:left; }
+.course .important .data { float:right; }
+.course .CDescription { margin:1em 0 0.5em; }
+.course ol.books li ul { list-style:none; margin-left:1em; }
+.course .space { height:1em; width:100%; }
+
+/** PROFESSIONAL DIRECTORY STYLES **********************************/
+.prodir div.row .label { width:8em; }
+.prodir h1.name { margin:0.75em 0 0; }
+#single .prodir h2.name { display:inline; margin-top:0; }
+.prodir h2.name a { color:inherit; }
+.prodir h2.name a:hover { color:#369; }
+.prodir .spec-cert { color:#036; text-align:right; }
+.prodir .modify { color:#333; }
+.prodir .locale { float:left; clear:left; width:30em; margin-bottom:1em; }
+.prodir .contact { width:auto; margin-left:0.5em; border-bottom:0.1em dashed #369; }
+.prodir .details { padding-top:0.5em; text-align:justify; clear:left; }
+
+/** E-Mentorship Styles *************************************************/
+.emSections .section { display:inline-block; width:12em; }
+
+/** Degree Information Styles *************************************************/
+ul.GCCourses { list-style:none; margin-bottom:0; }
+ul.GCCourses li .course { display:inline-block; width:35.25em; }

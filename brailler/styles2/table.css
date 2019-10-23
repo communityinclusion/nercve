@@ -1,0 +1,34 @@
+#single table {
+border:0;
+padding:0 0 1em 0;
+margin:0;
+}
+
+#single table th {
+color:#000;
+margin:0;
+background-color:#8AE;
+text-align:center;
+border:0.1em solid #46A;
+padding:0.2em 0.5em;
+}
+
+#single table td {
+padding:0.25em 0.5em;
+margin:1em;
+border-spacing:50px;
+border-top:0.1em solid #99CCFF;
+border-left:0.1em solid #99CCFF;
+border-bottom:0.16em solid #6699CC;
+border-right:0.16em solid #6699CC;
+color:#000;
+}
+
+#single table td.presenter {
+color:#000;
+background-color:#CCFFFF;
+}
+
+#single table ul, #single table ol {
+margin-bottom:0;
+}

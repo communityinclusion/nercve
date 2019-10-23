@@ -1,0 +1,188 @@
+* { margin:0; padding:0; border:0; }
+div#centeredcontainer { margin: 0 auto; width:71em; text-align:left; color:#999; }
+div#centeredcontainer .copyright a { color:#999; }
+#main { background-color:white; color:black; }
+#main2 { padding:0 0.25em; }
+div.hollyhack { height: 1%; }
+
+.error { color: red; background-color:inherit; }
+.warning { color: blue; background-color:inherit; }
+.success { color: green; background-color:inherit; }
+.simBraille { font-family:SimBraille; font-size:1.2em; }
+.caps { text-transform:uppercase; }
+
+#single { padding:0 2em; }
+#single h2 { margin:0.75em 0 0 0; }
+#single h3 { margin:0.5em 0 0 0; }
+#single h4 { margin:0.25em 0 0 0; }
+#single p { text-align:justify; padding:0 0 1em 0; }
+#single img { border:0.1em solid #369; margin-left:1em; }
+#single ul, #single ol { margin-left:1.25em; margin-bottom:1em; }
+p#misout{ border:1px solid black; color:#000066; padding:0.5em; background-color:#cccccc; text-align:center; line-height:2; }
+.mis{ font-weight: bolder; color:#006; text-align:justify;  margin:0 auto; }
+.archived-news { margin-left:1em; }
+
+/*************************************************
+ * Positional Styles
+ *************************************************/
+.float-right { float:right; }
+.float-left { float:left; }
+.clear { clear:both; }
+.center { text-align:center; }
+.left { text-align:left; }
+.right { text-align:right; }
+.spacer { padding-bottom:1em; }
+.spacer2 { margin-bottom:2em; }
+
+/**********************************************************************
+ * ELEMENT SPECIFIC
+ **********************************************************************/
+body { background-color:#DDD; color:#222; font-size:10.5pt; font-family:Verdana, Helvetica; text-align:center; }
+legend { border-left:0.1em solid #369; border-right:0.1em solid #369; padding:0.1em 0.25em; }
+fieldset {  border:0.1em solid #369; padding:0.25em; margin-bottom:1em; }
+a { color:#036; background:inherit; }
+a:hover, #skipmenu a:hover { color:#369; background-color:#DEF; }
+h1 { font-size:1.5em; font-family: Arial Black; margin:0.75em 0; color:#369; background-color:inherit; }
+form { background-color: #FFF; padding: 0.25em; color:#000; }
+select { border-top:0.2em solid #666; border-left:0.2em solid #666; border-right:0.2em solid #666; }
+option { padding:0 1em 0 0.2em; }
+optgroup option { padding-left:1em; }
+input { border:0; }
+input.text, input.button, button { border: 0.1em solid #69C; font-size: 1em; }
+/*, input[type^="text"], input[type^="submit"], input[type^="reset"], input[type^="button"]*/
+input.button, button { padding: 0.1em 1em; margin:0; }
+textarea { border: 0.1em solid #69C; }
+p { text-align:justify; }
+
+/**********************************************************************
+ * BORDERS
+ **********************************************************************/
+.border-white { border:0.1em solid white; }
+.border-blue { border:0.1em solid #369; }
+
+/**********************************************************************
+ * BACKGROUNDS
+ **********************************************************************/
+.bg-gray { background:gray; }
+.bg-lightBlue { background-color:#DEF; }
+
+/********************************
+ * HEADER STYLES
+ ********************************/
+#top { color:white; width:100%; height:6em; padding:0; margin:0; background-color:#233864; }
+#skipmenu, #skipmenu a { color:white; background-color:#1A3864; font-weight:bold; padding:0 0.5em; }
+#skipmenu { width: 11em; }
+#top .logo { float:left; width:4.2em; margin:0.5em 0.5em 0 0.5em; }
+#top .logo img { height:5em; width:4.2em; }
+#top .title { font-size:1.55em; font-family:Arial Black; font-weight:bold; color:white; }
+#top .subtitle { font-size:1.4em; font-style:italic; font-family: Arial; }
+#header { background-color: #ABBFCE; color:white; height:1.4em; width:100%; padding: 0.5em 0; }
+#navlist { color:white; background-color:#ABBFCE; width:100%; }
+#navlist, #navlist ul { list-style: none; font-family: Arial, Verdana, Geneva, Helvetica, sans-serif; }
+#navlist ul li a { display: block; padding: 0.2em 0.7em; color: black; text-decoration:none; font-weight:bold; }
+#navlist ul li a.success { color:#544031; background-color:inherit; }
+#navlist ul li ul { display:none; position: absolute; width: 13em; left: -999em; }
+#navlist li ul li { color:white; background-color:#ABBFCE; width:14em;  }
+#navlist ul li ul li a { font-weight:normal; }
+#navlist .hide { color:#ABBFCE; background-color:inherit; }
+#navlist a:hover, #navlist li ul li:hover { background-color: #DBEFFE; color: black; }
+#navlist li { float: left; }
+#navlist li.border { border-right:0.1em dashed #4B5F6E; }
+#navlist li:hover ul, #navlist li.sfhover ul { left: auto; display: block; z-index:3; }
+.headerImage { background-color:#1765A7; width:100%; text-align:right; height:48px; }
+
+/********************************
+ * START FOOTER STYLES
+ ********************************/
+.footer { background-color:#369; color:#FFF; float:none; clear:both; margin-top:1em; padding:0.3em; vertical-align:middle; height:3em; }
+div.footer a, div.footer a:hover, div.footer a img { text-decoration:none; border:0; }
+.bright a { color:#FF0; background-color:inherit; }
+ul.blinks { width:40em; margin:0 auto; padding:0; border:0; }
+ul.blinks li { list-style:none; margin:0 0.25em; float:left; padding:0.6em 1.5em; }
+ul.blinks a { display:block; color:#FFF; background-color:inherit; padding:0.1em; }
+ul.blinks a:hover { background:#036; color:#FFF; text-decoration:underline; }
+
+/**********************************
+ * START FORM STYLES
+ **********************************/
+div.row { clear: both; padding-top: 0.4em; margin-left: 0.5em; }
+div.row .label { float: left; width: 6em; text-align: right; padding-right:0.2em; }
+div.row span.formw { float: left; text-align: left; }
+
+/*******************************
+ * TABLE STYLE
+ *******************************/
+#single table { padding:0 0 1em 0; }
+#single table th { color:inherit; background-color:#8AE; text-align:center; border:0.1em solid #46A; padding:0.2em 0.5em; }
+#single table td { color:inherit; padding:0.25em 0.5em; margin:1em; border-spacing:50px; border-top:0.1em solid #99CCFF; border-left:0.1em solid #99CCFF; border-bottom:0.16em solid #6699CC; border-right:0.16em solid #6699CC; }
+#single table td.presenter { color:inherit; background-color:#CCFFFF; }
+#single table ul, #single table ol { margin-bottom:0; }
+
+/*****************************
+ * HOME PAGE STYLES
+ *****************************/
+div#homeLeft { float: right; width:20em; }
+div#homeRight { float:left; width:25.8em; font-size:1.2em; }
+div#homeMiddle { padding:0 0 0 1.5em; width: 12em; float:left; margin-top:1em; background-color:#DEF; }
+div#homeMiddle .date { display:block; padding-top:1.2em; }
+div.homeside { padding:0 1em; margin-top:1em; background-color: #FFF; color: inherit; }
+div.homeside a, div#homeMiddle a { text-decoration:none; color:#369; }
+div.homeside p { padding:0 0 0.5em; text-align:left; }
+div.homeside h2, div#homeMiddle h2 { color:#233864; margin-bottom: 0.3em; font-family:Arial Black; text-align:center; }
+ul.happenings { list-style:none; }
+ul.happenings li { padding-top:1em; }
+div.homeside .highlight { border:0.2em solid #ABBFCE; padding:1em; margin-bottom:1em; }
+div.homeside .highlight div { font-size:1.15em; }
+div.homeside .highlight div ul { list-style:none; }
+div.homeside table { width:100%; margin-top:0.2em; border-collapse:collapse; }
+div.homeside table caption { margin-bottom:0.2em;}
+div.homeside table th { color:inherit; background-color:#ABBFCE; text-align:center; border:0.1em solid #46A; padding:0.2em; }
+div.homeside table td { padding:0.4em 0.2em; border-spacing:0; border:0; border-bottom:0.1em solid #ABBFCE; color:inherit; }
+div.homeside form div.row .label { width:3.8em; }
+div.homeside form div.row input { width:9.2em; }
+
+/**************************************
+ * STAFF DIRECTORY STYLES
+  *************************************/
+.staff { clear:both; padding-bottom:1em; }
+.staff .info { float:left; padding-bottom:1em; }
+.staff .name { font-weight:bold; }
+.staff .staffPic { margin:0.2em 0.5em 0 0; float:left; width:80px; min-height:80px; }
+.staff .hide { display:none; }
+
+/******************************************
+ * COURSE STYLES
+ ******************************************/
+.course h2.courseHeader { color:#369; background-color:inherit; font-size:1.25em; clear:left; }
+.course .additional { margin-top:0.75em; color:gray; background-color:inherit; font-size:0.8em; text-align:left; }
+.course .instructor { color:#333; font-style:italic; float:left; clear:left; }
+.course .important { margin:1em 0 0 0.25em; padding-left:0.25em; text-align:right; width:11.5em; border-bottom:0.1em dashed #369; border-left:0.1em dashed #369; line-height:1.15; }
+.course .important .label { color:#036; background-color:inherit; float:left; }
+.course .important .data { float:right; }
+.course .CDescription { margin:1em 0 0.5em; }
+#single .course ol.books li ul { list-style:none; margin-left:1em; }
+.course .space { height:1em; width:100%; }
+
+
+/**********************************
+ * PROFESSIONAL DIRECTORY STYLES
+ **********************************/
+.prodir div.row span.label { width:8em; }
+.prodir h1.name { margin:0.75em 0 0; }
+#single .prodir h2.name { display:inline; margin-top:0; }
+.prodir .spec-cert { color:#036; text-align:right; }
+.prodir .modify { color:#333; }
+.prodir .locale { float:left; clear:left; width:30em; margin-bottom:1em; }
+.prodir .contact { width:auto; margin-left:0.5em; border-bottom:0.1em dashed #369; }
+.prodir .details { padding-top:0.5em; text-align:justify; clear:left; }
+
+/*************************************************
+ * E-Mentorship Styles
+ *************************************************/
+.emSections .section { float:left; width:10em; }
+
+/*************************************************
+ * Degree Information Styles
+ *************************************************/
+ul.GCCourses { list-style:none; width:44em; }
+ul.GCCourses li .course { float:left; width:40em; }

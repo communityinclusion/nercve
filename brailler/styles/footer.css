@@ -1,0 +1,40 @@
+.footer {
+background-color:#369;
+float:none;
+clear:both;
+margin-top:1em;
+padding-top:0.3em;
+vertical-align:middle;
+height:2.8em;
+}
+
+.bright {
+float:right;
+color:white;
+background-color:inherit;
+vertical-align:top;
+font-size:0.8em;
+padding-right:1em;
+}
+
+.bright a {
+color:#FF0;
+background-color:inherit;
+}
+
+.bleft {
+padding-left:1em;
+color:#369;
+background-color:inherit;
+list-style:none;
+margin:0;
+clear:left;
+}
+
+.bleft a {
+display:block;
+}
+.bleft li {
+float:left;
+margin:0 0.25em;
+}

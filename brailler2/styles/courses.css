@@ -1,0 +1,64 @@
+.course h2.courseHeader {
+padding:0;
+margin:0;
+color:#369;
+background-color:inherit;
+font-size:1.25em;
+clear:left;
+}
+
+.course .additional {
+margin-top:0.75em;
+padding:0;
+color:gray;
+background-color:inherit;
+font-size:0.8em;
+text-align:left;
+}
+
+.course .instructor {
+color:#333;
+font-style:italic;
+float:left;
+clear:left;
+}
+
+.course .important {
+margin:1em 0 0 0.25em;
+padding-left:0.25em;
+text-align:right;
+width:11.5em;
+border-bottom:0.1em dashed #369;
+border-left:0.1em dashed #369;
+line-height:1.15;
+}
+
+.course .important .label {
+color:#036;
+background-color:inherit;
+float:left;
+}
+
+.course .important .data {
+float:right;
+}
+
+.course .CDescription {
+margin:1em 0 0.5em;
+}
+
+.course .books {
+margin:0;
+padding:0;
+}
+
+#single .course ol.books li ul {
+list-style:none;
+margin-left:1em;
+padding:0;
+}
+
+.course .space {
+height:1em;
+width:100%;
+}

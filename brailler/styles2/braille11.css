@@ -1,0 +1,114 @@
+@font-face {
+	font-family: simbrl;
+	src: url(simbrl.eot);
+}
+@font-face {
+	font-family: simbrl;
+	src: url(simbrl.ttf);
+}
+
+.SimBraille { font-family:SimBraille, Braille; }
+#single #brailler input#field { width:100%; color:white; cursor:default; font-family:Verdana; font-size:1em; }
+#single #brailler input#field.brailleSpace { letter-spacing:0.55em; font-family:Courier; width:50em; }
+#single #brailler input#field:focus { outline:0; }
+#single p.sentence { font-size:1.1em; }
+/*#single p.text img, #single li.text img, #single td.text img { border:0; padding:0; margin:0; }*/
+#single span.text, #single li.text, #single td.text { word-spacing:0; letter-spacing:0; }
+#single li.text a img, #single td.text a img { border-bottom:0.1em solid #369; }
+#single #brailler .text { font-family: 'simbrl'; font-size:16pt; width:29.5em; white-space:pre-wrap; word-wrap:break-word; display:block; }
+#single #brailler .sentence { font-size:16pt; white-space:pre-wrap; word-wrap:break-word; display:block; }
+#single #answer .text { font-family: 'simbrl'; font-size:16pt; width:29.5em; white-space:pre-wrap; word-wrap:break-word; display:block; position: relative; }
+#single #answer .text .error, #single #answer .text .b64.error { background-color:inherit; color:inherit; text-decoration:underline; }
+#single #answer .braille { font-size:16pt; white-space:pre-wrap; word-wrap:break-word; display:block; position: relative; }
+#single #answer .braille .error { background-color:inherit; color:inherit; text-decoration:underline; }
+#single #sentences .braille { font-family: 'simbrl'; font-size:16pt; width:29.5em; }
+#single #sentences .text { width:100%; }
+#brailler fieldset { padding:0 1em 1em 1em; }
+#single form #courseLeft, #single form #courseRight { width:50%; float:left; }
+#single #form #setences .simbraille { font-family: 'simbrl'; font-size:16pt; width:29.5em; white-space:pre-wrap; word-wrap:break-word; display:block; position: relative; }
+div.row .label { width:6em; float:left; text-align:right; padding-right:0.2em; }
+body div#centeredcontainer { width:100%; }
+.cursor { background: url('../images/braille/cursor.gif') no-repeat top left; }
+/*#single span.text { width:641px; display:inline-block; }*/
+#tabs { margin-bottom:1em; }
+#tabs .dijitTab { background:url(../images/tableft.PNG) left top no-repeat #ABBFCE; padding:0.2em 0.5em; float:left; }
+#tabs .dijitTabChecked { background:url(../images/tableftdark.PNG) left top no-repeat #DBEFFE; }
+div.dijitTabPaneWrapper { border-top:0.2em solid #ABBFCE; clear:left; }
+#tabs .dijitTab img { border:0; margin: 0; }
+#details { display:none; padding-left:1em; width:75%; }
+#details #sname { padding:0; }
+#details label { vertical-align:top; }
+/** Braille symbol classes *****************************/
+.ascii { color:white; font-size:1pt; position:absolute; right:999999px; }
+.b0, .b1, .b2, .b3, .b4, .b5, .b6, .b7, .b8, .b9, .b10, .b11, .b12, .b13, .b14, .b15, .b16, .b17,
+	.b18, .b19, .b20, .b21, .b22, .b23, .b24, .b25, .b26, .b27, .b28, .b29, .b30, .b31, .b32, .b33,
+	.b34, .b35, .b36, .b37, .b38, .b39, .b40, .b41, .b42, .b43, .b44, .b45, .b46, .b47, .b48, .b49,
+	.b50, .b51, .b52, .b53, .b54, .b55, .b56, .b57, .b58, .b59, .b60, .b61, .b62, .b63
+	{ font-family:'simbrl'; }
+
+.b0:after { content: " "; }
+.b1:after { content: ","; }
+.b2:after { content: '"'; }
+.b3:after { content: ";"; }
+.b4:after { content: "@"; }
+.b5:after { content: "."; }
+.b6:after { content: "^"; }
+.b7:after { content: "_"; }
+.b8:after { content: "'"; }
+.b9:after { content: "-"; }
+.b10:after { content: "9"; }
+.b11:after { content: "0"; }
+.b12:after { content: "/"; }
+.b13:after { content: "+"; }
+.b14:after { content: ">"; }
+.b15:after { content: "#"; }
+.b16:after { content: "1"; }
+.b17:after { content: "5"; }
+.b18:after { content: "3"; }
+.b19:after { content: "4"; }
+.b20:after { content: "i"; }
+.b21:after { content: "["; }
+.b22:after { content: "j"; }
+.b23:after { content: "w"; }
+.b24:after { content: "2"; }
+.b25:after { content: "8"; }
+.b26:after { content: "6"; }
+.b27:after { content: "7"; }
+.b28:after { content: "s"; }
+.b29:after { content: "!"; }
+.b30:after { content: "t"; }
+.b31:after { content: ")"; }
+.b32:after { content: "a"; }
+.b33:after { content: "*"; }
+.b34:after { content: "e"; }
+.b35:after { content: ":"; }
+.b36:after { content: "c"; }
+.b37:after { content: "%"; }
+.b38:after { content: "d"; }
+.b39:after { content: "?"; }
+.b40:after { content: "k"; }
+.b41:after { content: "u"; }
+.b42:after { content: "o"; }
+.b43:after { content: "z"; }
+.b44:after { content: "m"; }
+.b45:after { content: "x"; }
+.b46:after { content: "n"; }
+.b47:after { content: "y"; }
+.b48:after { content: "b"; }
+.b49:after { content: "<"; }
+.b50:after { content: "h"; }
+.b51:after { content: "\\"; }
+.b52:after { content: "f"; }
+.b53:after { content: "$"; }
+.b54:after { content: "g"; }
+.b55:after { content: "]"; }
+.b56:after { content: "l"; }
+.b57:after { content: "v"; }
+.b58:after { content: "r"; }
+.b59:after { content: "("; }
+.b60:after { content: "p"; }
+.b61:after { content: "&"; }
+.b62:after { content: "q"; }
+.b63:after { content: "="; }
+.ab13:before, .b64:before { font-family: Arial;  content: "\21A9"; }
+.ab13, .ab0 { padding:0 0.1em; }
