@@ -1,0 +1,158 @@
+* { margin:0; padding:0; border:0; }
+div#centeredcontainer { text-align:left; }
+div.hollyhack { height: 1%; }
+
+.error { color: red; background-color:inherit; }
+.success { color: green; background-color:inherit; }
+.simBraille { font-family:SimBraille; font-size:1.2em; }
+.print_hide { display:none; }
+
+#single h2 { margin:0.75em 0 0 0; }
+#single h3 { margin:0.5em 0 0 0; }
+#single h4 { margin:0.25em 0 0 0; }
+#single table, #single p, #single ul, #single ol { padding:0 0 1em 0; }
+#single p { text-align:justify; }
+#single img { border:0.1em solid #369; margin-left:1em; }
+#single ul, #single ol { margin-left:1.25em; }
+p#misout{ border:1px solid black; color:#000066; padding:0.5em; background-color:#cccccc; text-align:center; line-height:2; }
+.mis{ font-weight: bolder; color:#006; text-align:justify;  margin:0 auto; }
+
+/*************************************************
+ * Positional Styles
+ *************************************************/
+.float-right { float:right; }
+.float-left { float:left; }
+.clear { clear:both; }
+.center { text-align:center; }
+.left { text-align:left; }
+.right { text-align:right; }
+.spacer { padding-bottom:1em; }
+.spacer2 { margin-bottom:2em; }
+
+/**********************************************************************
+ * ELEMENT SPECIFIC
+ **********************************************************************/
+body { background-color:white; color:black; font-size:12pt; font-family:Arial, Helvetica; text-align:left; }
+fieldset { border:0.1em solid #369; padding: 0.5em; }
+a { color:#036; background:inherit; }
+a:hover { color:#369; background-color:#DEF; }
+h1 { font-size:1.5em; font-family: Arial Black; margin:0.75em 0; color:#369; background-color:inherit; }
+form { background-color: #FFF; padding: 0.25em; color:#000; }
+select { border-top:0.2em solid #666; border-left:0.2em solid #666; border-right:0.2em solid #666; }
+option { margin-left:0.1em; }
+optgroup option { margin-left:1em; }
+input { border:0; }
+input.text, input.button  { border: 0.1em solid #69C; font-size: 1em; }
+/*, input[type^="text"], input[type^="submit"], input[type^="reset"], input[type^="button"]*/
+input.button { padding: 0.1em 1em; }
+textarea { border: 0.1em solid #69C; }
+p { text-align:justify; }
+
+/**********************************************************************
+ * BORDERS
+ **********************************************************************/
+.border-white { border:0.1em solid white; }
+.border-blue { border:0.1em solid #369; }
+
+/**********************************************************************
+ * BACKGROUNDS
+ **********************************************************************/
+.bg-gray { background:gray; }
+.bg-lightBlue { background-color:#DEF; }
+
+/********************************
+ * HEADER STYLES
+ ********************************/
+#top { color:black; width:100%; height:5.5em; background-color:white; }
+#top .logo { float:left; width:60px; margin:0.5em 0.5em 0 0.5em; }
+#top .title { font-size:1.25em; font-family:Arial Black; font-weight:bold; }
+#top .subtitle { font-size:1.1em; font-style:italic; font-family: Arial; }
+#header, .subheader, .skipmenu { display:none; }
+
+/********************************
+ * START FOOTER STYLES
+ ********************************/
+.footer { background-color:#369; float:none; clear:both; margin-top:1em; padding-top:0.3em; vertical-align:middle; height:2.6em; }
+.bright { float:right; color:white; background-color:inherit; vertical-align:top; font-size:0.8em; padding-right:1em; }
+.bright a { color:#FF0; background-color:inherit; }
+.bleft { color:#369; background-color:inherit; list-style:none; clear:left; }
+.bleft a { display:block; }
+.bleft li { float:left; margin:0 0.25em; }
+
+/**********************************
+ * START FORM STYLES
+ **********************************/
+div.row { clear: both; padding-top: 0.4em; margin-left: 0.5em; }
+div.row .label { float: left; width: 6em; text-align: right; padding-right:0.2em; }
+div.row span.formw { float: left; text-align: left; } 
+
+/*******************************
+ * TABLE STYLE
+ *******************************/
+#single table th { color:#000; background-color:#8AE; text-align:center; border:0.1em solid #46A; padding:0.2em 0.5em; }
+#single table td { padding:0.25em 0.5em; margin:1em; border-spacing:50px; border-top:0.1em solid #99CCFF; border-left:0.1em solid #99CCFF; border-bottom:0.16em solid #6699CC; border-right:0.16em solid #6699CC; color:#000; }
+#single table td.presenter { color:#000; background-color:#CCFFFF; }
+#single table ul, #single table ol { margin-bottom:0; }
+
+/*****************************
+ * HOME PAGE STYLES
+ *****************************/
+div#left { display:none; }
+div#middle { padding:0 0.75em; margin-top:0.5em; width: 18.6em; float:left; }
+div#middle h2 { color:#369; }
+div#middle .date { color:#36C; background-color:inherit; display:block; padding-top:1em; }
+ul.happenings { list-style:none; }
+ul.happenings li { padding-top:1em; }
+div#right { float:left; padding:0 1em 0 0.4em; font-size: 0.85em; width:22.5em; }
+div#right .highlight { border:0.1em solid #69C; padding:0 0.25em 0.5em 0.2em; margin-top:1em; }
+div#right .highlight div { font-size:1.15em; }
+div#right .highlight p { padding:0.5em 0; }
+div#right .highlight div ul { list-style:none; }
+div#right h2.highlightHeader { font-size:1.3em; font-family:Arial Black; color:#369; text-transform:uppercase; text-align:center; margin-top:0.5em; }
+div#right .highlight h2.highlightHeader { margin-top:0; }
+div#right table { width:100%; margin-top:0.2em; border-collapse:collapse; }
+div#right table caption { margin-bottom:0.2em;}
+div#right table th { color:#000; background-color:#8AE; text-align:center; border:0.1em solid #46A; padding:0.2em; }
+div#right table td { padding:0.2em; border-spacing:0; /*border:0;*/ border-bottom:0.1em solid #369; color:#000; }
+div#right #form div.row .label { width:3.4em; }
+.archived-news { margin-left:1em; }
+
+/**************************************
+ * STAFF DIRECTORY STYLES
+  *************************************/
+.staff { clear:both; padding-bottom:1em; }
+.staff .info { float:left; padding-bottom:1em; }
+.staff .name { font-weight:bold; }
+.staff .staffPic { margin:0.2em 0.5em 0 0; float:left; width:80px; min-height:80px; }
+.staff .hide { display:none; }
+
+/******************************************
+ * COURSE STYLES
+ ******************************************/
+.course h2.courseHeader { color:#369; background-color:inherit; font-size:1.25em; clear:left; }
+.course .additional { margin-top:0.75em; color:gray; background-color:inherit; font-size:0.8em; text-align:left; }
+.course .instructor { color:#333; font-style:italic; float:left; clear:left; }
+.course .important { margin:1em 0 0 0.25em; padding-left:0.25em; text-align:right; width:11.5em; border-bottom:0.1em dashed #369; border-left:0.1em dashed #369; line-height:1.15; }
+.course .important .label { color:#036; background-color:inherit; float:left; }
+.course .important .data { float:right; }
+.course .CDescription { margin:1em 0 0.5em; }
+#single .course ol.books li ul { list-style:none; margin-left:1em; }
+.course .space { height:1em; width:100%; }
+
+
+/**********************************
+ * PROFESSIONAL DIRECTORY STYLES
+ **********************************/
+.prodir div.row span.label { width:8em; }
+.prodir h1.name { margin:0.75em 0 0; }
+#single .prodir h2.name { display:inline; margin-top:0; }
+.prodir .spec-cert { color:#036; text-align:right; }
+.prodir .modify { color:#333; }
+.prodir .locale { float:left; clear:left; width:30em; margin-bottom:1em; }
+.prodir .contact { width:auto; margin-left:0.5em; border-bottom:0.1em dashed #369; }
+.prodir .details { padding-top:0.5em; text-align:justify; clear:left; }
+
+/*************************************************
+ * E-Mentorship Styles
+ *************************************************/
+.emSections .section { float:left; width:10em; }

@@ -1,0 +1,9 @@
+.SimBraille { font-family:SimBraille, Braille; }
+#brailler input#field { color:white; }
+.sentence { font-family:Arial; font-size:1.1em; }
+#single p.text img { border:0; padding:0; margin:0; }
+#single p#text { word-spacing:0; letter-spacing:0; font-size:0; }
+#brailler fieldset { padding:0 1em 1em 1em; }
+#form #left { width:38%; float:left; }
+#form #right { width:55%; float:left; }
+div.row .label { width:6em; float:left; text-align:right; padding-right:0.2em; }

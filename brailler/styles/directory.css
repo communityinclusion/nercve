@@ -1,0 +1,28 @@
+.staff {
+clear:both;
+padding-bottom:1em;
+}
+
+.staff .info {
+float:left;
+padding-bottom:1em;
+}
+
+.staff .name {
+font-weight:bold;
+}
+
+.staff .staffPic {
+margin:0;
+margin-right:0.5em;
+margin-top:0.2em;
+float:left;
+width:80px;
+min-height:80px;
+padding:0;
+/*padding-bottom:auto;*/
+}
+
+.staff .hide {
+display:none;
+}

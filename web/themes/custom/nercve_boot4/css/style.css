@@ -1,0 +1,667 @@
+/** Just testing Jenkins 5
+ * @file
+ * Subtheme specific CSS.
+ */
+/* #block-mainnavigation-2 ul#superfish-main {width: 68em; }*/
+ #block-mainnavigation-2 ul#superfish-main > li { width: 14em; }
+ #block-mainnavigation-2 ul#superfish-main > li,#block-mainnavigation-2 ul#superfish-main li.sf-depth-1.menuparent ul,#block-mainnavigation-2 ul#superfish-main li.sf-depth-1.menuparent ul li {
+     background-color: #fff;
+    }
+    #block-mainnavigation-2 ul#superfish-main li.sf-depth-1.menuparent{ height: 4em; }
+
+/*
+ li#main-menu-link-contentbd72769b-7c36-47f1-bb3a-667e8df24c98::before {
+   content: "Vistion Studies:";
+   padding-left: 15px;}
+*/
+
+#main-menu-link-contentf60aec04-01b5-4036-92c3-17b9dce749d7 {
+    font-weight: 700;
+}
+
+
+h3, h3 a {
+
+      letter-spacing: 1 ;
+}
+
+.page-title {font-size:2.5rem}
+
+.flex-container {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.flex-item {
+  padding: 5px;
+  height: 50px;
+  margin: 5px;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+}
+
+#main-wrapper {padding: 2rem 0;}
+
+
+.search-block-form .form-control {  padding: .15rem .375rem;}
+
+
+
+
+/*----home page block styles ----*/
+.block-views-blockspotlight-block-1 h2{
+  background-color:#ebf3f8;
+  padding:5px;
+}
+
+.block-views-blockspotlight-block-1 h2::before {
+    font-family: "Font Awesome 5 Free"; font-weight: 700; content: "\f005";margin-left:5px;margin-right:5px;
+  }
+
+.views-field-created, .views-field-title {font-weight: 700}
+
+
+.block-views-blockemployment-board-block-1 h2 { background-color:#ebf3f8;
+  padding:5px;}
+
+.block-views-blockemployment-board-block-1 h2::before { font-family: "Font Awesome 5 Free"; font-weight: 700; content: "\f0a1";margin-left:5px;margin-right:5px;}
+.block-views-blockemployment-board-block-1 table tr {background-color: #fff}
+
+
+.views-field-field-thumbnail {float:left;padding:5px;}
+
+
+
+/*   Hero    */
+
+
+
+.hero{
+  width: 100%;
+ max-width: 1400px;
+   height: 300px;
+  text-align: center;
+  margin: 0 auto;
+display:block;
+  position: relative;
+
+}
+
+
+
+  .hero-text {
+
+    background: rgba(50,50,50,0.4);
+    z-index: 10;
+    font-size: 30px;
+    color: #fff;
+    text-align: center;
+    width: 100%;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.6);
+
+}
+
+
+/* Social Icons */
+ul.social-icons {
+  margin: 0;
+  padding: 0;
+  width: auto;
+}
+
+ul.social-icons > li {
+  list-style: none;
+  margin-left: 5px;
+  display: inline-block;
+}
+
+ul.social-icons > li > a {
+  color: #fff;
+}
+
+
+
+
+
+ul.social-icons > li i {
+    width: 24px;
+    line-height: 24px;
+  font-size: 30px;
+}
+
+
+ul.social-icons .fa-facebook-square:hover {
+ color: #336699;
+   background-color: #fff;
+}
+
+ul.social-icons .fa-envelope:hover {
+ color: #336699;
+   background-color: #fff;
+       width: 30px;
+    line-height: 18px;
+}
+
+ul.social-icons .fa-twitter-square:hover {
+ color: #336699;
+   background-color: #fff;
+   width: 24px;
+    line-height: 24px;
+}
+
+
+/* Directory Filters */
+
+summary {
+    background-color: #eee;
+    padding: 3px 0 3px 10px;
+    margin-bottom: 5px;
+    border-radius: 4px;
+}
+
+.directory details summary {
+	padding: 0.80em .8em;
+}
+
+.directory summary, .directory .fieldgroup:not(.form-composite) > legend {
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 14px;
+}
+
+summary:hover, summary:focus, details[open] > summary {
+	color: #0074bd;
+}
+
+
+.directory .form-control {
+	font-size: .8rem;
+	line-height: 1.5;
+	color: #495057;
+}
+
+.form-row .form-item {
+	width: 33%;
+}
+
+
+.details-wrapper {
+	margin-top: 1em;
+	margin-bottom: 1em;
+	border: 1px solid #bfbfbf;
+	border-radius: 3px;
+	background-color: #fcfcfa;
+}
+
+details.form-item {
+	border-radius: 3px;
+	/*border: 1px solid #444;*/
+	margin-top: 9px;
+	padding-top: 0;
+	padding-bottom: 0;
+	margin-right: 2px
+}
+
+
+/* end Directory Filters */
+
+
+
+
+/* Sidebar Menus */
+
+.section-menu ul, .section-menu li {padding:0;}
+
+.section-menu  ul  li  ul {padding-left:10px;}
+
+.section-menu ul li ul li {padding-left:15px;}
+
+.sidebar nav ul.nav {margin:0 1rem}
+
+
+
+
+.site-name-slogan {
+     padding-left: 5px;
+    width: 125px;
+    line-height: 20px;
+}
+
+
+.site-name-slogan a {
+  color:#1d84c3;
+}
+
+.site-name-slogan a:hover {
+  font-weight:600;
+  text-transform: none;
+}
+
+div.sf-accordion-toggle.sf-style-none  > a:after {
+  content: "≡";
+  font-size: 3em;
+  position: absolute;
+    top: 40%;
+    right: .25em;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  speak: none;
+}
+
+/*** Footer ***/
+
+.site-footer h4 {
+    border-bottom: 1px solid #fff;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 27px;
+    padding: 10px 0;
+    color: #fff;
+    text-transform: uppercase;
+    }
+
+
+.site-footer .block {
+   border: none;
+}
+
+.site-footer {padding:0}
+
+
+
+.site-footer ul.list-unstyled {
+    padding-left: 0!important;
+}
+
+
+
+.site-footer__top .content li a {
+  padding: 5px 0;
+   text-indent: 0px;
+}
+
+
+.region-footer-fifth {
+  background-color: #233864;
+    margin-top: 5px;
+
+}
+
+
+.copyright-content .content {
+      width:90%;
+      margin:auto;}
+
+.site-footer__bottom {
+  margin-top:0;
+}
+
+
+.site-footer__top {
+      width:90%;
+      margin:auto;
+    }
+
+
+    .site-footer .content {
+   color: #fff;
+
+}
+
+
+
+
+
+/* Blockquote */
+
+
+blockquote {
+    position: relative;
+    text-align: left;
+    padding: 1.2em 0 2em 38px;
+    border: none;
+    margin: 20px auto 20px;
+    max-width: 800px;
+    width:100%;
+    display: block;
+}
+
+blockquote:after {
+    content: "";
+    display: block;
+    width: 2px;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    color: #1c84c3;
+    top: 0;
+    background: -moz-linear-gradient(top,#1c84c3 0%,#1c84c3 60%,rgba(255,255,255,0) 100%);
+    background: -webkit-linear-gradient(top,#1c84c3 0%,#1c84c3 60%,rgba(255,255,255,0) 100%);
+    /* background: linear-gradient(to bottom,#1c84c3 0%,#1c84c3 60%,rgba(255,255,255,0) 100%); */
+}
+
+blockquote:before {
+    content:"\f10d";
+    font-family: "fontawesome";
+    font-size: 20px;
+    display: block;
+    margin-bottom: 0.8em;
+    font-weight: 400;
+    color: #1c84c3;
+}
+
+blockquote > cite,
+blockquote > p > cite {
+    display: block;
+    font-size: 16px;
+    line-height: 1.3em;
+    font-weight: 700;
+    font-style: normal;
+    margin-top: 1.1em;
+    letter-spacing: 0;
+    font-style:italic;
+}
+
+
+
+/*
+ * Sample CSS to add Superfish CSS to themes.
+ *
+ * Instructions:
+ *
+ * 1. Change the #block-mainnavigation-2 (below) to the ID of your Superfish block.
+ *
+ * 2. Add the CSS to your theme, either as a separate CSS file or as a part of the main CSS file.
+ *
+ * 3. Note that by removing the .sf-style-none, the style will be applied to the menu regardless of
+ *    the "Style" selected in the Superfish block configuration.
+ *
+ */
+
+
+/* This seems to fix the issue of the sf menu disappearing in mobile view... probably a better way to fix-revisit later*/
+ .navbar-toggler {display:none}
+.collapse:not(.show) {
+    display: block;
+}
+
+
+#navbar-main {border-bottom:1px solid #d1d1d1;
+  -webkit-box-shadow:0px 1px 1px #d8d4d8;
+ -moz-box-shadow:0px 1px 1px #d8d4d8;
+ box-shadow:0px 1px 1px #d8d4d8;
+}
+ul.sf-menu .sf-sub-indicator {height:14px;width:14px}
+
+#block-mainnavigation-2 ul#superfish-main > li {
+    width: auto;
+}
+
+#block-mainnavigation-2 ul#superfish-main li.sf-depth-1.menuparent {
+    height: auto;
+}
+#block-mainnavigation-2 .sf-style-none {
+  float: left;
+  margin-left: 20px;
+  padding: 0;
+}
+#block-mainnavigation-2 .sf-style-none.sf-navbar {
+  width: 100%;
+}
+#block-mainnavigation-2 .sf-style-none ul {
+  padding-left: 0;
+}
+#block-mainnavigation-2 .sf-style-none a,
+#block-mainnavigation-2 .sf-style-none span.nolink {
+  color: #1d84c3;
+}
+#block-mainnavigation-2 .sf-style-none a.sf-with-ul,
+#block-mainnavigation-2 .sf-style-none span.nolink.sf-with-ul {
+  padding-right: 2.25em;
+}
+#block-mainnavigation-2 .sf-style-none.rtl a.sf-with-ul,
+#block-mainnavigation-2 .sf-style-none.rtl span.nolink.sf-with-ul {
+  padding-left: 2.25em;
+  padding-right: 1em;
+}
+#block-mainnavigation-2 .sf-style-none span.sf-description {
+  color: #1d84c3;
+  display: block;
+  font-size: 0.833em;
+  line-height: 1.5;
+  margin: 5px 0 0 5px;
+  padding: 0;
+}
+#block-mainnavigation-2 .sf-style-none.rtl span.sf-description {
+  margin: 5px 5px 0 0;
+}
+#block-mainnavigation-2 .sf-style-none li,
+#block-mainnavigation-2 .sf-style-none.sf-navbar {
+  background: #f0f0f0;
+}
+#block-mainnavigation-2 .sf-style-none li li {
+  background: #e0e0e0;
+}
+#block-mainnavigation-2 .sf-style-none li li li {
+  background: #d0d0d0;
+}
+#block-mainnavigation-2 .sf-style-none li:hover,
+#block-mainnavigation-2 .sf-style-none li.sfHover,
+#block-mainnavigation-2 .sf-style-none a:focus,
+#block-mainnavigation-2 .sf-style-none a:hover,
+#block-mainnavigation-2 .sf-style-none a:active,
+#block-mainnavigation-2 .sf-style-none span.nolink:hover {
+  background: #f0f0f0;
+  outline: 0;
+}
+#block-mainnavigation-2 .sf-style-none li:hover > ul,
+#block-mainnavigation-2 .sf-style-none li.sfHover > ul {
+  top: 40px;
+}
+
+
+#block-mainnavigation-2 .sf-depth-2 .menuparent .sf-sub-indicator:after {  content: "►";}
+#block-mainnavigation-2 .sf-sub-indicator:after {
+  content: "▼";
+}
+#block-mainnavigation-2 ul .sf-sub-indicator:after,
+#block-mainnavigation-2 .sf-vertical .sf-sub-indicator:after {
+  content: "▼";
+}
+#block-mainnavigation-2 .sf-navbar ul .sf-sub-indicator:after,
+#block-mainnavigation-2 .sf-accordion .sf-sub-indicator:after,
+#block-mainnavigation-2 .sf-accordion.sf-accordion-with-buttons .sf-accordion-button:after {
+  content: "▼";
+}
+#block-mainnavigation-2 .sf-navbar ul ul .sf-sub-indicator:after {
+  content: "►";
+}
+#block-mainnavigation-2 .sf-accordion.sf-accordion-with-buttons li.sf-expanded > .sf-accordion-button:after {
+  content: "▲";
+}
+#block-mainnavigation-2 .sf-horizontal.rtl ul .sf-sub-indicator:after,
+#block-mainnavigation-2 .sf-vertical.rtl .sf-sub-indicator:after,
+#block-mainnavigation-2 .sf-navbar.rtl ul ul .sf-sub-indicator:after {
+  content: "◄";
+}
+#block-mainnavigation-2 div.sf-accordion-toggle.sf-style-none a {
+  background:#1d84c3 ;
+  color: #f0f0f0;
+  border:#fff solid 1px;
+  display: inline-block;
+    font-weight: bold;
+    padding: 1em 3em 1em 1em;
+    position: absolute;
+      top:0;
+    right:0;
+    z-index: 1000;
+}
+
+
+div.sf-accordion-toggle.sf-style-none a {
+    background: #bdd2ff;
+    color: #13a;
+    display: inline-block;
+    font-weight: bold;
+    padding: 1em 3em 1em 1em;
+    position: relative;
+}
+
+
+
+/* #block-mainnavigation-2 div.sf-accordion-toggle.sf-style-none a.sf-expanded,
+#block-mainnavigation-2 .sf-style-none.sf-accordion li.sf-expanded  {
+  background: #f0f0f0;
+}
+*/
+#block-mainnavigation-2 div.sf-accordion-toggle.sf-style-none a.sf-expanded,
+#block-mainnavigation-2 .sf-style-none.sf-accordion li.sf-expanded > a,
+#block-mainnavigation-2 .sf-style-none.sf-accordion li.sf-expanded > span.nolink {
+  font-weight: bold;
+}
+#block-mainnavigation-2 .sf-style-none.sf-accordion li a.sf-accordion-button {
+  font-weight: bold;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 499;
+}
+#block-mainnavigation-2 .sf-style-none.sf-accordion li li a,
+#block-mainnavigation-2 .sf-style-none.sf-accordion li li span.nolink {
+  padding-left: 2em;
+}
+#block-mainnavigation-2 .sf-style-none.sf-accordion li li li a,
+#block-mainnavigation-2 .sf-style-none.sf-accordion li li li span.nolink {
+  padding-left: 3em;
+}
+#block-mainnavigation-2 .sf-style-none.sf-accordion li li li li a,
+#block-mainnavigation-2 .sf-style-none.sf-accordion li li li li span.nolink {
+  padding-left: 4em;
+}
+#block-mainnavigation-2 .sf-style-none.sf-accordion li li li li li a,
+#block-mainnavigation-2 .sf-style-none.sf-accordion li li li li li span.nolink {
+  padding-left: 5em;
+}
+#block-mainnavigation-2 .sf-style-none.rtl.sf-accordion li li a,
+#block-mainnavigation-2 .sf-style-none.rtl.sf-accordion li li span.nolink {
+  padding-left: auto;
+  padding-right: 2em;
+}
+#block-mainnavigation-2 .sf-style-none.rtl.sf-accordion li li li a,
+#block-mainnavigation-2 .sf-style-none.rtl.sf-accordion li li li span.nolink {
+  padding-left: auto;
+  padding-right: 3em;
+}
+#block-mainnavigation-2 .sf-style-none.rtl.sf-accordion li li li li a,
+#block-mainnavigation-2 .sf-style-none.rtl.sf-accordion li li li li span.nolink {
+  padding-left: auto;
+  padding-right: 4em;
+}
+#block-mainnavigation-2 .sf-style-none.rtl.sf-accordion li li li li li a,
+#block-mainnavigation-2 .sf-style-none.rtl.sf-accordion li li li li li span.nolink {
+  padding-left: auto;
+  padding-right: 5em;
+}
+#block-mainnavigation-2 .sf-style-none li.sf-multicolumn-wrapper ol,
+#block-mainnavigation-2 .sf-style-none li.sf-multicolumn-wrapper ol li {
+  margin: 0;
+  padding: 0;
+}
+#block-mainnavigation-2 .sf-style-none li.sf-multicolumn-wrapper a.menuparent,
+#block-mainnavigation-2 .sf-style-none li.sf-multicolumn-wrapper span.nolink.menuparent {
+  font-weight: bold;
+}
+#block-mainnavigation-2 .sf-style-none li.sf-multicolumn-wrapper {
+  background: #c0c0c0;
+}
+#block-mainnavigation-2 .sf-style-none li.sf-multicolumn-wrapper li {
+  background: transparent;
+}
+
+#navbar {
+    background-color: #ff0000;
+    height: 2.5em;
+}
+
+/* Smallscreen mode for <360px wide display */
+#navbar {
+    background-color: #fcfcfc;
+    height: 3.5em;
+    text-align: center;
+}
+#block-mainnavigation-2 > ul {
+    text-align: center;
+    padding: 0;
+    width: 100%;
+}
+#block-mainnavigation-2 .sf-menu li {
+    float: none;
+    position: relative;
+    display: inline-block;
+    text-align:left;
+}
+
+
+ul.sf-menu a, ul.sf-menu span.nolink {
+
+
+    padding: 1em 1em;
+}
+
+
+/* Make Navbar height double when menu wraps to 2 rows */
+@media (min-width: 360px) and (max-width: 668px) {
+    #navbar {
+        height: 5em;
+    }
+}
+/* Make Navbar height single when menu fits on 1 row */
+@media (min-width: 669px) {
+    #navbar {
+        height: 2.5em;
+    }
+}
+.view-new-professional-directory .views-row { width: 100%; float: none; padding: 9px 5px; }
+.view-new-professional-directory .views-label {
+  font-weight: bold;
+}
+.views-field-field-prof-dir-spec .field-content, .views-field-field-prof-dir-doe .field-content, .views-field-field-prof-dir-cert field-content { display: inline; }
+.view-new-professional-directory h3 { font-size: 130%; margin: 7px 0 3px 0; font-weight: bold;}
+.path-professional-development .view-employment-board table tr:nth-of-type(odd),.view-new-professional-directory .view-content .views-row:nth-of-type(odd) {
+  background: #fff;
+}
+
+.path-professional-development .view-employment-board table tr:nth-of-type(even),.view-new-professional-directory .view-content .views-row:nth-of-type(even) {
+  background: #e9ecef;
+}
+#block-exposedformnew-professional-directorypage-1 select { max-width: 315px; }
+.js-form-type-textarea .link-edit-summary, #node-training-form #edit-body-0-format,#node-job-form #edit-body-0-format,#node-job-form #edit-field-qualifications-0-format {display:none;}
+.page-user-register .form-item-contact { display:none; }
+.page-user-register .field--name-field__would-like-to-be-consider {font-size: 1.5em;}
+
+
+.floatLeft {float:left;width:49%;}
+.floatRight {float:right; width:49%}
+
+
+@media (min-width: 669px) {
+  .hero .h1 {font-weight:700}
+}
+
+
+@media (max-width: 668px) {
+
+.floatLeft {float:none;width:100%;}
+.floatRight {float:none;width:100%;}
+.hero .h1 {font-size:1.8rem;font-weight:700;padding-right:10px;padding-left:10px;}
+.hero .h2 {font-size:1.3rem;padding-right:10px;padding-left:10px;}
+}

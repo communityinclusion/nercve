@@ -1,0 +1,95 @@
+.SimBraille { font-family:SimBraille, Braille; }
+#single #brailler input#field { width:100%; color:white; cursor:default; font-family:Verdana; font-size:1em; }
+#single #brailler input#field.brailleSpace { letter-spacing:0.55em; font-family:Courier; width:50em; }
+#single #brailler input#field:focus { outline:0; }
+#single p.sentence { font-size:1.1em; }
+/*#single p.text img, #single li.text img, #single td.text img { border:0; padding:0; margin:0; }*/
+#single span.text, #single li.text, #single td.text { word-spacing:0; letter-spacing:0; }
+#single li.text a img, #single td.text a img { border-bottom:0.1em solid #369; }
+#brailler fieldset { padding:0 1em 1em 1em; }
+#single form #courseLeft, #single form #courseRight { width:50%; float:left; }
+div.row .label { width:6em; float:left; text-align:right; padding-right:0.2em; }
+body div#centeredcontainer { width:100%; }
+.cursor { background: url('../images/braille/cursor.gif') no-repeat top left; }
+/*#single span.text { width:641px; display:inline-block; }*/
+#tabs { margin-bottom:1em; }
+#tabs .dijitTab { background:url(../images/tableft.PNG) left top no-repeat #ABBFCE; padding:0.2em 0.5em; float:left; }
+#tabs .dijitTabChecked { background:url(../images/tableftdark.PNG) left top no-repeat #DBEFFE; }
+div.dijitTabPaneWrapper { border-top:0.2em solid #ABBFCE; clear:left; }
+#tabs .dijitTab img { border:0; margin: 0; }
+#details { display:none; padding-left:1em; width:75%; }
+#details #sname { padding:0; }
+#details label { vertical-align:top; }
+/** Braille symbol classes *****************************/
+.ascii { color:white; font-size:1pt; position:absolute; right:999999px; }
+.b0, .b1, .b2, .b3, .b4, .b5, .b6, .b7, .b8, .b9, .b10, .b11, .b12, .b13, .b14, .b15, .b16, .b17,
+	.b18, .b19, .b20, .b21, .b22, .b23, .b24, .b25, .b26, .b27, .b28, .b29, .b30, .b31, .b32, .b33,
+	.b34, .b35, .b36, .b37, .b38, .b39, .b40, .b41, .b42, .b43, .b44, .b45, .b46, .b47, .b48, .b49,
+	.b50, .b51, .b52, .b53, .b54, .b55, .b56, .b57, .b58, .b59, .b60, .b61, .b62, .b63
+	{ display:inline-block; height:15px; width:10px; background: #fff url('../images/braille.JPG') top left no-repeat; margin:0.3em; }
+
+.b0  { background-position:-1px 0; }
+.b1  { background-position:-61px 0; }
+.b2  { background-position:-51px 0; }
+.b3  { background-position:-211px 0; }
+.b4  { background-position:-41px 0; }
+.b5  { background-position:-201px 0; }
+.b6  { background-position:-191px 0; }
+.b7  { background-position:-411px 0; }
+.b8  { background-position:-31px 0; }
+.b9  { background-position:-181px 0; }
+.b10 { background-position:-171px 0; }
+.b11 { background-position:-401px 0; }
+.b12 { background-position:-161px 0; }
+.b13 { background-position:-391px 0; }
+.b14 { background-position:-381px 0; }
+.b15 { background-position:-561px 0; }
+.b16 { background-position:-21px 0; }
+.b17 { background-position:-151px 0; }
+.b18 { background-position:-141px 0; }
+.b19 { background-position:-371px 0; }
+.b20 { background-position:-131px 0; }
+.b21 { background-position:-361px 0; }
+.b22 { background-position:-351px 0; }
+.b23 { background-position:-551px 0; }
+.b24 { background-position:-121px 0; }
+.b25 { background-position:-341px 0; }
+.b26 { background-position:-331px 0; }
+.b27 { background-position:-541px 0; }
+.b28 { background-position:-321px 0; }
+.b29 { background-position:-531px 0; }
+.b30 { background-position:-521px 0; }
+.b31 { background-position:-621px 0; }
+.b32 { background-position:-11px 0; }
+.b33 { background-position:-111px 0; }
+.b34 { background-position:-101px 0; }
+.b35 { background-position:-311px 0; }
+.b36 { background-position:-91px 0; }
+.b37 { background-position:-301px 0; }
+.b38 { background-position:-291px 0; }
+.b39 { background-position:-511px 0; }
+.b40 { background-position:-81px 0; }
+.b41 { background-position:-281px 0; }
+.b42 { background-position:-271px 0; }
+.b43 { background-position:-501px 0; }
+.b44 { background-position:-261px 0; }
+.b45 { background-position:-491px 0; }
+.b46 { background-position:-481px 0; }
+.b47 { background-position:-611px 0; }
+.b48 { background-position:-71px 0; }
+.b49 { background-position:-251px 0; }
+.b50 { background-position:-241px 0; }
+.b51 { background-position:-471px 0; }
+.b52 { background-position:-231px 0; }
+.b53 { background-position:-461px 0; }
+.b54 { background-position:-451px 0; }
+.b55 { background-position:-601px 0; }
+.b56 { background-position:-221px 0; }
+.b57 { background-position:-441px 0; }
+.b58 { background-position:-431px 0; }
+.b59 { background-position:-591px 0; }
+.b60 { background-position:-421px 0; }
+.b61 { background-position:-581px 0; }
+.b62 { background-position:-571px 0; }
+.b63 { background-position:-631px 0; }
+

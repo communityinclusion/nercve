@@ -1,0 +1,23 @@
+ul.GCCourses {
+list-style:none;
+margin:0;
+padding:0;
+clear:both;
+width:100%;
+}
+
+ul.GCCourses li span.course {
+margin:0;
+padding:0;
+float:left;
+}
+
+ul.GCCourses li {
+clear:both;
+width:100%;
+}
+
+.clearRight {
+clear:both;
+color:red;
+}

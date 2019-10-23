@@ -1,0 +1,7 @@
+#DirectoryIndex index.php index.html
+#DirectoryIndex index.html index.php
+#Options FollowSymLinks
+#RewriteEngine On
+#RewriteBase /workspace/nercve.org/htdocs/brailler/
+#RewriteCond %{REMOTE_ADDR} !^158\.121\.240\.\d{1,3}
+#RewriteRule ^index\.php(\?.*)? index.html [R,NC,L]

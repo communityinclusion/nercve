@@ -1,0 +1,51 @@
+h2 {
+padding-bottom:0;
+margin-bottom:0;
+}
+
+div.row span.label {
+width:8em;
+}
+
+.name {
+padding:0;
+margin:0;
+display:inline;
+}
+
+#single h2.name {
+margin-top:0;
+}
+
+.spec-cert {
+color:#036;
+text-align:right;
+}
+
+.modify {
+color:#333;
+}
+
+.spacer2 {
+margin-bottom:2em;
+}
+
+.locale {
+float:left;
+clear:left;
+width:20em;
+}
+
+.contact {
+width:auto;
+padding:0;
+margin:0;
+margin-left:0.5em;
+border-bottom:0.1em dashed #369;
+}
+
+.details {
+padding-top:0.5em;
+text-align:justify;
+clear:left;
+}
