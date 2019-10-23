@@ -58,7 +58,7 @@ class TamperEditForm extends TamperFormBase {
     $tamper_meta->setTamperConfig($uuid, $config);
     $this->feedsFeedType->save();
 
-    $this->messenger()->addStatus($this->t('The plugin %plugin_label has been updated.', [
+    drupal_set_message($this->t('The plugin %plugin_label has been updated.', [
       '%plugin_label' => $this->plugin->getPluginDefinition()['label'],
     ]));
   }

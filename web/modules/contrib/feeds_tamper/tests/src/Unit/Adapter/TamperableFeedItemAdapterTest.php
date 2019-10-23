@@ -30,7 +30,7 @@ class TamperableFeedItemAdapterTest extends UnitTestCase {
    * {@inheritdoc}
    */
   protected function setUp() {
-    $this->feedItem = $this->createMock(ItemInterface::class);
+    $this->feedItem = $this->getMock(ItemInterface::class);
     $this->adapter = new TamperableFeedItemAdapter($this->feedItem);
   }
 

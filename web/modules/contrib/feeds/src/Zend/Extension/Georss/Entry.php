@@ -27,7 +27,6 @@ class Entry extends AbstractEntry {
    * Get the entry points.
    *
    * @return array
-   *   The geo entry points.
    */
   public function getGeoPoints() {
     if (!isset($this->data['georss'])) {

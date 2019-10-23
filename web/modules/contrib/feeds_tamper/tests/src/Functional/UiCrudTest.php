@@ -78,7 +78,6 @@ class UiCrudTest extends FeedsTamperBrowserTestBase {
 
     // Configure plugin.
     $edit = [
-      'plugin_configuration[label]' => 'Trim test',
       'plugin_configuration[side]' => 'ltrim',
     ];
     $this->drupalPostForm(NULL, $edit, 'Submit');
@@ -92,7 +91,6 @@ class UiCrudTest extends FeedsTamperBrowserTestBase {
 
     $tamper = $plugin_collection->getIterator()->current();
     $this->assertEquals('trim', $tamper->getPluginId());
-    $this->assertEquals('Trim test', $tamper->getSetting('label'));
     $this->assertEquals('ltrim', $tamper->getSetting('side'));
     $this->assertEquals('description', $tamper->getSetting('source'));
   }
@@ -107,7 +105,6 @@ class UiCrudTest extends FeedsTamperBrowserTestBase {
       ->addTamper([
         'plugin' => 'convert_case',
         'operation' => 'strtoupper',
-        'label' => 'Str to Upper',
         'source' => 'title',
         'description' => 'Convert the case to uppercase.',
       ]);
@@ -152,7 +149,6 @@ class UiCrudTest extends FeedsTamperBrowserTestBase {
       ->addTamper([
         'plugin' => 'convert_case',
         'operation' => 'strtoupper',
-        'label' => 'Str to Upper',
         'source' => 'title',
         'description' => 'Convert the case to uppercase.',
       ]);
@@ -186,31 +182,26 @@ class UiCrudTest extends FeedsTamperBrowserTestBase {
     $tamper_meta = $this->feedTypeTamperManager->getTamperMeta($this->feedType, TRUE);
     $uuid_content_1 = $tamper_meta->addTamper([
       'plugin' => 'explode',
-      'label' => 'Explode',
       'separator' => '|',
       'source' => 'content',
     ]);
     $uuid_content_2 = $tamper_meta->addTamper([
       'plugin' => 'implode',
-      'label' => 'Implode',
       'glue' => '-',
       'source' => 'content',
     ]);
     $uuid_content_3 = $tamper_meta->addTamper([
       'plugin' => 'trim',
-      'label' => 'Trim Content',
       'side' => 'trim',
       'source' => 'content',
     ]);
     $uuid_title_1 = $tamper_meta->addTamper([
       'plugin' => 'trim',
-      'label' => 'Trim Title',
       'side' => 'trim',
       'source' => 'title',
     ]);
     $uuid_title_2 = $tamper_meta->addTamper([
       'plugin' => 'required',
-      'label' => 'Required',
       'invert' => FALSE,
       'source' => 'title',
     ]);
