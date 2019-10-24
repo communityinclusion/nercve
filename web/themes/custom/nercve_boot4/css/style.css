@@ -636,11 +636,11 @@ ul.sf-menu a, ul.sf-menu span.nolink {
 }
 .views-field-field-prof-dir-spec .field-content, .views-field-field-prof-dir-doe .field-content, .views-field-field-prof-dir-cert field-content { display: inline; }
 .view-new-professional-directory h3 { font-size: 130%; margin: 7px 0 3px 0; font-weight: bold;}
-.path-professional-development .view-employment-board table tr:nth-of-type(odd),.view-new-professional-directory .view-content .views-row:nth-of-type(odd) {
+.path-professional-development .view-employment-board div.mb4:nth-of-type(odd),.view-new-professional-directory .view-content .views-row:nth-of-type(odd) {
   background: #fff;
 }
 
-.path-professional-development .view-employment-board table tr:nth-of-type(even),.view-new-professional-directory .view-content .views-row:nth-of-type(even) {
+.path-professional-development .view-employment-board div.mb4:nth-of-type(even),.view-new-professional-directory .view-content .views-row:nth-of-type(even) {
   background: #e9ecef;
 }
 #block-exposedformnew-professional-directorypage-1 select { max-width: 315px; }
