@@ -20,7 +20,6 @@ abstract class TamperFormBase extends FormBase {
 
   // Form fields.
   const VAR_TAMPER_ID = 'tamper_id';
-  const VAR_TAMPER_LABEL = 'label';
   const VAR_PLUGIN_CONFIGURATION = 'plugin_configuration';
   const VAR_WEIGHT = 'weight';
 
@@ -87,14 +86,6 @@ abstract class TamperFormBase extends FormBase {
     ];
 
     if ($this->plugin) {
-      $form[self::VAR_PLUGIN_CONFIGURATION][self::VAR_TAMPER_LABEL] = [
-        '#type' => 'textfield',
-        '#title' => $this->t('Label'),
-        '#maxlength' => '255',
-        '#description' => $this->t('A useful description of what this plugin is doing.'),
-        '#required' => TRUE,
-        '#default_value' => $this->plugin->getSetting(self::VAR_TAMPER_LABEL) ? $this->plugin->getSetting(self::VAR_TAMPER_LABEL) : $this->plugin->getPluginDefinition()['label'],
-      ];
       $form[self::VAR_PLUGIN_CONFIGURATION]['description'] = [
         '#markup' => $this->plugin->getPluginDefinition()['description'],
       ];
@@ -141,11 +132,6 @@ abstract class TamperFormBase extends FormBase {
    *   Plugin form.
    */
   public function getPluginForm(array $form, FormStateInterface $form_state) {
-    // Update label when selecting an other plugin.
-    if (!$this->plugin || !$this->plugin->getSetting(self::VAR_TAMPER_LABEL)) {
-      $form[self::VAR_PLUGIN_CONFIGURATION][self::VAR_TAMPER_LABEL]['#value'] = $form[self::VAR_PLUGIN_CONFIGURATION][self::VAR_TAMPER_LABEL]['#default_value'];
-    }
-
     return $form[self::VAR_PLUGIN_CONFIGURATION];
   }
 
@@ -195,7 +181,6 @@ abstract class TamperFormBase extends FormBase {
       'plugin' => $this->plugin->getPluginId(),
       'source' => $source,
       'weight' => $form_state->getValue(self::VAR_WEIGHT),
-      'label' => $form_state->getValue([self::VAR_PLUGIN_CONFIGURATION, self::VAR_TAMPER_LABEL]),
     ];
 
     $plugin_config = $form_state->getValue(self::VAR_PLUGIN_CONFIGURATION);

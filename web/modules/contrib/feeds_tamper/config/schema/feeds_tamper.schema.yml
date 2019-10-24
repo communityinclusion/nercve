@@ -23,9 +23,6 @@ feeds_tamper.*:
     weight:
       type: integer
       label: 'Weight'
-    label:
-      type: string
-      label: 'Label'
     description:
       type: string
       label: 'Description'

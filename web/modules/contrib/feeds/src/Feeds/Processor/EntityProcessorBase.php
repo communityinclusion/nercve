@@ -826,6 +826,8 @@ abstract class EntityProcessorBase extends ProcessorBase implements EntityProces
       $plugin = $this->feedType->getTargetPlugin($delta);
       if (isset($field_values[$mapping['target']])) {
         $plugin->setTarget($feed, $entity, $mapping['target'], $field_values[$mapping['target']]);
+        // Hack PF https://www.drupal.org/project/feeds/issues/2994668
+        unset($field_values[$mapping['target']]);
       }
     }
 

@@ -14,7 +14,7 @@ class CsvController extends ControllerBase {
   /**
    * Date format not defined in PHP 5.
    *
-   * Example: Sun, 06 Nov 1994 08:49:37 GMT.
+   * Example: Sun, 06 Nov 1994 08:49:37 GMT
    *
    * @var string
    */

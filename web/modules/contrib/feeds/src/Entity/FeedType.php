@@ -2,6 +2,7 @@
 
 namespace Drupal\feeds\Entity;
 
+use Drupal\Component\Utility\Html;
 use Drupal\Core\Config\Entity\ConfigEntityBundleBase;
 use Drupal\Core\Entity\EntityStorageInterface;
 use Drupal\Core\Entity\EntityWithPluginCollectionInterface;

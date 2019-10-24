@@ -96,7 +96,6 @@ class Feed extends ContentEntityBase implements FeedInterface {
    * Gets the event dispatcher.
    *
    * @return \Symfony\Component\EventDispatcher\EventDispatcherInterface
-   *   The event dispatcher service.
    */
   protected function eventDispatcher() {
     return \Drupal::service('event_dispatcher');

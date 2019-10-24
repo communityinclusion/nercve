@@ -56,17 +56,13 @@ class TamperAddForm extends TamperFormBase {
       return NULL;
     }
 
-    $meta = $this->feedTypeTamperManager->getTamperMeta($this->feedsFeedType);
-
     try {
       /** @var \Drupal\tamper\TamperInterface $tamper */
-      $tamper = $this->tamperManager->createInstance($tamper_id, [
-        'source_definition' => $meta->getSourceDefinition(),
-      ]);
+      $tamper = $this->tamperManager->createInstance($tamper_id);
       return $tamper;
     }
     catch (PluginException $e) {
-      $this->messenger()->addError($this->t('The specified plugin is invalid.'));
+      drupal_set_message($this->t('The specified plugin is invalid.'), 'error');
     }
   }
 
@@ -110,7 +106,7 @@ class TamperAddForm extends TamperFormBase {
     $tamper_meta->addTamper($config);
     $this->feedsFeedType->save();
 
-    $this->messenger()->addStatus($this->t('Plugin %plugin_label was successfully added to %source.', [
+    drupal_set_message($this->t('Plugin %plugin_label was successfully added to %source.', [
       '%plugin_label' => $this->plugin->getPluginDefinition()['label'],
       '%source' => $this->sourceField,
     ]));
