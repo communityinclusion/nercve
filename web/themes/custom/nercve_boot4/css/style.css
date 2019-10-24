@@ -635,13 +635,14 @@ ul.sf-menu a, ul.sf-menu span.nolink {
   font-weight: bold;
 }
 .views-field-field-prof-dir-spec .field-content, .views-field-field-prof-dir-doe .field-content, .views-field-field-prof-dir-cert field-content { display: inline; }
+.path-professional-development .view-employment-board div.mb-4 { display: block; clear: both; width: 100%; margin: 0 ! important; padding: 10px 0 10px 10px; }
 .view-new-professional-directory h3 { font-size: 130%; margin: 7px 0 3px 0; font-weight: bold;}
 .path-professional-development .view-employment-board div.mb-4:nth-of-type(odd),.view-new-professional-directory .view-content .views-row:nth-of-type(odd) {
-  background: #fff; display: block; 
+  background: #fff;
 }
 
 .path-professional-development .view-employment-board div.mb-4:nth-of-type(even),.view-new-professional-directory .view-content .views-row:nth-of-type(even) {
-  background: #e9ecef; display: block;
+  background: #e9ecef; 
 }
 #block-exposedformnew-professional-directorypage-1 select { max-width: 315px; }
 .js-form-type-textarea .link-edit-summary, #node-training-form #edit-body-0-format,#node-job-form #edit-body-0-format,#node-job-form #edit-field-qualifications-0-format {display:none;}
