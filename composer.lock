@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "1b0c3b48279b2a94f8ac505ea0f9691d",
+    "content-hash": "c03ce2f7b1db96c4c7db47d0dda9d3dd",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -467,7 +467,9 @@
             "version": "9.7.0",
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/components/highlightjs/archive/9.7.0.zip"
+                "url": "https://github.com/components/highlightjs/archive/9.7.0.zip",
+                "reference": null,
+                "shasum": null
             },
             "type": "drupal-library"
         },
@@ -1470,7 +1472,9 @@
             "version": "v3.5.17",
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/d3/d3/archive/v3.5.17.zip"
+                "url": "https://github.com/d3/d3/archive/v3.5.17.zip",
+                "reference": null,
+                "shasum": null
             },
             "type": "drupal-library"
         },
@@ -3743,7 +3747,8 @@
             "homepage": "https://www.drupal.org/project/datetime_extras",
             "support": {
                 "source": "https://git.drupalcode.org/project/datetime_extras"
-            }
+            },
+            "time": "2019-06-26T19:46:42+00:00"
         },
         {
             "name": "drupal/db_maintenance",
@@ -3893,7 +3898,8 @@
                 "source": "http://cgit.drupalcode.org/devel",
                 "issues": "http://drupal.org/project/devel",
                 "irc": "irc://irc.freenode.org/drupal-contribute"
-            }
+            },
+            "time": "2019-05-08T10:03:51+00:00"
         },
         {
             "name": "drupal/ds",
@@ -4436,6 +4442,75 @@
                 "source": "http://cgit.drupalcode.org/feeds",
                 "issues": "https://www.drupal.org/project/issues/feeds"
             }
+        },
+        {
+            "name": "drupal/feeds_tamper",
+            "version": "dev-2.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/feeds_tamper.git",
+                "reference": "ecb78e6e3271bbb7b736158e2af1e2228205d9a2"
+            },
+            "require": {
+                "drupal/core": "^8.5.0",
+                "drupal/feeds": "~3.0",
+                "drupal/tamper": "~1.0"
+            },
+            "require-dev": {
+                "drupal/feeds": "3.x-dev"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-2.x": "2.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-2.x-dev",
+                    "datestamp": "1561048985",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Dev releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Bobík",
+                    "homepage": "https://www.drupal.org/user/123612"
+                },
+                {
+                    "name": "MegaChriz",
+                    "homepage": "https://www.drupal.org/user/654114"
+                },
+                {
+                    "name": "franz",
+                    "homepage": "https://www.drupal.org/user/581844"
+                },
+                {
+                    "name": "mausolos",
+                    "homepage": "https://www.drupal.org/user/642118"
+                },
+                {
+                    "name": "twistor",
+                    "homepage": "https://www.drupal.org/user/473738"
+                }
+            ],
+            "description": "Modify feeds data before it gets saved.",
+            "homepage": "http://drupal.org/project/feeds_tamper",
+            "keywords": [
+                "Drupal",
+                "feeds",
+                "tamper"
+            ],
+            "support": {
+                "source": "http://cgit.drupalcode.org/feeds_tamper",
+                "issues": "http://drupal.org/project/issues/feeds_tamper"
+            },
+            "time": "2019-06-20T16:42:57+00:00"
         },
         {
             "name": "drupal/field_display_label",
@@ -6817,7 +6892,8 @@
             "homepage": "https://www.drupal.org/project/typed_data",
             "support": {
                 "source": "https://git.drupalcode.org/project/typed_data"
-            }
+            },
+            "time": "2019-05-26T03:09:33+00:00"
         },
         {
             "name": "drupal/viewfield",
@@ -13609,6 +13685,7 @@
         "drupal/devel": 20,
         "drupal/entity_block": 10,
         "drupal/fapi_validation": 15,
+        "drupal/feeds_tamper": 20,
         "drupal/mailgun": 10,
         "drupal/nodeaccess": 10,
         "drupal/single_datetime": 20,

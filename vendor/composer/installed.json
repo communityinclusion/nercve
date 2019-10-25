@@ -479,7 +479,9 @@
         "version_normalized": "9.7.0.0",
         "dist": {
             "type": "zip",
-            "url": "https://github.com/components/highlightjs/archive/9.7.0.zip"
+            "url": "https://github.com/components/highlightjs/archive/9.7.0.zip",
+            "reference": null,
+            "shasum": null
         },
         "type": "drupal-library",
         "installation-source": "dist"
@@ -1510,7 +1512,9 @@
         "version_normalized": "3.5.17.0",
         "dist": {
             "type": "zip",
-            "url": "https://github.com/d3/d3/archive/v3.5.17.zip"
+            "url": "https://github.com/d3/d3/archive/v3.5.17.zip",
+            "reference": null,
+            "shasum": null
         },
         "type": "drupal-library",
         "installation-source": "dist"
@@ -4562,6 +4566,76 @@
         "support": {
             "source": "http://cgit.drupalcode.org/feeds",
             "issues": "https://www.drupal.org/project/issues/feeds"
+        }
+    },
+    {
+        "name": "drupal/feeds_tamper",
+        "version": "dev-2.x",
+        "version_normalized": "dev-2.x",
+        "source": {
+            "type": "git",
+            "url": "https://git.drupalcode.org/project/feeds_tamper.git",
+            "reference": "ecb78e6e3271bbb7b736158e2af1e2228205d9a2"
+        },
+        "require": {
+            "drupal/core": "^8.5.0",
+            "drupal/feeds": "~3.0",
+            "drupal/tamper": "~1.0"
+        },
+        "require-dev": {
+            "drupal/feeds": "3.x-dev"
+        },
+        "type": "drupal-module",
+        "extra": {
+            "branch-alias": {
+                "dev-2.x": "2.x-dev"
+            },
+            "drupal": {
+                "version": "8.x-2.x-dev",
+                "datestamp": "1561048985",
+                "security-coverage": {
+                    "status": "not-covered",
+                    "message": "Dev releases are not covered by Drupal security advisories."
+                }
+            }
+        },
+        "installation-source": "source",
+        "notification-url": "https://packages.drupal.org/8/downloads",
+        "license": [
+            "GPL-2.0+"
+        ],
+        "authors": [
+            {
+                "name": "Bobík",
+                "homepage": "https://www.drupal.org/user/123612"
+            },
+            {
+                "name": "MegaChriz",
+                "homepage": "https://www.drupal.org/user/654114"
+            },
+            {
+                "name": "franz",
+                "homepage": "https://www.drupal.org/user/581844"
+            },
+            {
+                "name": "mausolos",
+                "homepage": "https://www.drupal.org/user/642118"
+            },
+            {
+                "name": "twistor",
+                "homepage": "https://www.drupal.org/user/473738"
+            }
+        ],
+        "description": "Modify feeds data before it gets saved.",
+        "homepage": "http://drupal.org/project/feeds_tamper",
+        "keywords": [
+            "Drupal",
+            "feeds",
+            "tamper"
+        ],
+        "support": {
+            "source": "http://cgit.drupalcode.org/feeds_tamper",
+            "issues": "http://drupal.org/project/issues/feeds_tamper"
         }
     },
     {
