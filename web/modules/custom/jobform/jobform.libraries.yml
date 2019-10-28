@@ -1,0 +1,9 @@
+jobformfix:
+  version: 1.x
+  header: true
+  js:
+    js/formfix.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupalSettings
+    - core/drupal
