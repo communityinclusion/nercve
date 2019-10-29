@@ -4,7 +4,7 @@
  * /
 **/
 function jobform_form_alter(&$form,\Drupal\Core\Form\FormStateInterface $form_state, $form_id) {
-    if ($form_id == 'node_job_form' || $form_id == 'node_training_form') {
+    if ($form_id == 'node_job_form' || $form_id == 'node_training_form' || $form_id == 'user_register_form') {
       $form['#attached']['library'][] = 'jobform/jobformfix';
     }
   }
