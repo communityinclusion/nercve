@@ -8,5 +8,3 @@ function jobform_form_alter(&$form,\Drupal\Core\Form\FormStateInterface $form_st
       $form['#attached']['library'][] = 'jobform/jobformfix';
     }
   }
-  
- 

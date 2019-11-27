@@ -50,7 +50,7 @@
         "d3/d3": "3.5.*",
         "drupal-composer/drupal-scaffold": "^2.5",
         "drupal/admin_content_notification": "^3.5",
-        "drupal/admin_toolbar": "^1.26",
+        "drupal/admin_toolbar": "^2.0",
         "drupal/adminimal_admin_toolbar": "^1.9",
         "drupal/adminimal_theme": "^1.4",
         "drupal/auto_entitylabel": "^3.0",
