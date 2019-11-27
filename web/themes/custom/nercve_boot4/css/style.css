@@ -52,7 +52,9 @@ h3, h3 a {
 
 .search-block-form .form-control {  padding: .15rem .375rem;}
 
-
+.spotlight.views-row {    margin-bottom: 15px;
+    border-bottom: solid #ccc 1px;
+    padding-bottom: 15px;}
 
 
 /*----home page block styles ----*/
