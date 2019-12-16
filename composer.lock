@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "25ed7388b77bfc80abd8859b53e8bd34",
+    "content-hash": "0223b8c4037fb998f612c81c85240ae2",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -6497,6 +6497,56 @@
                 "source": "https://git.drupalcode.org/project/smtp",
                 "issues": "https://www.drupal.org/project/issues/smtp"
             }
+        },
+        {
+            "name": "drupal/spamspan",
+            "version": "dev-1.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/spamspan.git",
+                "reference": "e04ad6401600f95435afed8ca449794c9e37b05d"
+            },
+            "require": {
+                "drupal/core": "~8.1"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.0+3-dev",
+                    "datestamp": "1574170686",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Dev releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "lakka",
+                    "homepage": "https://www.drupal.org/user/63367"
+                },
+                {
+                    "name": "peterx",
+                    "homepage": "https://www.drupal.org/user/23516"
+                },
+                {
+                    "name": "vitalie",
+                    "homepage": "https://www.drupal.org/user/175134"
+                }
+            ],
+            "description": "The SpamSpan module obfuscates email addresses to help prevent spambots from collecting them. It implements the technique at http://www.spamspan.com.",
+            "homepage": "http://drupal.org/project/spamspan",
+            "support": {
+                "source": "https://git.drupalcode.org/project/spamspan"
+            },
+            "time": "2019-11-25T10:12:49+00:00"
         },
         {
             "name": "drupal/subpathauto",
@@ -13350,6 +13400,7 @@
                 "GPL-2.0-or-later"
             ],
             "description": "require-dev dependencies from drupal/core",
+            "abandoned": "drupal/core-dev",
             "time": "2019-09-04T10:31:38+00:00"
         },
         {
@@ -13762,6 +13813,7 @@
         "drupal/nodeaccess": 10,
         "drupal/single_datetime": 20,
         "drupal/smtp": 10,
+        "drupal/spamspan": 20,
         "drupal/subpathauto": 5,
         "drupal/tamper": 20,
         "drupal/token_custom": 15,
