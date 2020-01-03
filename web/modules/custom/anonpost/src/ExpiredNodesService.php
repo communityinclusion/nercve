@@ -13,7 +13,7 @@ class ExpiredNodesService
     {
         $storage = $this->entityTypeManager->getStorage('node');
         $query = $storage->getQuery()
-        ->condition('created',strtotime('-60 days'), '<')
+        ->condition('created',strtotime('-90 days'), '<')
         ->condition('type', 'job')
         ->condition('status', 1);
         $nids = $query->execute();
