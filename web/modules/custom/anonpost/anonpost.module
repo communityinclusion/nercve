@@ -49,7 +49,7 @@ function anonpost_cron()
     $key = 'unpublish_job';
     $to = $node->get('field_email')->first()->getValue();
     $params['node_title'] = $node->label();
-    $params['message'] = "Your job ad on NERCVE.org, " . $params['node_title'] . " was unpublished after 60 days.  Contact admin@mailer.nercve.org if you wish to re-post a job ad.";
+    $params['message'] = "Your job ad on NERCVE.org, " . $params['node_title'] . " was unpublished after 120 days.  Contact admin@mailer.nercve.org if you wish to re-post a job ad.";
     $langcode = "en";
     $send = true;
     $result = $mailManager->mail($module, $key, $to, $langcode, $params, NULL, $send);
@@ -68,13 +68,13 @@ function anonpost_mail($key, &$message, $params) {
   switch ($key) {
     case 'unpublish_job':
     $message['from'] = \Drupal::config('system.site')->get('mail');
-    $message['subject'] = t('You job ad on NERCVE.org has expired: @title', array('@title' => $params['node_title']), $options);
+    $message['subject'] = t('Your job ad on NERCVE.org has expired: @title', array('@title' => $params['node_title']), $options);
     $message['body'][] = $params['message'];
     break;
     case 'create_job':
       $message['from'] = \Drupal::config('system.site')->get('mail');
       $message['subject'] = t('Job ad created on NERCVE.org: @title', array('@title' => $params['node_title']), $options);
-      $message['body'][] = t('Your job ad, @title was posted to NERCVE.org.  After an adminstrator approves your posting it will be available on our website employment board for 60 days.', array('@title' => $params['node_title']), $options);
+      $message['body'][] = t('Your job ad, @title was posted to NERCVE.org.  After an adminstrator approves your posting it will be available on our website employment board for 120 days.', array('@title' => $params['node_title']), $options);
       break;
   }
  }
