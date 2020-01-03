@@ -8,10 +8,10 @@ use Drupal\Core\Field\FieldDefinitionInterface;
 use Drupal\Core\Form\FormStateInterface;
 use Drupal\Core\Plugin\ContainerFactoryPluginInterface;
 use Drupal\datetime\Plugin\Field\FieldType\DateTimeItem;
+use Drupal\datetime\Plugin\Field\FieldType\DateTimeItemInterface;
 use Drupal\datetime_range\Plugin\Field\FieldType\DateRangeItem;
 use Symfony\Component\DependencyInjection\ContainerInterface;
 use Drupal\datetime\Plugin\Field\FieldWidget\DateTimeWidgetBase;
-
 /**
  * Base class for SingleDateTime widget types.
  */
@@ -64,6 +64,7 @@ abstract class SingleDateTimeBase extends DateTimeWidgetBase implements Containe
       'max_date' => '',
       'year_start' => '',
       'year_end' => '',
+      'allow_blank' => FALSE,
     ];
   }
 
@@ -183,6 +184,13 @@ abstract class SingleDateTimeBase extends DateTimeWidgetBase implements Containe
       '#default_value' => $this->getSetting('year_end'),
       '#required' => FALSE,
     ];
+    $elements['allow_blank'] = [
+      '#type' => 'checkbox',
+      '#title' => $this->t('Allow blank'),
+      '#description' => $this->t('Allow deleting the value to unset a date.'),
+      '#default_value' => $this->getSetting('allow_blank'),
+      '#required' => FALSE,
+    ];
     return $elements;
   }
 
@@ -237,6 +245,8 @@ abstract class SingleDateTimeBase extends DateTimeWidgetBase implements Containe
 
     $summary[] = t('End year: @year_end', ['@year_end' => !empty($year_end) ? $year_end : t('None')]);
 
+    $summary[] = t('Allow blank: @allow_blank', ['@allow_blank' => !empty($this->getSetting('allow_blank')) ? t('Yes') : t('No')]);
+
     return $summary;
   }
 
@@ -259,8 +269,8 @@ abstract class SingleDateTimeBase extends DateTimeWidgetBase implements Containe
           case DateRangeItem::DATETIME_TYPE_DATE:
             // If this is a date-only field, set it to the default time so the
             // timezone conversion can be reversed.
-            datetime_date_default_time($start_date);
-            $format = DATETIME_DATE_STORAGE_FORMAT;
+            $start_date->setDefaultDateTime();
+            $format = DateTimeItemInterface::DATE_STORAGE_FORMAT;
             break;
 
           // All day.
@@ -271,12 +281,12 @@ abstract class SingleDateTimeBase extends DateTimeWidgetBase implements Containe
             // we need to explicitly set the timezone.
             $start_date->setTimeZone(timezone_open(drupal_get_user_timezone()));
             $start_date->setTime(0, 0, 0);
-            $format = DATETIME_DATETIME_STORAGE_FORMAT;
+            $format = DateTimeItemInterface::DATETIME_STORAGE_FORMAT;
             break;
 
           // Date and time.
           default:
-            $format = DATETIME_DATETIME_STORAGE_FORMAT;
+            $format = DateTimeItemInterface::DATETIME_STORAGE_FORMAT;
             break;
         }
         // Adjust the date for storage.
@@ -293,8 +303,8 @@ abstract class SingleDateTimeBase extends DateTimeWidgetBase implements Containe
           case DateRangeItem::DATETIME_TYPE_DATE:
             // If this is a date-only field, set it to the default time so the
             // timezone conversion can be reversed.
-            datetime_date_default_time($end_date);
-            $format = DATETIME_DATE_STORAGE_FORMAT;
+            $end_date->setDefaultDateTime();
+            $format = DateTimeItemInterface::DATE_STORAGE_FORMAT;
             break;
 
           case DateRangeItem::DATETIME_TYPE_ALLDAY:
@@ -304,11 +314,11 @@ abstract class SingleDateTimeBase extends DateTimeWidgetBase implements Containe
             // we need to explicitly set the timezone.
             $end_date->setTimeZone(timezone_open(drupal_get_user_timezone()));
             $end_date->setTime(23, 59, 59);
-            $format = DATETIME_DATETIME_STORAGE_FORMAT;
+            $format = DateTimeItemInterface::DATETIME_STORAGE_FORMAT;
             break;
 
           default:
-            $format = DATETIME_DATETIME_STORAGE_FORMAT;
+            $format = DateTimeItemInterface::DATETIME_STORAGE_FORMAT;
             break;
         }
         // Adjust the date for storage.
@@ -342,7 +352,7 @@ abstract class SingleDateTimeBase extends DateTimeWidgetBase implements Containe
     if ($this->getFieldSetting('datetime_type') === DateTimeItem::DATETIME_TYPE_DATE) {
       // A date without time will pick up the current time, use the default
       // time.
-      datetime_date_default_time($date);
+      $date->setDefaultDateTime();
     }
     $date->setTimezone(new \DateTimeZone($timezone));
 
@@ -370,6 +380,7 @@ abstract class SingleDateTimeBase extends DateTimeWidgetBase implements Containe
       '#max_date' => $this->getSetting('max_date'),
       '#year_start' => $this->getSetting('year_start'),
       '#year_end' => $this->getSetting('year_end'),
+      '#allow_blank' => $this->getSetting('allow_blank'),
     ];
   }
 

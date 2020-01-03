@@ -54,22 +54,6 @@ class MenuBlock extends SystemMenuBlock {
       '#description' => $this->t('Alter the options in “Menu levels” to be relative to the fixed parent item. The block will only contain children of the selected menu link.'),
     ];
 
-    $form['advanced']['render_parent'] = [
-      '#type' => 'checkbox',
-      '#title' => $this->t('<strong>Render parent item</strong>'),
-      '#default_value' => $config['render_parent'],
-      '#description' => $this->t('Parent menu link will be rendered together with children items.'),
-      '#states' => [
-        'disabled' => [
-          ':input[name="settings[level]"]' => ['!value' => '1'],
-        ],
-        'checked' => [
-          ':input[name="settings[level]"]' => ['value' => '1'],
-          ':input[name="settings[render_parent]"]' => ['checked' => true],          
-        ],        
-      ],      
-    ];
-
     $form['style'] = [
       '#type' => 'details',
       '#title' => $this->t('HTML and style options'),
@@ -119,7 +103,6 @@ class MenuBlock extends SystemMenuBlock {
     $this->configuration['depth'] = $form_state->getValue('depth');
     $this->configuration['expand'] = $form_state->getValue('expand');
     $this->configuration['parent'] = $form_state->getValue('parent');
-    $this->configuration['render_parent'] = $form_state->getValue('render_parent');
     $this->configuration['suggestion'] = $form_state->getValue('suggestion');
   }
 
@@ -135,13 +118,9 @@ class MenuBlock extends SystemMenuBlock {
     $depth = $this->configuration['depth'];
     $expand = $this->configuration['expand'];
     $parent = $this->configuration['parent'];
-    $render_parent = $this->configuration['render_parent'];
     $suggestion = $this->configuration['suggestion'];
 
-    // Parent item will be included by default if mi depth is NULL.
-    if (!($render_parent && (int)$level === 1)) {
-      $parameters->setMinDepth($level);     
-    }
+    $parameters->setMinDepth($level);
     // When the depth is configured to zero, there is no depth limit. When depth
     // is non-zero, it indicates the number of levels that must be displayed.
     // Hence this is a relative depth that we must convert to an actual
@@ -190,10 +169,7 @@ class MenuBlock extends SystemMenuBlock {
           // Change the request to expand all children and limit the depth to
           // the immediate children of the root.
           $parameters->expandedParents = [];
-          // Parent item will be included by default if mi depth is NULL.
-          if (!$render_parent) {
-            $parameters->setMinDepth(1);
-          }
+          $parameters->setMinDepth(1);
           $parameters->setMaxDepth(1);
           // Re-load the tree.
           $tree = $this->menuTree->load($menu_name, $parameters);
@@ -236,7 +212,6 @@ class MenuBlock extends SystemMenuBlock {
       'depth' => 0,
       'expand' => 0,
       'parent' => $this->getDerivativeId() . ':',
-      'render_parent' => 0,
       'suggestion' => strtr($this->getDerivativeId(), '-', '_'),
     ];
   }

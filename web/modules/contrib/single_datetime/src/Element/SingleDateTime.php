@@ -45,6 +45,7 @@ class SingleDateTime extends FormElement {
    *   The $element with prepared variables ready for input.html.twig.
    */
   public static function preRenderSingleDateTime(array $element) {
+    $element['#attributes']['type'] = 'text';
     Element::setAttributes($element, ['id', 'name', 'value', 'size']);
     static::setAttributes($element, ['form-date']);
     return $element;
@@ -94,6 +95,7 @@ class SingleDateTime extends FormElement {
       'data-inline' => !empty($element['#inline']) ? 1 : 0,
       'data-mask' => !empty($element['#mask']) ? 1 : 0,
       'data-datetimepicker-theme' => $element['#datetimepicker_theme'],
+      'data-custom-format' => $element['#custom_format'] ?? NULL,
     ];
 
     // Year start.
@@ -115,6 +117,11 @@ class SingleDateTime extends FormElement {
       $settings['data-max-date'] = $element['#max_date'];
     }
 
+    // Allow blank.
+    if (!empty($element['#allow_blank'])) {
+      $settings['data-allow-blank'] = $element['#allow_blank'];
+    }
+
     // Push field type to JS for changing between date only and time fields.
     // Difference between date and date range fields.
     if (isset($element['#date_type'])) {
@@ -133,8 +140,11 @@ class SingleDateTime extends FormElement {
     // Disable Chrome autofill on widget.
     $element['#attributes']['autocomplete'] = 'off';
 
-    // Prevent keyboard on mobile devices.
-    $element['#attributes']['onfocus'] = 'blur();';
+    // Prevent keyboard on mobile devices, but only if allowBlank is false
+    // otherwise a user won't be able to delete a date.
+    if (!$element['#allow_blank']) {
+      $element['#attributes']['onfocus'] = 'blur();';
+    }
 
     // Attach library.
     $element['#attached']['library'][] = 'single_datetime/datetimepicker';

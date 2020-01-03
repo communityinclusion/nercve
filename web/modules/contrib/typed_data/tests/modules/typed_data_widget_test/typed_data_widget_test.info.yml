@@ -4,3 +4,4 @@ description: 'Implements example forms using typed data widgets.'
 core: 8.x
 dependencies:
   - typed_data:typed_data
+configure: typed_data_widget_test.examples

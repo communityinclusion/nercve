@@ -8,6 +8,12 @@ tamper.convert_case:
       type: string
       label: 'How to convert case'
 
+tamper.url_decode:
+  mapping:
+    method:
+      type: string
+      label: 'Decode method'
+
 tamper.default_value:
   mapping:
     default_value:
@@ -136,3 +142,9 @@ tamper.truncate_text:
     wordsafe:
       type: boolean
       label: 'Truncate on a word boundary'
+
+tamper.url_encode:
+  mapping:
+    method:
+      type: string
+      label: 'Encode method'

@@ -57,7 +57,7 @@
   Drupal.behaviors.single_datetime = {
     attach(context) {
       // Setting the current language for the calendar.
-      val lang = drupalSettings.path.currentLanguage;
+      let lang = drupalSettings.path.currentLanguage;
 
       $(context)
         .find("input[data-single-date-time]")
@@ -99,11 +99,15 @@
           // Set the hour format.
           const formatTime = hourFormat === "12h" ? "h:i A" : "H:i";
 
+          const customFormat = input.data('customFormat');
+
           const inline = input.data("inline");
 
           const mask = Boolean(input.data("mask"));
 
           const theme = input.data("datetimepickerTheme");
+
+          const allowBlank = Boolean(input.data("allowBlank"));
 
           // Default empty array. Only calculate later if field type
           // includes times.
@@ -119,6 +123,9 @@
               input.data("allowedHours"),
               input.data("allowTimes")
             );
+          }
+          if (typeof customFormat !== 'undefined') {
+            format = customFormat;
           }
 
           $(`#${input.attr("id")}`).datetimepicker({
@@ -138,7 +145,8 @@
             maxDate,
             yearStart,
             yearEnd,
-            theme
+            theme,
+            allowBlank
           });
 
           if (lang === 'pt-br') {
@@ -154,7 +162,7 @@
           }
 
           // Explicitly set locale. Does not work with passed variable
-          // in setttings above.
+          // in settings above.
           $.datetimepicker.setLocale(lang);
         });
     }

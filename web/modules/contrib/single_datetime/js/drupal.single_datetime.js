@@ -104,11 +104,15 @@
         // Set the hour format.
         var formatTime = hourFormat === "12h" ? "h:i A" : "H:i";
 
+        var customFormat = input.data('customFormat');
+
         var inline = input.data("inline");
 
         var mask = Boolean(input.data("mask"));
 
         var theme = input.data("datetimepickerTheme");
+
+        var allowBlank = Boolean(input.data("allowBlank"));
 
         // Default empty array. Only calculate later if field type
         // includes times.
@@ -121,6 +125,10 @@
 
           // Get minute granularity, and allowed hours.
           allowTimes = SingleDatetimeAllowTimes(input.data("allowedHours"), input.data("allowTimes"));
+        }
+
+        if (typeof customFormat !== 'undefined') {
+          format = customFormat;
         }
 
         $("#" + input.attr("id")).datetimepicker({
@@ -140,7 +148,8 @@
           maxDate: maxDate,
           yearStart: yearStart,
           yearEnd: yearEnd,
-          theme: theme
+          theme: theme,
+          allowBlank: allowBlank
         });
 
         if (lang === 'pt-br') {
@@ -156,7 +165,7 @@
         }
 
         // Explicitly set locale. Does not work with passed variable
-        // in setttings above.
+        // in settings above.
         $.datetimepicker.setLocale(lang);
       });
     }

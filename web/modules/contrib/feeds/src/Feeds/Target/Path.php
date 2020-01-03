@@ -21,8 +21,8 @@ class Path extends FieldTargetBase {
   /**
    * {@inheritdoc}
    *
-   * This method is overridden to make the target available even when the pathauto
-   * module is enabled.
+   * This method is overridden to make the target available even when the
+   * pathauto module is enabled.
    */
   public static function targets(array &$targets, FeedTypeInterface $feed_type, array $definition) {
     $processor = $feed_type->getProcessor();
