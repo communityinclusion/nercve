@@ -100,6 +100,7 @@
         "drupal/paragraphs": "^1.9",
         "drupal/pathauto": "^1.6",
         "drupal/profile": "^1.0",
+        "drupal/quick_node_clone": "^1.12",
         "drupal/recaptcha": "^2.4",
         "drupal/redirect": "^1.4",
         "drupal/redis": "^1.2",
