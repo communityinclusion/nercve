@@ -37,5 +37,8 @@
     "rollup-plugin-babel": "^2.7.1",
     "rollup-plugin-eslint": "^3.0.0",
     "rollup-plugin-uglify": "^1.0.1"
+  },
+  "dependencies": {
+    "lodash": "^4.17.12"
   }
 }
